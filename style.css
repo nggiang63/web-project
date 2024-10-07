@@ -88,7 +88,7 @@ nav ul li a:hover {
   }
   
   .search-input {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Times, 'Times New Roman', serif;
 
     padding: 10px;
     border: 1px solid #007bff;
@@ -105,8 +105,84 @@ nav ul li a:hover {
     cursor: pointer;
   }
 
+  .project-details h2 {
+    color: #043365;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Giúp văn bản nằm phía trên lớp phủ */
+    
+  }
+
+  .project-details h3 {
+    color: #043365;
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: -25px;
+    text-align: center;
+    position: relative;
+    z-index: 2; 
+    }
+
+.project-details {
+    position: relative;
+    background-image: url("images/background-hus-vnu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 565px;
+    overflow: hidden; /* Giúp lớp phủ không tràn ra ngoài */
+}
+
+.project-details::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.697); /* Màu trắng với độ mờ 50% */
+    z-index: 1; /* Lớp phủ nằm phía trên nền */
+}
+
+.logo-container {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các hình ảnh */
+    justify-content: center; /* Căn giữa các hình ảnh */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 60px; /* Khoảng cách trên giữa tiêu đề và hình ảnh */
+    margin-right: 70px;
+    position: relative;
+    z-index: 2; 
+}
+
+.html-image {
+    width: 350px; 
+    height: auto; 
+    margin: 0 -25px; 
+}
+.css-image {
+    width: 145px;
+    height: auto;
+}
 
 
+
+
+
+
+
+
+
+
+
+ 
 /* Responsive cho thiết bị di động */
 @media (max-width: 768px) {
     .header-content {
