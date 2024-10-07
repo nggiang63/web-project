@@ -1,0 +1,129 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f000;
+}
+
+header {
+    background-color: #f8f8f8;
+    color: #0063EC;
+    padding: 0.1px;
+    text-align: center;
+    align-items: center; 
+    border-radius: 1px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0688f311; 
+    border-radius: 30px; 
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    width: 180px; 
+    height: 40px; 
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px; 
+}
+
+.site-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-container {
+    text-align: center;
+    flex-grow: 1;
+    
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 250px;
+    justify-content: left;
+}
+
+nav ul li {
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0063EC;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0688f311; 
+}
+
+.search-form {
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 15px;
+  }
+  
+  .search-button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+
+
+/* Responsive cho thiết bị di động */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Xếp logo và menu theo cột */
+        text-align: center;
+    }
+
+    .nav-container {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Chuyển menu thành dạng cột */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
