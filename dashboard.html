@@ -1,13 +1,28 @@
-<!-- dashboard.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
-    <h2>Chào mừng đến với Group 8!</h2>
-    <p>Bạn đã đăng nhập thành công.</p>
+    <header>
+        <h1>Chào mừng, <span id="username-display"></span>!</h1>
+    </header>
+    <p>Đây là trang dashboard của bạn.</p>
+
+    <script>
+        // Lấy tên đăng nhập từ LocalStorage
+        var username = localStorage.getItem('username');
+        
+        // Nếu có tên đăng nhập, hiển thị
+        if (username) {
+            document.getElementById('username-display').innerText = username;
+        } else {
+            // Nếu không có tên đăng nhập, chuyển về trang đăng nhập
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
 </html>

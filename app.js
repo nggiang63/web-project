@@ -18,6 +18,7 @@ $(document).ready(function() {
 
         if (account) {
             alert('Đăng nhập thành công!');
+            localStorage.setItem('username', username);
             // Điều hướng đến trang dashboard hoặc làm gì đó
             window.location.href = 'dashboard.html';
         } else {
@@ -39,3 +40,6 @@ $(document).ready(function() {
         }
     });
 });
+
+
+
