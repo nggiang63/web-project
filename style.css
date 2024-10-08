@@ -654,3 +654,10 @@ button:hover {
   color: #e0e0e0;
   border: 1px solid #333;
 }
+
+.form-group i{
+  color: #fff;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
