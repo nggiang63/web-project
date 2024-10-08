@@ -7,11 +7,6 @@ body {
     overflow: auto;
 }
 
-body.dark-mode {
-  background-color: #2c2c2c; /* Màu nền tối */
-  color: #f0f0f0; /* Màu chữ sáng */
-}
-
 header {
     background-color: #f8f8f8;
     color: #0063EC;
@@ -19,6 +14,10 @@ header {
     text-align: center;
     align-items: center; 
     border-radius: 1px;
+}
+
+header button:hover {
+  background-color: #45a049; /* Nền nút khi hover */
 }
 
 .header-content {
@@ -87,9 +86,7 @@ nav ul li a:hover {
     background-color: #0688f311; 
 }
 
-body.dark-mode .sidebar {
-  background-color: #3c3c3c; /* Màu nền sidebar tối */
-}
+
 
 .search-form {
     
@@ -142,7 +139,7 @@ body.dark-mode .sidebar {
 
 .project-details {
     position: relative;
-    background-image: url("images/background-hus-vnu.jpg");
+    background-image: url("images/background-hus-vnu.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -239,13 +236,6 @@ body.dark-mode .sidebar {
   }
 
 
-
-
-
-
-
-
-
  
 /* Responsive cho thiết bị di động */
 @media (max-width: 768px) {
@@ -272,3 +262,82 @@ body.dark-mode .sidebar {
         gap: 10px;
       }
 }
+
+body.dark-mode {
+  background-color: #3c2b2b; /* Màu nền tối */
+  color: #f0f0f0; /* Màu chữ sáng */
+}
+
+body.dark-mode header {
+  background-color: #463535; /* Màu nền tối cho header */
+  color: #f0f0f0; /* Màu chữ sáng trong header */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4; /* Màu nền sidebar sáng */
+  padding: 15px;
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+body.dark-mode .sidebar {
+  background-color: #3c3c3c; /* Màu nền sidebar tối */
+}
+
+.project-details {
+  position: relative;
+  background-image: url("images/background-hus-vnu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  min-height: 1200px;
+  overflow: auto;
+  z-index: 1;
+}
+
+.project-details .overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ màu đen với độ mờ 50% */
+  z-index: 2; /* Đảm bảo lớp phủ nằm trên cùng */
+  opacity: 0; /* Ẩn lớp phủ mặc định */
+  transition: opacity 0.3s; /* Hiệu ứng chuyển đổi cho lớp phủ */
+}
+
+body.dark-mode .project-details .overlay {
+  opacity: 1; /* Hiện lớp phủ khi ở chế độ tối */
+}
+
+.theme-toggle-button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px 20px;
+  background-color: #adc4c4; /* Màu nền mặc định */
+  color: #003c81; /* Màu chữ */
+  border: none; /* Không có viền */
+  border-radius: 15px; /* Bo tròn góc */
+  cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+  transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển đổi */
+}
+
+.theme-toggle-button:hover {
+  background-color: #99badb; /* Màu nền khi di chuột qua */
+  transform: scale(1.05); /* Phóng to một chút khi di chuột qua */
+}
+
+body.dark-mode .theme-toggle-button {
+  background-color: #495c68; /* Màu nền cho chế độ tối */
+  color: #fff; /* Màu chữ cho chế độ tối */
+}
+
+body.dark-mode .theme-toggle-button:hover {
+  background-color: #666; /* Màu nền khi di chuột qua trong chế độ tối */
+}
+
+
