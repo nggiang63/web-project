@@ -1,4 +1,5 @@
 body {
+  /* Cài đặt font chữ và các thuộc tính chung cho trang */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@ body {
 }
 
 header {
+  /* Thiết lập giao diện cho phần header */
   background-color: #f8f8f8;
   color: #0063EC;
   padding: 0.1px;
@@ -17,6 +19,7 @@ header {
 }
 
 .header-content {
+  /* Căn chỉnh phần nội dung trong header */
   display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -26,6 +29,7 @@ header {
 }
 
 .logo-title {
+  /* Cài đặt giao diện cho logo và tiêu đề */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,23 +42,26 @@ header {
 }
 
 .logo {
+  /* Kích thước logo */
   width: 50px;
   height: 50px;
   margin-right: 15px; 
 }
 
 .site-title {
+  /* Thiết lập tiêu đề trang */
   font-size: 20px;
   font-weight: bold;
 }
 
 .nav-container {
+  /* Căn giữa menu điều hướng */
   text-align: center;
   flex-grow: 1;
-  
 }
 
 nav ul {
+  /* Cài đặt cho danh sách điều hướng */
   list-style: none; 
   margin: 0;
   padding: 0;
@@ -64,10 +71,12 @@ nav ul {
 }
 
 nav ul li {
+  /* Khoảng cách giữa các mục trong menu */
   margin-left: 60px;
 }
 
 nav ul li a {
+  /* Cài đặt giao diện cho các liên kết trong menu */
   text-decoration: none;
   color: #0063EC;
   font-size: 25px;
@@ -79,24 +88,26 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+  /* Hiệu ứng hover cho liên kết */
   background-color: #0688f311; 
 }
 
 .search-form {
-  
+  /* Căn chỉnh form tìm kiếm */
   display: flex;
   align-items: center;
 }
 
 .search-input {
+  /* Cài đặt cho ô nhập tìm kiếm */
   font-family: Times, 'Times New Roman', serif;
-
   padding: 10px;
   border: 1px solid #007bff;
   border-radius: 15px;
 }
 
 .search-button {
+  /* Cài đặt cho nút tìm kiếm */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 10px 20px;
   background-color: #007bff;
@@ -107,6 +118,7 @@ nav ul li a:hover {
 }
 
 .project-details h2 {
+  /* Tiêu đề phụ trong phần project details */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #043365;
   font-size: 24px;
@@ -116,10 +128,10 @@ nav ul li a:hover {
   text-align: center;
   position: relative;
   z-index: 2; /* Giúp văn bản nằm phía trên lớp phủ */
-  
 }
 
 .project-details h3 {
+  /* Tiêu đề chính trong phần project details */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #e60a0aca;
   font-size: 40px;
@@ -129,9 +141,10 @@ nav ul li a:hover {
   text-align: center;
   position: relative;
   z-index: 2; 
-  }
+}
 
 .project-details {
+  /* Phần nội dung dự án với ảnh nền */
   position: relative;
   background-image: url("images/background-hus-vnu.jpg");
   background-size: cover;
@@ -146,6 +159,7 @@ nav ul li a:hover {
 }
 
 .project-details::before {
+  /* Lớp phủ trên ảnh nền để làm nổi bật nội dung */
   content: '';
   position: absolute;
   top: 0;
@@ -157,6 +171,7 @@ nav ul li a:hover {
 }
 
 .logo-container {
+  /* Căn chỉnh logo trong phần dự án */
   display: flex; /* Sử dụng flexbox để căn chỉnh các hình ảnh */
   justify-content: center; /* Căn giữa các hình ảnh */
   align-items: center; /* Căn giữa theo chiều dọc */
@@ -167,17 +182,20 @@ nav ul li a:hover {
 }
 
 .html-image {
+  /* Kích thước hình ảnh HTML */
   width: 300px; 
   height: auto; 
   margin: 0 -25px; 
 }
+
 .css-image {
+  /* Kích thước hình ảnh CSS */
   width: 120px;
   height: auto;
 }
 
-
 .member-info {
+  /* Cài đặt hiển thị thông tin thành viên */
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -185,16 +203,17 @@ nav ul li a:hover {
 }
 
 .member-card {
+  /* Cài đặt cho thẻ thông tin thành viên */
   border: 1px solid #ccc;
   border-radius: 25px;
   padding: 15px;
   width: 250px;
   text-align: center;
   background-color: #e9f7ff;
-  
 }
 
 .member-card h3 {
+  /* Tiêu đề thẻ thành viên */
   font-size: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -203,19 +222,13 @@ nav ul li a:hover {
 }
 
 .member-card p {
+  /* Phần mô tả thẻ thành viên */
   font-size: 15px;
   color: #043365;
 }
 
-/* .member-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-} */
-
-/* CSS cho phần footer */
 footer {
+  /* Cài đặt cho phần footer */
   background-color: #f8f8f8;
   text-align: center;
   padding: 15px;
@@ -224,41 +237,98 @@ footer {
   border-top: 1px solid #ccc;
 }
 
-footer p {
-  margin: 0;
-  font-size: 14px;
+
+
+
+
+.dropdown-content {
+  display: none; /* Ẩn dropdown-content mặc định */
+  position: absolute; /* Đặt vị trí tuyệt đối cho dropdown */
+  background-color: #eeeeee; /* Màu nền cho dropdown */
+  min-width: 160px; /* Độ rộng tối thiểu cho dropdown */
+  border: 1px solid #88bef9; /* Đường viền cho dropdown */
+  border-radius: 15px; /* Bo góc cho dropdown */
+  z-index: 2; /* Đảm bảo dropdown nằm trên các phần tử khác */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Hiển thị dropdown khi hover vào dropdown */
+}
+
+.dropdown-content a {
+  display: block; /* Hiển thị dưới dạng khối để dễ click */
+  padding: 10px; /* Khoảng cách cho từng mục */
+  text-decoration: none; /* Bỏ gạch chân cho liên kết */
+  color: #333; /* Màu chữ */
+  font-size: 15px;
+  text-align: left;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #d1e0ff; /* Màu nền khi hover */
+  color: #000; /* Màu chữ khi hover */
+}
+
+.sidebar-body {
+  position: fixed; /* Đặt cố định phần sidebar */
+  left: 0; /* Gán vị trí bên trái */
+  top: 0; /* Gán vị trí từ trên xuống */
+  width: 200px; /* Độ rộng của sidebar */
+  height: 100%; /* Độ cao chiếm toàn bộ chiều cao màn hình */
+  background-color: #f9f9f9; /* Màu nền của sidebar */
+  overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá lớn */
+}
+
+.sidebar-body ol {
+  list-style-type: none; /* Ẩn số tự động của danh sách */
+  padding-left: 0; /* Bỏ lề bên trái */
+}
+
+.sidebar-body li {
+  margin-bottom: 10px; /* Khoảng cách giữa các mục */
 }
 
 
 
-/* xin chaooooo */
 
 
 
 
 
+
+footer p {
+  /* Nội dung văn bản trong footer */
+  margin: 0;
+  font-size: 14px;
+}
 
 /* Responsive cho thiết bị di động */
 @media (max-width: 768px) {
   .header-content {
-      flex-direction: column; /* Xếp logo và menu theo cột */
+      /* Xếp logo và menu theo cột trên thiết bị di động */
+      flex-direction: column; 
       text-align: center;
   }
 
   .nav-container {
+      /* Thêm khoảng cách trên cho menu điều hướng */
       margin-top: 10px;
   }
 
   nav ul {
-      flex-direction: column; /* Chuyển menu thành dạng cột */
+      /* Chuyển menu thành dạng cột */
+      flex-direction: column; 
   }
 
   nav ul li {
+      /* Cài đặt khoảng cách cho các mục menu trên thiết bị di động */
       margin-left: 0;
       margin-bottom: 10px;
   }
 
   .member-info {
+      /* Chuyển thông tin thành viên thành dạng cột trên thiết bị di động */
       flex-direction: column;
       gap: 10px;
     }
