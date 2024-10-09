@@ -22,6 +22,19 @@ $(document).ready(function() {
         const email = $(this).find('input[placeholder="Email"]').val().trim();
         const password = $(this).find('input[placeholder="Mật khẩu"]').val();
         const confirmPassword = $(this).find('input[placeholder="Xác nhận mật khẩu"]').val();
+        const phone = $(this).find('input[placeholder="Số điện thoại"]').val().trim();
+        const location = $(this).find('input[placeholder="Thành phố, quốc gia"]').val().trim();
+
+         // Lấy danh sách tài khoản từ localStorage
+         const accounts = JSON.parse(localStorage.getItem('accounts')) || [];
+
+         // Kiểm tra xem tài khoản đã tồn tại chưa
+         const accountExists = accounts.some(account => account.username === username);
+         
+         if (accountExists) {
+             alert('Tài khoản đã tồn tại!');
+             return;
+         }
 
         // Kiểm tra xem mật khẩu và xác nhận mật khẩu có khớp không
         if (password !== confirmPassword) {
@@ -29,18 +42,21 @@ $(document).ready(function() {
             return;
         }
 
+
         // Lưu thông tin đăng ký vào localStorage
         const userInfo = {
             username: username,
             email: email,
-            password: password
+            password: password,
+            phone: phone,
+            location: location
         };
+        accounts.push(userInfo);
 
-        localStorage.setItem('userInfo', JSON.stringify(userInfo)); // Lưu thông tin
+        localStorage.setItem('accounts', JSON.stringify(accounts)); // Lưu thông tin
 
         alert('Đăng ký thành công!');
 
-        // Bạn có thể chuyển hướng tới trang đăng nhập ở đây nếu cần
         window.location.href = "login.html"; // Chuyển hướng tới trang đăng nhập
     });
 });
