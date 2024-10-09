@@ -270,14 +270,24 @@ footer {
   color: #000; /* Màu chữ khi hover */
 }
 
+.sidebar-container {
+  display: flex; /* Dùng flexbox để định dạng layout */
+}
+
+.group {
+  flex: 1; /* Phần tử group chiếm toàn bộ không gian còn lại */
+}
+
 .sidebar-body {
-  position: fixed; /* Đặt cố định phần sidebar */
+  position: relative; /* Đặt thanh danh sách ở vị trí tương đối */
   left: 0; /* Gán vị trí bên trái */
-  top: 0; /* Gán vị trí từ trên xuống */
-  width: 200px; /* Độ rộng của sidebar */
-  height: 100%; /* Độ cao chiếm toàn bộ chiều cao màn hình */
+  top: 10x; /* Khoảng cách từ trên xuống để nằm dưới group */
+  left: 20px;
+  min-width: none; /* Độ rộng của sidebar */
+  height: auto; /* Chiều cao tự động */
   background-color: #f9f9f9; /* Màu nền của sidebar */
   overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá lớn */
+  border-radius: 20px;
 }
 
 .sidebar-body ol {
