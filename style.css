@@ -272,6 +272,7 @@ footer {
 
 .sidebar-container {
   display: flex; /* Dùng flexbox để định dạng layout */
+  width: 250px;
 }
 
 .group {
@@ -283,11 +284,12 @@ footer {
   left: 0; /* Gán vị trí bên trái */
   top: 10x; /* Khoảng cách từ trên xuống để nằm dưới group */
   left: 20px;
-  min-width: none; /* Độ rộng của sidebar */
+  width: 150px; /* Độ rộng của sidebar */
   height: auto; /* Chiều cao tự động */
-  background-color: #f9f9f9; /* Màu nền của sidebar */
+  background-color: #f9f9f900; /* Màu nền của sidebar */
   overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá lớn */
   border-radius: 20px;
+  font-size: 12px;
 }
 
 .sidebar-body ol {
@@ -299,7 +301,9 @@ footer {
   margin-bottom: 10px; /* Khoảng cách giữa các mục */
 }
 
-
+.main-wrapper {
+  display: flex; /* Sử dụng flexbox để xếp bên cạnh nhau */
+}
 
 
 
