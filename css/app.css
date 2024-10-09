@@ -49,6 +49,11 @@ body{
     padding-right: 0;
     cursor: pointer;
 }
+
+#eye1 i{
+    padding-right: 0;
+    cursor: pointer;
+}
 .form-submit{
     background: transparent;
     border: 1px solid #f5f5f5;

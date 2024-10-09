@@ -10,23 +10,37 @@ $(document).ready(function() {
         event.preventDefault(); // Ngăn chặn reload trang
 
         // Lấy giá trị từ input
-        const username = $('.form-input[type="text"]').val();
+        const username = $('.form-input[type="text"]').val().trim();
         const password = $('.form-input[type="password"]').val();
 
-        // Kiểm tra thông tin đăng nhập
-        const account = accounts.find(acc => acc.username === username && acc.password === password);
+        // Lấy thông tin tài khoản từ localStorage
+        const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
-        if (account) {
+        // Kiểm tra thông tin đăng nhập
+        if (userInfo && userInfo.username === username && userInfo.password === password) {
             alert('Đăng nhập thành công!');
             localStorage.setItem('username', username);
             // Điều hướng đến trang dashboard hoặc làm gì đó
             window.location.href = 'dashboard.html';
+            //localStorage.clear();
         } else {
             alert('Tên đăng nhập hoặc mật khẩu không chính xác!');
         }
     });
 
     // Bật/tắt hiển thị mật khẩu
+    $('#eye').on('click', function() {
+        const passwordField = $(this).siblings('.form-input');
+        const icon = $(this).children('i');
+
+        if (passwordField.attr('type') === 'password') {
+            passwordField.attr('type', 'text');
+            icon.removeClass('fa-eye').addClass('fa-eye-slash');
+        } else {
+            passwordField.attr('type', 'password');
+            icon.removeClass('fa-eye-slash').addClass('fa-eye');
+        }
+    });
     $('#eye').on('click', function() {
         const passwordField = $(this).siblings('.form-input');
         const icon = $(this).children('i');
