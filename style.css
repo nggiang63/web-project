@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #f8f8f8;
+    background-color: #fcfcf9;
     color: #0063EC;
     padding: 0.1px;
     text-align: center;
@@ -45,12 +45,48 @@ header button:hover {
 .logo {
     width: 50px;
     height: 50px;
-    margin-right: 15px; 
+    margin-right: 5px; 
 }
 
 .site-title {
     font-size: 20px;
     font-weight: bold;
+}
+
+/* Basic styles for dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(232, 233, 240); /* Set the background color */
+  min-width: 160px; /* Set the minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Make sure the dropdown is above other elements */
+}
+
+.dropdown-content a {
+  font-size: 18px;
+  color: rgb(133, 136, 153);
+  padding: 10px 10px; /* Add some padding */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #c3cde3; /* Change background on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+/* Optional: Adjust overlay z-index */
+.overlay {
+  z-index: 1; /* Set overlay below dropdown */
 }
 
 .nav-container {
@@ -433,231 +469,6 @@ body.dark-mode p {
   margin-left: 20px; /* Khoảng cách giữa các mục */
 }
 
-
-
-/* CSS cho phần Đăng Nhập */
-.login-box {
-    max-width: 400px; /* Giới hạn chiều rộng form */
-    margin: 100px auto; /* Căn giữa form theo chiều dọc và ngang */
-    padding: 40px;
-    background-color: #f9f9f9; /* Màu nền nhạt */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
-    border-radius: 8px; /* Bo tròn góc */
-}
-
-.login-box h2 {
-    text-align: center; /* Căn giữa chữ Đăng Nhập */
-    font-size: 24px; /* Kích thước chữ */
-    color: #333; /* Màu chữ đậm */
-    margin-bottom: 20px; /* Khoảng cách dưới chữ */
-    font-family: 'Arial', sans-serif; /* Font chữ đơn giản và hiện đại */
-    letter-spacing: 1px; /* Khoảng cách giữa các ký tự */
-    text-transform: uppercase; /* In hoa toàn bộ */
-}
-
-.input-group {
-    margin-bottom: 20px; /* Khoảng cách giữa các trường input */
-}
-
-.input-group label {
-    font-size: 14px; /* Kích thước chữ của label */
-    color: #555; /* Màu xám cho label */
-    display: block;
-    margin-bottom: 5px;
-}
-
-.input-group input {
-    width: 100%; /* Chiều rộng full của input */
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc; /* Viền nhạt */
-    border-radius: 4px;
-    background-color: #fff;
-}
-
-button[type="submit"] {
-    width: 100%; /* Nút full width */
-    padding: 10px;
-    background-color: #4CAF50; /* Màu nền xanh lá cây */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
-}
-
-button[type="submit"]:hover {
-    background-color: #45a049; /* Đổi màu khi hover */
-}
-
-
-/* Định dạng cho hộp đăng nhập */
-.login-modal {
-  display: none; /* Ẩn theo mặc định */
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 300px;
-  border-radius: 10px;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-/* login */
-/* Container chứa khung đăng nhập, căn giữa */
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 80px); /* Chiều cao trừ đi chiều cao của header */
-  padding: 20px;
-}
-
-/* Khung đăng nhập */
-.login-box {
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  width: 350px;
-  text-align: center;
-}
-
-.login-box h2 {
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #333;
-}
-
-.input-group {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.input-group label {
-  font-size: 14px;
-  color: #666;
-}
-
-.input-group input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.input-group input:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-.extra-options {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #666;
-}
-
-.extra-options a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.extra-options a:hover {
-  text-decoration: underline;
-}
-
-/* chế đọo tối cho tất cả các trang */
-/* Chế độ tối cho toàn bộ body */
-.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
-}
-
-/* Chế độ tối cho header */
-.dark-mode header {
-  background-color: #1f1f1f;
-}
-
-.dark-mode header a {
-  color: #e0e0e0;
-}
-
-/* Chế độ tối cho form đăng nhập */
-.dark-mode .login-box {
-  background-color: #1f1f1f;
-  color: #e0e0e0;
-}
-
-.dark-mode .input-group input {
-  background-color: #333;
-  color: #fff;
-  border-color: #444;
-}
-
-.dark-mode .input-group input:focus {
-  border-color: #007bff;
-}
-
-.dark-mode button {
-  background-color: #444;
-  color: #fff;
-}
-
-.dark-mode button:hover {
-  background-color: #333;
-}
-
-/* Chế độ tối cho các thẻ link trong extra-options */
-.dark-mode .extra-options a {
-  color: #007bff;
-}
-
-/* Chế độ tối cho member-card nếu có */
-.dark-mode .member-card {
-  background-color: #1f1f1f;
-  color: #e0e0e0;
-  border: 1px solid #333;
-}
-
-.form-group i{
-  color: #fff;
-  font-size: 14px;
-  padding-top: 5px;
-  padding-right: 10px;
+.dark-mode .dropdown-content {
+  background-color: #434445;
 }

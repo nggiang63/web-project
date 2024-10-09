@@ -62,4 +62,8 @@ body{
 .form-submit:hover{
     border: 1px solid #54a0ff;
 }
+.extra-options{
+    color: #f5f5f5;
+    margin-top: 8px;
+}
 
