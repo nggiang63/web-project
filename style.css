@@ -12,7 +12,7 @@ header {
   /* Thiết lập giao diện cho phần header */
   background-color: #f8f8f8;
   color: #0063EC;
-  padding: 1px;
+  padding: 0.1px;
   text-align: center;
   align-items: center; 
   border-radius: 1px;
@@ -104,28 +104,6 @@ nav ul li a:hover {
   padding: 10px;
   border: 1px solid #007bff;
   border-radius: 15px;
-    padding: 10px;
-    border: 1px solid #007bff;
-    border-radius: 15px;
-  }
-  
-  .search-button {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-    .logo-title a {
-      text-decoration: none;
-      /* Xóa dấu gạch chân */
-      color: inherit;
-      /* Tùy chọn: giữ màu chữ giống như màu của phần tử cha */
-    }
-    .search-button:hover {
-    background-color: #0056b3; /* Màu nền khi hover */
 }
 
 .search-button {
