@@ -63,6 +63,8 @@
 /* BÊN PHẢIIIIIIIIIIIIIIIIIIIIIIII */
 /* Định dạng cho aside với class 'aside-right' */
 .aside-right {
+  position: relative; /* Giữ thanh cố định */
+
   background-color: #f9f9f9; /* Màu nền */
   border: 1px solid #ddd; /* Đường viền */
   padding: 15px; /* Khoảng cách bên trong */
@@ -128,6 +130,8 @@
 /* BÊN TRÁIIIIIIIIIIIIIIIIIIIIII */
 /* Định dạng cho aside với class 'aside-left' */
 .aside-left {
+  position: relative; /* Giữ thanh cố định */
+
   background-color: #f9f9f9; /* Màu nền */
   border: 1px solid #ddd; /* Đường viền */
   padding: 15px; /* Khoảng cách bên trong */
@@ -229,4 +233,18 @@
 .pagination a:hover {
   background-color: #e0e0e0; /* Hiệu ứng khi di chuột qua */
 }
+
+.scroll-to-top {
+  position: fixed; /* Đặt vị trí cố định */
+  bottom: 20px; /* Khoảng cách từ dưới lên */
+  right: 20px; /* Khoảng cách từ bên phải */
+  background-color: #0063EC; /* Màu nền */
+  color: white; /* Màu chữ */
+  padding: 10px 15px; /* Đệm cho nút */
+  border-radius: 5px; /* Bo góc */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Hiệu ứng bóng */
+  cursor: pointer; /* Hiển thị con trỏ khi hover */
+  display: flex; 
+}
+
 
