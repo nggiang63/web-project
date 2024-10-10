@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_html.css" />
+    <title>Siêu liên kết</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-title">
+          <img src="/images/group8.jpg" alt="Logo" class="logo" />
+          <h1 class="site-title">
+            <a href="/index.html">Group 8</a>
+          </h1>
+        </div>
+        <div class="nav-container">
+          <nav>
+            <ul>
+              <li><a href="/gioithieuHTML/html_content.html">HTML</a></li>
+              <li><a href="css_content.html">CSS</a></li>
+              <li class="search-container">
+                <form action="search-results.html" method="get">
+                  <input
+                    type="text"
+                    name="q"
+                    placeholder="Tìm kiếm ..."
+                    class="search-input"
+                  />
+                  <button type="submit" class="search-button">Tìm kiếm</button>
+                </form>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+        <aside class="aside-left">
+            <h2 class="title-content">HTML - Cấu trúc trang Web</h2>
+            <ol>
+                <li>
+                    <details open="">
+                        <summary>Giới thiệu HTML</summary>
+                        <ol>
+                            <li><a href="/gioithieuHTML/html_content.html">Giới thiệu HTML</a></li>
+                            <li><a href="/gioithieuHTML/html_head.html">HTML Head</a></li>
+                            <li><a href="/gioithieuHTML/sieulienket.html">Tạo siêu liên kết</a></li>
+                        </ol>
+                    </details>
+                </li>
+                <li>
+                    <details open="">
+                        <summary>Đa phương tiện và nhúng</summary>
+                        <ol>
+                           <li></li> 
+                        </ol>
+                    </details>
+                </li>
+                <li>
+                    <details open="">
+                        <summary>Bảng HTML</summary>
+                        <ol>
+                            <li><a href="/HTMLtables/html_table1.html">Cơ bản về bảng HTML</a></li>
+                            <li><a href="/HTMLtables/html_table2.html">Các tính năng nâng cao và khả năng truy cập bảng</a></li>
+                        </ol>
+                    </details>
+                </li>
+            </ol>
+        </aside>
+        
+
+      <main class="content">
+        <h1>Tạo siêu liên kết</h1>
+        <section id="section1">
+          <h2><a href="#section1">Siêu liên kết là gì</a></h2>
+          <p>
+            Siêu liên kết là một tính năng quan trọng của Web từ những ngày đầu,
+            giúp kết nối các tài liệu, tài nguyên, hoặc ứng dụng tại một địa chỉ
+            web. Chúng cho phép liên kết đến phần cụ thể của tài liệu hoặc nội
+            dung khác, giúp trình duyệt chuyển đến một URL khác khi người dùng
+            nhấp vào.
+          </p>
+        </section>
+        <section id="section2">
+          <h2><a href="#section2">Cấu trúc </a></h2>
+          <img
+            src="/gioithieuHTML/img/cautruclienket.png"
+            alt="Cấu trúc của một liên kết"
+          />
+        </section>
+        <section id="section3">
+          <h2>
+            <a href="#section3">Liên kết các phần tử khối(Block level links)</a>
+          </h2>
+          <img src="/gioithieuHTML/img/lienketkhoi.png" alt="Liên kết khối" />
+          <p>Điều này biến thẻ tiêu đề thành 1 liên kết:</p>
+          <img
+            src="/gioithieuHTML/img/kqlienketkhoi.png"
+            alt="Kết quả liên kết khối"
+          />
+        </section>
+        <section id="section4">
+          <h2><a href="#section4">Liên kết hình ảnh</a></h2>
+          <img src="/gioithieuHTML/img/lkhinhanh.png" alt="Liên kết hình ảnh" />
+        </section>
+        <section id="section5">
+          <h2><a href="#section5">URL và đường dẫn</a></h2>
+          <img src="/gioithieuHTML/img/URL.png" alt="URL" />
+          <p>Cùng cấp với thư mục:</p>
+          <img
+            src="/gioithieuHTML/img/thumuc.png"
+            alt="Liên kết cùng cấp với thư mục"
+          />
+          <p>Di chuyển xuống các thư mục con:</p>
+          <img
+            src="/gioithieuHTML/img/thumucon.png"
+            alt="Di chuyển xuống các thư mục con"
+          />
+          <p>Di chuyển ngược lại các thư mục cha</p>
+          <img
+            src="/gioithieuHTML/img/thumuccha.png"
+            alt="Di chuyển lên cấp cao hơn"
+          />
+        </section>
+          <div class="pagination">
+            <a href="/gioithieuHTML/html_head.html" class="prev"
+              >Trang trước</a
+            >
+            <a href="/gioithieuHTML/sieulienket.html" class="next"
+              >Trang kế tiếp</a
+            >
+          </div>
+        </section>
+      </main>
+
+      <aside class="aside-right">
+        <p>Trong trang này</p>
+        <ul>
+          <li><a href="#section1">Siêu liên kết là gì</a></li>
+          <li><a href="#section2">Cấu trúc</a></li>
+          <li><a href="#section3">Liên kết các phần tử khối(Block level links)</a></li>
+          <li><a href="#section4">Liên kết hình ảnh</a></li>
+          <li><a href="#section5">URL và đường dẫn</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      <p>2024 - Trường đại học Khoa học Tự nhiên</p>
+    </footer>
+  </body>
+</html>
