@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_html.css" />
+    <title>HTML Head</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-title">
+          <img src="" alt="Logo" class="logo" />
+          <h1 class="site-title">
+            <a href="/index.html">Group 8</a>
+          </h1>
+        </div>
+        <div class="nav-container">
+          <nav>
+            <ul>
+              <li><a href="html_content.html">HTML</a></li>
+              <li><a href="css_content.html">CSS</a></li>
+              <li class="search-container">
+                <form action="search-results.html" method="get">
+                  <input
+                    type="text"
+                    name="q"
+                    placeholder="Tìm kiếm ..."
+                    class="search-input"
+                  />
+                  <button type="submit" class="search-button">Tìm kiếm</button>
+                </form>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+        <aside class="aside-left">
+          <p>HTML - Cấu trúc trang Web</p>
+          <ul>
+              <li><a href="/gioithieuHTML/html_content.html">Giới thiệu HTML</a></li>
+              <li><a href="/gioithieuHTML/html_head.html">HTML Head</a></li>
+              <li><a href="#elements">Phần tử HTML</a></li>
+          </ul>
+      </aside>
+      
+        <main class="content">
+          <h1>HTML Head</h1>
+          <section id="section1">
+            <h2><a href="#section1">Head</a></h2>
+            <p>HTML là nội dung của phần tử <head>. Khác với nội dung của phần tử <body>
+                (nội dung sẽ được hiển thị trên trang khi tải trong trình duyệt), nội dung của phần đầu
+                không được hiển thị trên trang. Thay vào đó, nhiệm vụ của phần đầu là chứa siêu dữ liệu
+                về tài liệu.</p>
+          </section>
+          <section id="section2">
+            <h2><a href="#section2">Title</a></h2>
+            <p>
+                Phần tử <code>&lt;title&gt;</code> được sử dụng để thêm tiêu đề cho tài liệu. Tuy nhiên, điều này có thể bị nhầm lẫn với phần tử <code>&lt;h1&gt;</code>, được sử dụng để thêm tiêu đề cấp một cho nội dung trong phần thân — điều này cũng đôi khi được gọi là tiêu đề trang. Nhưng chúng là hai thứ khác nhau!
+            </p>
+          </section>
+          <section id="section3">
+            <h2><a href="#section3">Cấu trúc của một phần tử HTML</a></h2>
+            <img
+              src="/gioithieuHTML/img/cautructhehtml.png"
+              alt="Cấu trúc của một phần tử HTML"
+            />
+            <p>Cấu trúc phần tử của chúng ta như sau:</p>
+            <ul>
+              <li>
+                Opening tag(thẻ mở): Thẻ này bao gồm tên của phần tử (trong ví dụ
+                này, là p cho đoạn văn), được bao quanh bởi dấu ngoặc nhọn mở và
+                đóng. Thẻ mở này đánh dấu nơi phần tử bắt đầu hoặc bắt đầu có hiệu
+                lực. Trong ví dụ này, nó đứng trước phần bắt đầu của đoạn văn bản.
+              </li>
+              <li>
+                Content(nội dung): Đây là nội dung của phần tử. Trong ví dụ này,
+                đó là văn bản của đoạn văn.
+              </li>
+              <li>
+                Closing tag(thẻ đóng): Thẻ này giống như thẻ mở, ngoại trừ việc nó
+                có thêm một dấu gạch chéo trước tên phần tử. Điều này đánh dấu nơi
+                phần tử kết thúc. Việc không bao gồm thẻ đóng là một lỗi phổ biến
+                của người mới bắt đầu có thể dẫn đến những kết quả kỳ lạ.
+              </li>
+              <li>
+                Element(phần tử): Phần tử là thẻ mở, tiếp theo là nội dung, và
+                cuối cùng là thẻ đóng
+              </li>
+            </ul>
+            <p>
+              Phần tử này bao gồm thẻ mở, theo sau là nội dung và cuối cùng là thẻ
+              đóng.
+            </p>
+            <p>Các phần tử lồng nhau:</p>
+            <pre>
+                      &lt;p&gt;Tôi &lt;strong&gt;rất&lt;/strong&gt; đói bụng&lt;/p&gt;
+                  </pre
+            >
+            <p>
+              Khuyết thẻ đóng: Không phải tất cả các phần tử đều theo mẫu của một
+              thẻ mở, nội dung và một thẻ đóng. Một số phần tử chỉ bao gồm một thẻ
+              đơn, thường được sử dụng để chèn/gắn một cái gì đó vào tài liệu.
+              Những phần tử như vậy được gọi là Khuyết thẻ đóng. Ví dụ, phần tử
+              <code>&lt;img&gt;</code> chèn một tệp hình ảnh vào một trang.
+            </p>
+          </section>
+          <section id="section4">
+            <h2><a href="#section4">Thuộc tính</a></h2>
+            <img src="/gioithieuHTML/img/thuoctinh.png" alt="Thuộc tính" />
+            <p>
+              Các thuộc tính chứa thông tin bổ sung về phần tử sẽ không xuất hiện
+              trong nội dung. Trong ví dụ này, thuộc tính class là một tên xác
+              định được sử dụng để nhắm đến phần tử với thông tin kiểu
+            </p>
+            <ul>
+              <li>
+                Một khoảng trắng giữa nó và tên phần tử. (Đối với phần tử có nhiều
+                hơn một thuộc tính, các thuộc tính cũng phải được phân tách bằng
+                khoảng trắng.)
+              </li>
+              <li>Tên thuộc tính, theo sau là dấu bằng</li>
+              <li>
+                Giá trị thuộc tính được bao quanh bởi dấu ngoặc kép mở và đóng
+              </li>
+            </ul>
+          </section>
+          <section id="section5">
+            <h2><a href="#section5">Cấu trúc của tài liệu HTML</a></h2>
+            <img
+              src="/gioithieuHTML/img/cautructailieu.png"
+              alt="Cấu trúc của một trang tài liệu"
+            />
+            <li>
+              <code>&lt;!doctype html&gt;</code>: Doctype. Khi HTML còn mới (1991-1992), các doctype được tạo ra để đóng vai trò là các liên kết tới một tập hợp các quy tắc mà trang HTML phải tuân theo để được coi là HTML chuẩn. 
+              <code>&lt;!doctype html&gt;</code> là chuỗi ký tự ngắn nhất được tính là doctype hợp lệ.
+          </li>
+          <li>
+              <code>&lt;html&gt;&lt;/html&gt;</code>: Phần tử <code>&lt;html&gt;</code>. Phần tử này bao quanh tất cả nội dung trên trang. Nó đôi khi được gọi là phần tử gốc.
+          </li>
+          <li>
+              <code>&lt;head&gt;&lt;/head&gt;</code>: Phần tử <code>&lt;head&gt;</code>. Phần tử này hoạt động như một vùng chứa cho mọi thứ bạn muốn bao gồm trên trang HTML mà không phải là nội dung mà trang sẽ hiển thị cho người xem. Điều này bao gồm các từ khóa và mô tả trang sẽ xuất hiện trong kết quả tìm kiếm, CSS để định dạng nội dung, khai báo tập ký tự và nhiều hơn nữa. Bạn sẽ học thêm về điều này trong bài viết tiếp theo của loạt bài.
+          </li>
+          <li>
+              <code>&lt;meta charset="utf-8"&gt;</code>: Phần tử <code>&lt;meta&gt;</code>. Phần tử này đại diện cho siêu dữ liệu không thể biểu diễn bằng các phần tử HTML liên quan đến meta khác, như <code>&lt;base&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> hoặc <code>&lt;title&gt;</code>. Thuộc tính charset chỉ định mã hóa ký tự cho tài liệu của bạn là UTF-8, bao gồm hầu hết các ký tự từ đa số các ngôn ngữ viết của con người. Với thiết lập này, trang có thể xử lý bất kỳ nội dung văn bản nào mà nó có thể chứa. Không có lý do gì để không đặt điều này và nó có thể giúp tránh một số vấn đề sau này.
+          </li>
+          <li>
+              <code>&lt;title&gt;&lt;/title&gt;</code>: Phần tử <code>&lt;title&gt;</code>. Phần tử này đặt tiêu đề của trang, là tiêu đề xuất hiện trong tab trình duyệt khi trang được tải. Tiêu đề trang cũng được sử dụng để mô tả trang khi nó được đánh dấu (bookmark).
+          </li>
+          <li>
+              <code>&lt;body&gt;&lt;/body&gt;</code>: Phần tử <code>&lt;body&gt;</code>. Phần tử này chứa tất cả nội dung hiển thị trên trang, bao gồm văn bản, hình ảnh, video, trò chơi, các đoạn âm thanh có thể phát hoặc bất cứ thứ gì khác.
+          </li>
+      </ul>
+      <p>Các kí tự đặc biệt: </p>
+      <table>
+        <thead>
+            <tr>
+                <th>Ký tự nguyên văn</th>
+                <th>Ký tự tham chiếu tương đương</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;</td>
+                <td>&amp;lt;</td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>&amp;gt;</td>
+            </tr>
+            <tr>
+                <td>"</td>
+                <td>&amp;quot;</td>
+            </tr>
+            <tr>
+                <td>’</td>
+                <td>&amp;apos;</td>
+            </tr>
+            <tr>
+                <td>&</td>
+                <td>&amp;amp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="pagination">
+      <a href="/gioithieuHTML/html_content.html" class="prev">Trang trước</a>
+      <a href="/gioithieuHTML/html_head.html" class="next">Trang kế tiếp</a>
+    </div>
+          </section>
+        </main>
+        
+        <aside class="aside-right">
+          <p>Trong trang này</p>
+          <ul>
+              <li><a href="#section1">Tóm tắt lịch sử</a></li>
+              <li><a href="#section2">HTML là gì?</a></li>
+              <li><a href="#section3">Cấu trúc của phần tử HTML</a></li>
+              <li><a href="#section4">Thuộc tính</a></li>
+              <li><a href="#section5">Cấu trúc của tài liệu HTML</a></li>
+          </ul>
+      </aside>
+      
+      </div>
+      
+      
+      <footer>
+        <p>2024 - Trường đại học Khoa học Tự nhiên</p>
+      </footer>
+  </body>
+</html>
