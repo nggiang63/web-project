@@ -105,6 +105,15 @@ nav ul li a:hover {
     border-radius: 15px;
     cursor: pointer;
   }
+    .logo-title a {
+      text-decoration: none;
+      /* Xóa dấu gạch chân */
+      color: inherit;
+      /* Tùy chọn: giữ màu chữ giống như màu của phần tử cha */
+    }
+    .search-button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
 
   .project-details h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
