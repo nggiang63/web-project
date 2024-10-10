@@ -199,7 +199,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 160px; /* Thêm khoảng cách với phần trên */
+  margin-top: 200px; /* Thêm khoảng cách với phần trên */
 }
 
 .member-card {
@@ -239,7 +239,8 @@ footer {
 
 
 
-
+/* CSS - TẠO KIỂU CHO TRANG WEB */
+/* MỞ ĐẦU CHO CSS */
 
 .dropdown-content {
   display: none; /* Ẩn dropdown-content mặc định */
@@ -269,43 +270,6 @@ footer {
   background-color: #d1e0ff; /* Màu nền khi hover */
   color: #000; /* Màu chữ khi hover */
 }
-
-.sidebar-container {
-  display: flex; /* Dùng flexbox để định dạng layout */
-  width: 250px;
-}
-
-.group {
-  flex: 1; /* Phần tử group chiếm toàn bộ không gian còn lại */
-}
-
-.sidebar-body {
-  position: relative; /* Đặt thanh danh sách ở vị trí tương đối */
-  left: 0; /* Gán vị trí bên trái */
-  top: 10x; /* Khoảng cách từ trên xuống để nằm dưới group */
-  left: 20px;
-  width: 150px; /* Độ rộng của sidebar */
-  height: auto; /* Chiều cao tự động */
-  background-color: #f9f9f900; /* Màu nền của sidebar */
-  overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá lớn */
-  border-radius: 20px;
-  font-size: 12px;
-}
-
-.sidebar-body ol {
-  list-style-type: none; /* Ẩn số tự động của danh sách */
-  padding-left: 0; /* Bỏ lề bên trái */
-}
-
-.sidebar-body li {
-  margin-bottom: 10px; /* Khoảng cách giữa các mục */
-}
-
-.main-wrapper {
-  display: flex; /* Sử dụng flexbox để xếp bên cạnh nhau */
-}
-
-
 
 
 
