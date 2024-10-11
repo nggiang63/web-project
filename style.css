@@ -1,112 +1,147 @@
 body {
-  /* Cài đặt font chữ và các thuộc tính chung cho trang */
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f0f0f000;
-  overflow: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f000;
+    overflow: auto;
 }
 
 header {
-  /* Thiết lập giao diện cho phần header */
-  background-color: #f8f8f8;
-  color: #0063EC;
-  padding: 1px;
-  text-align: center;
-  align-items: center; 
-  border-radius: 1px;
+    background-color: #fcfcf9;
+    color: #0063EC;
+    padding: 0.1px;
+    text-align: center;
+    align-items: center; 
+    border-radius: 1px;
+}
+
+header button:hover {
+  background-color: #45a049; /* Nền nút khi hover */
 }
 
 .header-content {
-  /* Căn chỉnh phần nội dung trong header */
   display: flex;
   justify-content: space-between; 
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
 }
 
 .logo-title {
-  /* Cài đặt giao diện cho logo và tiêu đề */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #0688f311; 
-  border-radius: 30px; 
-  margin-top: 5px; 
-  margin-bottom: 5px;
-  width: 180px; 
-  height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0688f311; 
+    border-radius: 30px; 
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    width: 180px; 
+    height: 40px; 
 }
 
 .logo {
-  /* Kích thước logo */
-  width: 50px;
-  height: 50px;
-  margin-right: 15px; 
+    width: 50px;
+    height: 50px;
+    margin-right: 5px; 
 }
 
 .site-title {
-  /* Thiết lập tiêu đề trang */
-  font-size: 20px;
-  font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+/* Basic styles for dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(232, 233, 240); /* Set the background color */
+  min-width: 160px; /* Set the minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Make sure the dropdown is above other elements */
+}
+
+.dropdown-content a {
+  font-size: 18px;
+  color: rgb(133, 136, 153);
+  padding: 10px 10px; /* Add some padding */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #c3cde3; /* Change background on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+/* Optional: Adjust overlay z-index */
+.overlay {
+  z-index: 1; /* Set overlay below dropdown */
 }
 
 .nav-container {
-  /* Căn giữa menu điều hướng */
-  text-align: center;
-  flex-grow: 1;
+    text-align: center;
+    flex-grow: 1;
+    
 }
 
 nav ul {
-  /* Cài đặt cho danh sách điều hướng */
-  list-style: none; 
-  margin: 0;
-  padding: 0;
-  display: flex;
-  margin-left: 250px;
-  justify-content: left;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 250px;
+    justify-content: left;
 }
 
 nav ul li {
-  /* Khoảng cách giữa các mục trong menu */
-  margin-left: 60px;
+    margin-left: 60px;
 }
 
 nav ul li a {
-  /* Cài đặt giao diện cho các liên kết trong menu */
-  text-decoration: none;
-  color: #0063EC;
-  font-size: 25px;
-  font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 20px;
-  margin-top: 10px;
-  transition: background-color 0.3s;
+    text-decoration: none;
+    color: #0063EC;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-  /* Hiệu ứng hover cho liên kết */
-  background-color: #0688f311; 
+    background-color: #0688f311; 
 }
+
+
 
 .search-form {
-  /* Căn chỉnh form tìm kiếm */
-  display: flex;
-  align-items: center;
-}
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    font-family: Times, 'Times New Roman', serif;
 
-.search-input {
-  /* Cài đặt cho ô nhập tìm kiếm */
-  font-family: Times, 'Times New Roman', serif;
-  padding: 10px;
-  border: 1px solid #007bff;
-  border-radius: 15px;
     padding: 10px;
     border: 1px solid #007bff;
     border-radius: 15px;
+    margin-left: 500px;
+    
   }
   
   .search-button {
@@ -118,55 +153,180 @@ nav ul li a:hover {
     border-radius: 15px;
     cursor: pointer;
   }
-    .logo-title a {
-      text-decoration: none;
-      /* Xóa dấu gạch chân */
-      color: inherit;
-      /* Tùy chọn: giữ màu chữ giống như màu của phần tử cha */
+
+  .project-details h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #043365;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: -30px;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Giúp văn bản nằm phía trên lớp phủ */
+    
+  }
+
+  .project-details h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #e60a0aca;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: -40px;
+    text-align: center;
+    position: relative;
+    z-index: 2; 
     }
-    .search-button:hover {
-    background-color: #0056b3; /* Màu nền khi hover */
+
+.project-details {
+    position: relative;
+    background-image: url("images/background-hus-vnu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    min-height: 1200px;
+    overflow: auto; /* Giúp lớp phủ không tràn ra ngoài */
+    z-index: 1;
 }
 
-.search-button {
-  /* Cài đặt cho nút tìm kiếm */
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
+.project-details::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.35); /* Màu trắng với độ mờ 50% */
+    z-index: 1; /* Lớp phủ nằm phía trên nền */
 }
 
-.project-details h2 {
-  /* Tiêu đề phụ trong phần project details */
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #043365;
-  font-size: 24px;
-  font-weight: bolder;
-  margin-top: -30px;
-  margin-bottom: 25px;
-  text-align: center;
-  position: relative;
-  z-index: 2; /* Giúp văn bản nằm phía trên lớp phủ */
+.logo-container {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các hình ảnh */
+    justify-content: center; /* Căn giữa các hình ảnh */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 110px; /* Khoảng cách trên giữa tiêu đề và hình ảnh */
+    margin-right: 50px;
+    position: relative;
+    z-index: 2; 
 }
 
-.project-details h3 {
-  /* Tiêu đề chính trong phần project details */
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #e60a0aca;
-  font-size: 40px;
-  font-weight: bolder;
-  margin-top: 50px;
-  margin-bottom: -40px;
-  text-align: center;
-  position: relative;
-  z-index: 2; 
+.html-image {
+    width: 300px; 
+    height: auto; 
+    margin: 0 -25px; 
+}
+.css-image {
+    width: 120px;
+    height: auto;
+}
+
+  
+.member-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 160px; /* Thêm khoảng cách với phần trên */
+}
+  
+  .member-card {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    background-color: #e9f7ff;
+    
+  }
+  
+  .member-card h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #043365;
+  }
+  
+  .member-card p {
+    font-size: 15px;
+    color: #043365;
+  }
+  
+  /* .member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  } */
+  
+  /* CSS cho phần footer */
+  footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 15px;
+    color: #043365;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+
+ 
+/* Responsive cho thiết bị di động */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Xếp logo và menu theo cột */
+        text-align: center;
+    }
+
+    .nav-container {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Chuyển menu thành dạng cột */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .member-info {
+        flex-direction: column;
+        gap: 10px;
+      }
+}
+
+body.dark-mode {
+  background-color: #3c2b2b; /* Màu nền tối */
+  color: #f0f0f0; /* Màu chữ sáng */
+}
+
+body.dark-mode header {
+  background-color: #463535; /* Màu nền tối cho header */
+  color: #f0f0f0; /* Màu chữ sáng trong header */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4; /* Màu nền sidebar sáng */
+  padding: 15px;
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+body.dark-mode .sidebar {
+  background-color: #3c3c3c; /* Màu nền sidebar tối */
 }
 
 .project-details {
-  /* Phần nội dung dự án với ảnh nền */
   position: relative;
   background-image: url("images/background-hus-vnu.jpg");
   background-size: cover;
@@ -176,196 +336,142 @@ nav ul li a:hover {
   margin-bottom: 20px;
   border-radius: 5px;
   min-height: 1200px;
-  overflow: auto; /* Giúp lớp phủ không tràn ra ngoài */
+  overflow: auto;
   z-index: 1;
 }
 
-.project-details::before {
-  /* Lớp phủ trên ảnh nền để làm nổi bật nội dung */
+.project-details .overlay {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.35); /* Màu trắng với độ mờ 50% */
-  z-index: 1; /* Lớp phủ nằm phía trên nền */
+  background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ màu đen với độ mờ 50% */
+  z-index: 2; /* Đảm bảo lớp phủ nằm trên cùng */
+  opacity: 0; /* Ẩn lớp phủ mặc định */
+  transition: opacity 0.3s; /* Hiệu ứng chuyển đổi cho lớp phủ */
 }
 
-.logo-container {
-  /* Căn chỉnh logo trong phần dự án */
-  display: flex; /* Sử dụng flexbox để căn chỉnh các hình ảnh */
-  justify-content: center; /* Căn giữa các hình ảnh */
-  align-items: center; /* Căn giữa theo chiều dọc */
-  margin-top: 110px; /* Khoảng cách trên giữa tiêu đề và hình ảnh */
-  margin-right: 50px;
-  position: relative;
-  z-index: 2; 
+body.dark-mode .project-details .overlay {
+  opacity: 1; /* Hiện lớp phủ khi ở chế độ tối */
 }
 
-.html-image {
-  /* Kích thước hình ảnh HTML */
-  width: 300px; 
-  height: auto; 
-  margin: 0 -25px; 
+.theme-toggle-button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 15px;
+    background-color: #adc4c4; /* Màu nền mặc định */
+    color: #003c81; /* Màu chữ */
+    border: none; /* Không có viền */
+    border-radius: 10px; /* Bo tròn góc */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+    transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển đổi */
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.css-image {
-  /* Kích thước hình ảnh CSS */
-  width: 120px;
-  height: auto;
+.theme-toggle-button:hover {
+  background-color: #99badb; /* Màu nền khi di chuột qua */
+  transform: scale(1.05); /* Phóng to một chút khi di chuột qua */
 }
 
-.member-info {
-  /* Cài đặt hiển thị thông tin thành viên */
+nav ul li a:hover {
+  background-color: #1179ce11; 
+}
+
+body.dark-mode nav ul li a {
+  color: #ffffff; /* Màu chữ cho chế độ tối */
+}
+
+/* màu cho body */
+body.dark-mode .theme-toggle-button {
+  background-color: #48718a; /* Màu nền cho chế độ tối */
+  color: #fff; /* Màu chữ cho chế độ tối */
+}
+
+body.dark-mode .theme-toggle-button:hover {
+  background-color: #666; /* Màu nền khi di chuột qua trong chế độ tối */
+}
+
+body.dark-mode {
+  background-color: #2c2c2c; /* Màu nền tối */
+  color: #f0f0f0; /* Màu chữ sáng */
+}
+
+body.dark-mode .member-card {
+  background-color: #5a5858; /* Màu nền của thẻ thành viên trong chế độ tối */
+  color: #ffffff; /* Màu chữ của thẻ thành viên trong chế độ tối */
+}
+
+body.dark-mode footer {
+  background-color: #9c9191; /* Màu nền footer trong chế độ tối */
+  color: #9f9393; /* Màu chữ footer trong chế độ tối */
+}
+
+/* Đảm bảo bạn điều chỉnh các phần tử khác nếu cần */
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode p {
+  color: #f0f0f0; /* Đảm bảo màu chữ cho các tiêu đề và đoạn văn trong chế độ tối */
+}
+
+/* chữ đăng nhập trên phần header trang đầu */
+/* Định dạng cho chữ "Đăng Nhập" */
+.login-link {
+  color: #034aaf;
+  font-size: 18px;
+  padding: 5px 20px; /* Khoảng cách xung quanh chữ */
+  text-decoration: none; /* Bỏ gạch chân */
+  border-radius: 10px; /* Bo tròn góc */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển màu nền và phóng to */
+  margin-right: auto; /* Khoảng cách giữa "Đăng Nhập" và nút "Chế Độ Tối" */
+  margin-left: auto; /* Đẩy sang bên phải  */
+
+   /* Thêm khung */
+   border: 2px solid #656f7d; /*dày 1px */
+   background-color: #c2d1de;
+}
+
+.header-content {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 160px; /* Thêm khoảng cách với phần trên */
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+}
+.login-link:hover {
+  background-color: #034aaf; /* Màu nền khi di chuột */
+  color: white; /* Chữ chuyển sang màu trắng */
+  transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+/* Chế độ tối */
+.dark-mode .login-link {
+  color: #dddfe3;
+  border: 2px solid #646566;
+  background-color: #595757;
 }
 
-.member-card {
-  /* Cài đặt cho thẻ thông tin thành viên */
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  padding: 15px;
-  width: 250px;
-  text-align: center;
-  background-color: #e9f7ff;
+.dark-mode .login-link:hover {
+  background-color: #434445;
+  color: white;
 }
 
-.member-card h3 {
-  /* Tiêu đề thẻ thành viên */
-  font-size: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  color: #043365;
+/* Điều chỉnh cho nav-container */
+.nav-container ul {
+  list-style: none; /* Bỏ dấu chấm đầu dòng */
+  display: flex; /* Hiện các mục trong hàng */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin: 0; /* Bỏ lề mặc định */
+  padding: 0; /* Bỏ padding mặc định */
 }
 
-.member-card p {
-  /* Phần mô tả thẻ thành viên */
-  font-size: 15px;
-  color: #043365;
+/* Điều chỉnh cho nav-item */
+.nav-container li {
+  margin-left: 20px; /* Khoảng cách giữa các mục */
 }
 
-footer {
-  /* Cài đặt cho phần footer */
-  background-color: #f8f8f8;
-  text-align: center;
-  padding: 15px;
-  color: #043365;
-  font-weight: bold;
-  border-top: 1px solid #ccc;
-}
-
-
-
-
-
-.dropdown-content {
-  display: none; /* Ẩn dropdown-content mặc định */
-  position: absolute; /* Đặt vị trí tuyệt đối cho dropdown */
-  background-color: #eeeeee; /* Màu nền cho dropdown */
-  min-width: 160px; /* Độ rộng tối thiểu cho dropdown */
-  border: 1px solid #88bef9; /* Đường viền cho dropdown */
-  border-radius: 15px; /* Bo góc cho dropdown */
-  z-index: 2; /* Đảm bảo dropdown nằm trên các phần tử khác */
-}
-
-.dropdown:hover .dropdown-content {
-  display: block; /* Hiển thị dropdown khi hover vào dropdown */
-}
-
-.dropdown-content a {
-  display: block; /* Hiển thị dưới dạng khối để dễ click */
-  padding: 10px; /* Khoảng cách cho từng mục */
-  text-decoration: none; /* Bỏ gạch chân cho liên kết */
-  color: #333; /* Màu chữ */
-  font-size: 15px;
-  text-align: left;
-
-}
-
-.dropdown-content a:hover {
-  background-color: #d1e0ff; /* Màu nền khi hover */
-  color: #000; /* Màu chữ khi hover */
-}
-
-.sidebar-container {
-  display: flex; /* Dùng flexbox để định dạng layout */
-  width: 250px;
-}
-
-.group {
-  flex: 1; /* Phần tử group chiếm toàn bộ không gian còn lại */
-}
-
-.sidebar-body {
-  position: relative; /* Đặt thanh danh sách ở vị trí tương đối */
-  left: 0; /* Gán vị trí bên trái */
-  top: 10x; /* Khoảng cách từ trên xuống để nằm dưới group */
-  left: 20px;
-  width: 150px; /* Độ rộng của sidebar */
-  height: auto; /* Chiều cao tự động */
-  background-color: #f9f9f900; /* Màu nền của sidebar */
-  overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá lớn */
-  border-radius: 20px;
-  font-size: 12px;
-}
-
-.sidebar-body ol {
-  list-style-type: none; /* Ẩn số tự động của danh sách */
-  padding-left: 0; /* Bỏ lề bên trái */
-}
-
-.sidebar-body li {
-  margin-bottom: 10px; /* Khoảng cách giữa các mục */
-}
-
-.main-wrapper {
-  display: flex; /* Sử dụng flexbox để xếp bên cạnh nhau */
-}
-
-
-
-
-
-
-
-footer p {
-  /* Nội dung văn bản trong footer */
-  margin: 0;
-  font-size: 14px;
-}
-
-/* Responsive cho thiết bị di động */
-@media (max-width: 768px) {
-  .header-content {
-      /* Xếp logo và menu theo cột trên thiết bị di động */
-      flex-direction: column; 
-      text-align: center;
-  }
-
-  .nav-container {
-      /* Thêm khoảng cách trên cho menu điều hướng */
-      margin-top: 10px;
-  }
-
-  nav ul {
-      /* Chuyển menu thành dạng cột */
-      flex-direction: column; 
-  }
-
-  nav ul li {
-      /* Cài đặt khoảng cách cho các mục menu trên thiết bị di động */
-      margin-left: 0;
-      margin-bottom: 10px;
-  }
-
-  .member-info {
-      /* Chuyển thông tin thành viên thành dạng cột trên thiết bị di động */
-      flex-direction: column;
-      gap: 10px;
-    }
+.dark-mode .dropdown-content {
+  background-color: #434445;
 }
