@@ -25,38 +25,42 @@ $(document).ready(function() {
         const phone = $(this).find('input[placeholder="Số điện thoại"]').val().trim();
         const location = $(this).find('input[placeholder="Thành phố, quốc gia"]').val().trim();
 
-         // Lấy danh sách tài khoản từ localStorage
-         const accounts = JSON.parse(localStorage.getItem('accounts')) || [];
-
-         // Kiểm tra xem tài khoản đã tồn tại chưa
-         const accountExists = accounts.some(account => account.username === username);
-         
-         if (accountExists) {
-             alert('Tài khoản đã tồn tại!');
-             return;
-         }
-
         // Kiểm tra xem mật khẩu và xác nhận mật khẩu có khớp không
         if (password !== confirmPassword) {
             alert('Mật khẩu và xác nhận mật khẩu không khớp!');
             return;
         }
 
-
-        // Lưu thông tin đăng ký vào localStorage
-        const userInfo = {
+        // Tạo dữ liệu người dùng để gửi đến server
+        const userData = {
             username: username,
             email: email,
             password: password,
             phone: phone,
             location: location
         };
-        accounts.push(userInfo);
 
-        localStorage.setItem('accounts', JSON.stringify(accounts)); // Lưu thông tin
-
-        alert('Đăng ký thành công!');
-
-        window.location.href = "login.html"; // Chuyển hướng tới trang đăng nhập
+        // Gửi dữ liệu lên server
+        fetch('http://localhost:3000/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(userData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.message === 'Tài khoản đã tồn tại!') {
+                alert('Tài khoản đã tồn tại!');
+            } else {
+                alert('Đăng ký thành công!');
+                window.location.href = "login.html"; // Chuyển hướng tới trang đăng nhập
+            }
+        })
+        .catch(error => {
+            console.error('Lỗi:', error);
+            alert('Có lỗi xảy ra!');
+        });
     });
 });
+

@@ -19,12 +19,13 @@
                 <nav>
                     <ul>
                         <li class="dropdown">
-                            <a href="#">HTML</a>
+                            <a href="gioithieuHTML/html_content.html">HTML</a>
                             <div class="dropdown-content">
-                                <a href="html_intro.html">Giới thiệu về HTML</a>
-                                <a href="html_elements.html">HTML Elements</a>
-                                <a href="html_attributes.html">HTML Attributes</a>
+                                <a href="gioithieuHTML/html_content.html">Giới thiệu về HTML</a>
+                                <a href="daphuongtienvanhung/daphuongtien_nhung.html">Đa phương tiện và nhúng</a>
+                                <a href="html_attributes.html">Bảng HTML</a>
                             </div>
+                        </li>
 
                         <li class="dropdown">
                             <a href="#">CSS</a>
@@ -52,7 +53,7 @@
                             <a href="" class="login-link"><span id="username-display"></span></a>
                             <div class="dropdown-content">
                                 <a href="profile.html">Trang cá nhân</a>
-                                <a href="index.html">Đăng xuất</a>
+                                <a href="#" id="logout-btn">Đăng xuất</a>
                             </div>
                         </li>
                     </ul>
@@ -102,11 +103,11 @@
     </section>
     <script>
         // Lấy tên đăng nhập từ LocalStorage
-        var username = localStorage.getItem('username');
+        var username = localStorage.getItem('loggedInUser');
         // tên đăng nhập, hiển thị
         document.getElementById('username-display').innerText = username;
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+    <script src="logout.js"></script>
 </html>
