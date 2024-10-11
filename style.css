@@ -207,7 +207,7 @@ nav ul li a:hover {
 .project-details {
   /* Phần nội dung dự án với ảnh nền */
   position: relative;
-  background-image: url("images/background-hus-vnu.jpg");
+  background-image: url("css_content/images/background-hus-vnu.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
