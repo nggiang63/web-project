@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Group 8</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css_style.css">
+
 </head>
 
 <body>
@@ -12,7 +14,7 @@
     <div class="header-content">
       <div class="logo-title">
         <a href="index.html" style="text-decoration: none; color: inherit;">
-          <!-- Logo can be added here -->
+          <!-- <img src="" alt="Logo" class="logo"> -->
           <h1 class="site-title">Group 8</h1>
         </a>
       </div>
@@ -25,12 +27,12 @@
             <li class="dropdown">
               <a href="css_content.html">CSS</a>
               <div class="dropdown-content">
-                <a href="css_content.html" id="ModauCSS">1. Mở đầu về CSS</a>
-                <a href="css_content.html" id="NhungCSSvaoHTML">2. Nhúng CSS vào HTML</a>
-                <a href="css_content.html" id="Nguyentac">3. Nguyên tắc hoạt động cơ bản</a>
-                <a href="css_content.html" id="Cautruc">4. Cấu trúc của CSS</a>
-                <a href="css_content.html">5. Định dạng văn bản bằng CSS</a>
-                <a href="css_content.html">6. Bố cục CSS</a>
+                <a href="css_content.html">1. Mở đầu về CSS</a>
+                <a href="css_content2.html">2. Nhúng CSS vào HTML</a>
+                <a href="css_content3.html">3. Nguyên tắc hoạt động cơ bản</a>
+                <a href="css_content4.html">4. Cấu trúc của CSS</a>
+                <a href="css_content5.html">5. Định dạng văn bản bằng CSS</a>
+                <a href="css_content6.html">6. Bố cục CSS</a>
               </div>
             </li>
 
@@ -47,101 +49,114 @@
     </div>
   </header>
 
+  <div class="container">
+    <aside class="aside-right">
+      <p><strong>Trong trang này</strong></p>
+      <ul>
+          <li><a href="#css-content-1.1">CSS là gì?</a></li>
+          <li><a href="#css-content-1.2">Tại sao cần dùng CSS?</a></li>
+      </ul>
+    </aside>
+  
+    <aside class="aside-left">
+      <h2 class="title-content">CSS - Tạo kiểu cho trang web</h2> 
+      <ol>
+        <li>
+          <details open>
+            <summary>Mở đầu về CSS</summary>
+            <ol>
+              <li><a href="css_content.html#css-content-1.1">CSS là gì?</a></li>
+              <li><a href="css_content.html#css-content-1.2">Tại sao cần dùng CSS?</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Kỹ thuật nhúng CSS vào HTML</summary>
+            <ol>
+              <li><a href="css_content2.html#css-content-2.1">Inline CSS</a></li>
+              <li><a href="css_content2.html#css-content-2.2">Internal CSS</a></li>
+              <li><a href="css_content2.html#css-content-2.3">External CSS</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Nguyên tắc hoạt động cơ bản của CSS</summary>
+            <ol>
+              <li><a href="css_content3.html#css-content-3.1">Giới thiệu về DOM</a></li>
+              <li><a href="css_content3.html#css-content-3.2">Nguyên tắc hoạt động của CSS</a></li>
+              <li><a href="css_content3.html#css-content-3.3">Trình duyệt xử lý CSS không hiểu như nào?</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Cấu trúc của CSS</summary>
+            <ol>
+              <li><a href="css_content4.html#css-content-4.1">Bộ chọn CSS (CSS selectors)</a></li>
+              <li><a href="css_content4.html#css-content-4.2">Thuộc tính CSS (CSS Properties)</a></li>
+              <li><a href="css_content4.html#css-content-4.3">Giá trị và đơn vị trong CSS (CSS Values and Units)</a></li>
+              <li><a href="css_content4.html#css-content-4.4">Cơ chế hoạt động của CSS</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Định dạng văn bản bằng CSS</summary>
+            <ol>
+              <li><a href="css_content5.html#css-content-5.1">Kiểu chữ và văn bản cơ bản</a></li>
+              <li><a href="css_content5.html#css-content-5.2">Danh sách kiểu dáng</a></li>
+              <li><a href="css_content5.html#css-content-5.3">Tạo kiểu cho liên kết</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Bố cục CSS</summary>
+            <ol>
+              <li><a href="css_content6.html#css-content-6.1">Normal Flow (Dòng chảy bình thường)</a></li>
+              <li><a href="css_content6.html#css-content-6.2">Các phương pháp bố cục chính</a></li>
+            </ol>
+          </details>
+        </li>
+      </ol>
+    </aside>
+    
   <div class="main-wrapper">
-    <div class="sidebar-container">
-      <div class="sidebar-body">
-        <h2 class="title-content">CSS - Tạo kiểu cho trang web</h2> 
-        <ol>
-          <li>
-            <details open>
-              <summary>Mở đầu về CSS</summary>
-              <ol>
-                <li><a href="css-content-1.1">CSS là gì?</a></li>
-                <li><a href="css-content-1.2">Tại sao cần dùng CSS?</a></li>
-              </ol>
-            </details>
-          </li>
-          <li>
-            <details>
-              <summary>Kỹ thuật nhúng CSS vào HTML</summary>
-              <ol>
-                <li><a href="css-content-2.1">Inline CSS</a></li>
-                <li><a href="css-content-2.2">Internal CSS</a></li>
-                <li><a href="css-content-2.3">External CSS</a></li>
-              </ol>
-            </details>
-          </li>
-          <li>
-            <details>
-              <summary>Nguyên tắc hoạt động cơ bản của CSS</summary>
-              <ol>
-                <li><a href="css-content-3.1">Giới thiệu về DOM</a></li>
-                <li><a href="css-content-3.2">Nguyên tắc hoạt động của CSS</a></li>
-                <li><a href="css-content-3.3">Trình duyệt xử lý CSS không hiểu như nào?</a></li>
-              </ol>
-            </details>
-          </li>
-          <li>
-            <details>
-              <summary>Cấu trúc của CSS</summary>
-              <ol>
-                <li><a href="css-content-4.1">Bộ chọn CSS (CSS selectors)</a></li>
-                <li><a href="css-content-4.2">Thuộc Tính CSS (CSS Properties)</a></li>
-                <li><a href="css-content-4.3">Giá trị và đơn vị trong CSS (CSS Values and Units)</a></li>
-                <li><a href="css-content-4.4">Cơ chế hoạt động của CSS</a></li>
-              </ol>
-            </details>
-          </li>
-          <li>
-            <details>
-              <summary>Định dạng văn bản bằng CSS</summary>
-              <ol>
-                <li><a href="css-content-5.1">Kiểu chữ và văn bản cơ bản</a></li>
-                <li><a href="css-content-5.2">Danh sách kiểu dáng</a></li>
-                <li><a href="css-content-5.3">Tạo kiểu cho liên kết</a></li>
-              </ol>
-            </details>
-          </li>
-          <li>
-            <details>
-              <summary>Bố cục CSS</summary>
-              <ol>
-                <li><a href="css-content-6.1">Normal Flow (Dòng chảy bình thường)</a></li>
-                <li><a href="css-content-6.2">Các phương pháp bố cục chính</a></li>
-              </ol>
-            </details>
-          </li>
-        </ol>
-      </div>
-    </div>
-
     <main id="content" class="main-content">
       <article class="main-page-content" lang="en-US">
-        <header>
-          <h1>CSS là gì?</h1>
-        </header>
-        <div class="slide-container">
-          <div class="slide">
-            <h2>1. Định nghĩa CSS</h2>
-            <p>Cascading Style Sheets (CSS) là một ngôn ngữ được sử dụng để mô tả cách trình bày của một tài liệu viết bằng HTML hoặc XML.</p>
-          </div>
-          <div class="slide">
-            <h2>2. Tại sao cần CSS?</h2>
-            <p>CSS giúp tách biệt nội dung và kiểu dáng, cho phép dễ dàng duy trì và thay đổi thiết kế của trang web.</p>
-          </div>
-          <div class="slide">
-            <h2>3. Cách hoạt động của CSS</h2>
-            <p>CSS hoạt động bằng cách chọn các phần tử trong HTML và áp dụng các quy tắc kiểu dáng cho chúng.</p>
-          </div>
-          <button class="prev" onclick="changeSlide(-1)">❮</button>
-          <button class="next" onclick="changeSlide(1)">❯</button>
-        </div>
+        <h1 class="main-title">Mở đầu về CSS</h1>
+        <section id="css-content-1.1">
+          <h2>CSS là gì?</h2>
+          <p>CSS (Cascading Style Sheets) là một ngôn ngữ dùng để mô tả cách trình bày và hiển thị của các phần tử HTML trên trang web.</p>
+          <div class="img-css"><img src="images/html-css-minhhoa.png" alt="html-css-minhhoa">          </div>
+        </section>
+
+        <section id="css-content-1.2">
+          <h2>Tại sao cần dùng CSS?</h2>
+          <ul>
+            <li style="margin-bottom: 10px;">Tách biệt nội dung và kiểu dáng: Dễ dàng bảo trì và cập nhật trang web mà không làm thay đổi nội dung.</li>
+            <li style="margin-bottom: 10px;">Kiểm soát phong cách: CSS cho phép quản lý màu sắc, font chữ, kích thước, khoảng cách giữa các phần tử, và bố cục trang web.</li>
+            <li style="margin-bottom: 10px;">Tính nhất quán: Đảm bảo phong cách giống nhau trên tất cả các trang thông qua một tệp CSS duy nhất.</li>
+            <li>Thiết kế đáp ứng: Tự động điều chỉnh bố cục cho các thiết bị khác nhau, cải thiện trải nghiệm người dùng.</li>
+          </ul>
+        </section>
       </article>
     </main>
   </div>
 
+  <div class="pagination">
+    <a href="css_content.html" class="prev"> Trang trước</a>
+    <a href="css_content2.html" class="next">Trang kế tiếp</a>
+  </div>
+
+  <div class="scroll-to-top" id="scrollBtn">↑</div>
+  <script src="scroll.js"></script> <!-- Kết nối file JavaScript -->
+
+
   <footer>
-    <p>&copy; 2024 - Trường đại học Khoa học Tự nhiên</p>
+    <p>&copy; 2024 - Trường Đại học Khoa học Tự nhiên</p>
   </footer>
 </body>
 </html>
