@@ -145,6 +145,10 @@
         <section id="css-content-6.2">
             <h2>Các phương pháp bố cục chính</h2>
                 <p><em><strong>Floats (Nổi)</strong></em></p>
+                <div style="border: 1px solid #ddd; background-color: #f9f9f9; border-radius: 5px; position: relative; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: inline-block; text-align: center;">
+                  <div style="position: absolute; top: -10px; left: 10px; background-color: #fff; padding: 1px 8px; font-weight: bold; color: #333; font-size: 14px; border: 1px solid #ddd; border-radius: 3px;">CSS</div>
+                  <pre style="margin: 0; font-family: monospace; background-color: #f4f4f4; padding: 1px; border-radius: 3px; text-align: center;"><code>float: left</code></pre>
+              </div>
                 <ul>
                   <li style="margin-bottom: 10px;">Phần tử có thể "nổi" sang trái hoặc phải của vùng chứa, và các phần tử khác sẽ bám xung quanh.
                   <img src="/images/floatleft.png" alt="float" style="display: block; margin: 0 auto; width: 40%;"></li>
@@ -153,22 +157,34 @@
                 </ul>
               
                 <p><em><strong>Flexbox</strong></em></p>
+                <div style="border: 1px solid #ddd; background-color: #f9f9f9; border-radius: 5px; position: relative; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: inline-block; text-align: center;">
+                  <div style="position: absolute; top: -10px; left: 10px; background-color: #fff; padding: 1px 8px; font-weight: bold; color: #333; font-size: 14px; border: 1px solid #ddd; border-radius: 3px;">CSS</div>
+                  <pre style="margin: 0; font-family: monospace; background-color: #f4f4f4; padding: 1px; border-radius: 3px; text-align: center;"><code>display: flex</code></pre>
+                </div>
                 <ul>
                   <li style="margin-bottom: 10px;">Cách hoạt động: Sử dụng mô hình "flex", giúp tạo bố cục linh hoạt theo cả chiều ngang và chiều dọc. Các phần tử có thể co giãn hoặc giãn rộng tự động</li>
                   <li style="margin-bottom: 10px;">Mô hình flexbox:</li>
                   <img src="/images/flexbox.png" alt="float" style="display: block; margin: 0 auto; width: 60%;">
                   <li style="margin-bottom: 10px;">Wrapping: Khi các phần tử flexbox con tràn vùng chứa của cột và hàng, thì ta dùng wrap.</li>
-                  
+
                   <div style="border: 1px solid #ddd; background-color: #f9f9f9; border-radius: 5px; position: relative; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: inline-block; text-align: center;">
                     <div style="position: absolute; top: -10px; left: 10px; background-color: #fff; padding: 1px 8px; font-weight: bold; color: #333; font-size: 14px; border: 1px solid #ddd; border-radius: 3px;">CSS</div>
-                    <pre style="margin: 0; font-family: monospace; background-color: #f4f4f4; padding: 1px; border-radius: 3px; text-align: center;"><code>flex-wrap: wrap</code></pre>
-                </ul>
-                    
-                    
+                    <pre style="margin: 0; font-family: monospace; background-color: #f4f4f4; padding: 1px; border-radius: 3px; text-align: center;"><code>flex-wrap: wrap</code></pre></div>
+                  <li style="margin-bottom: 10px;">Căn chỉnh theo chiều ngang và chiều dọc: Bạn cũng có thể sử dụng các tính năng flexbox để căn chỉnh các mục flex dọc theo trục chính hoặc trục chéo</li>
+                  </ul>
                 
-
                 <p><em><strong>Grids (Lưới)</strong></em></p>
-
+                <div style="border: 1px solid #ddd; background-color: #f9f9f9; border-radius: 5px; position: relative; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: inline-block; text-align: center;">
+                  <div style="position: absolute; top: -10px; left: 10px; background-color: #fff; padding: 1px 8px; font-weight: bold; color: #333; font-size: 14px; border: 1px solid #ddd; border-radius: 3px;">CSS</div>
+                  <pre style="margin: 0; font-family: monospace; background-color: #f4f4f4; padding: 1px; border-radius: 3px; text-align: center;"><code>display: grid</code></pre>
+                </div>
+                <ul>
+                  <li style="margin-bottom: 10px;">Lưới cho phép bạn tạo ra các bố cục phức tạp bằng cách chia không gian thành các hàng và cột, từ đó dễ dàng sắp xếp và căn chỉnh các phần tử.</li>
+                  <li style="margin-bottom: 10px;">Sơ đồ lưới: Một lưới thường có các cột , hàng và sau đó là khoảng cách giữa mỗi hàng và cột.Các khoảng cách này thường được gọi là gutter.</li>
+                  <img src="/images/luoi.png" alt="luoi" style="display: block; margin: 0 auto; width: 70%;">
+                  <li style="margin-bottom: 10px;">Hàng và cột: Chúng ta sử dụng thuộc tính <em>grid-template-row</em> và <em>grid-template-column</em>. VÀ nếu muốn thêm khoảng cách giữa các hàng, cột thì chỉ cần thêm <em> grid-column-gap</em> và <em>grid-row-gap</em> hoặc <em>grid-gap</em>.</li>
+                  <li style="margin-bottom: 10px;">Hàm minmax(): cho phép chúng ta đặt kích thước tối thiểu và tối đa cho một track, ví dụ, minmax(100px, auto).</li>
+                </ul>
                 
                 <p><em><strong>Positioning (Định vị)</strong></em></p>
                 <ul>
@@ -184,11 +200,18 @@
                 </ul>
 
                 <p><em><strong>Multiple-column layout (Bố cục nhiều cột)</strong></em></p>
-
-                <p><em><strong>Responsive design (Bố cục đáp ứng)</strong></em></p>
-                    
-                </li>
-
+                <img src="/images/bao.jpg" alt="bao" style="display: block; margin: 0 auto; width: 60%;">
+                <li style="margin-bottom: 10px;">Bố cục nhiều cột cung cấp cho bạn một phương pháp để bố trí nội dung trong các cột, như bạn có thể thấy trên một tờ báo.</li>
+                <li style="margin-bottom: 10px;">Để tạo bố cục nhiều cột, trước hết phải chỉ định số cột bằng thuộc tính <em>coloumn-count</em></li>
+                <li style="margin-bottom: 10px;">Tạo kiểu cho các cột: <em>column-width</em>, <em>column-gap</em>, <em>column-rule</em>,... </li>
+                <img src="/images/bocucCss.png" alt="Bocuc" style="display: block; margin: 0 auto; width: 60%;">
+                
+                <p><em><strong>Responsive design (Thiết kế đáp ứng)</strong></em></p>
+                <li style="margin-bottom: 10px;">Responsive được hiểu là một công nghệ hỗ trợ cho website sẽ hiển thị tốt trên mọi loại thiết bị như Smart Phone, Laptop, Máy tính bảng, PC, trình duyệt... </li></li>
+                <li style="margin-bottom: 10px;">Các thành phần cơ bản của Responsive:</li>
+                <ul>
+                  <li style="margin-bottom: 10px;">Media Queries: là thành phần chính trong Responsive CSS, cho phép áp dụng các quy tắc CSS khác nhau dựa trên các đặc điểm của thiết bị như chiều rộng, chiều cao, độ phân giải và định hướng màn hình, giúp điều chỉnh phong cách trang web phù hợp nhiều thiết bị</li>
+                </ul>
             </ul>
         </section>
       </article>
