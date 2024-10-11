@@ -1,0 +1,248 @@
+
+/* CSS - TẠO KIỂU CHO TRANG WEB */
+/* ---------------------------- MỞ ĐẦU VỀ CSS ---------------------------- */
+
+.dropdown-content {
+    display: none; /* Ẩn dropdown-content mặc định */
+    position: absolute; /* Đặt vị trí tuyệt đối cho dropdown */
+    background-color: #eeeeee; /* Màu nền cho dropdown */
+    min-width: 160px; /* Độ rộng tối thiểu cho dropdown */
+    border: 1px solid #88bef9; /* Đường viền cho dropdown */
+    border-radius: 15px; /* Bo góc cho dropdown */
+    z-index: 2; /* Đảm bảo dropdown nằm trên các phần tử khác */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block; /* Hiển thị dropdown khi hover vào dropdown */
+  }
+  
+  .dropdown-content a {
+    display: block; /* Hiển thị dưới dạng khối để dễ click */
+    padding: 10px; /* Khoảng cách cho từng mục */
+    text-decoration: none; /* Bỏ gạch chân cho liên kết */
+    color: #333; /* Màu chữ */
+    font-size: 15px;
+    text-align: left;
+  
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #d1e0ff; /* Màu nền khi hover */
+    color: #000; /* Màu chữ khi hover */
+  }
+
+  
+  .group {
+    flex: 1; /* Phần tử group chiếm toàn bộ không gian còn lại */
+  }
+
+
+  .main-wrapper {
+    margin: 20px auto; /* Căn giữa ô khung và thêm khoảng cách trên/dưới */
+    max-width: 700px; /* Chiều rộng tối đa của ô khung */
+    padding: 20px; /* Đệm cho nội dung bên trong */
+    background-color: #ffffff; /* Màu nền của ô khung */
+    border: 1px solid #ccc; /* Đường viền xung quanh ô khung */
+    border-radius: 10px; /* Bo tròn các góc */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Hiệu ứng bóng nhẹ */
+}
+  
+  .main-title {
+    font-size: 2em; /* Kích thước chữ */
+    color: white; /* Màu chữ */
+    text-align: center; /* Căn giữa */
+    margin: 12px 0; /* Khoảng cách trên và dưới */
+    background-color: #0063EC;
+    border-radius: 10px;
+  }
+
+  .img-css{
+    text-align: center;
+  }
+
+/* BÊN PHẢIIIIIIIIIIIIIIIIIIIIIIII */
+/* Định dạng cho aside với class 'aside-right' */
+.aside-right {
+  position: relative; /* Giữ thanh cố định */
+
+  background-color: #f9f9f9; /* Màu nền */
+  border: 1px solid #ddd; /* Đường viền */
+  padding: 15px; /* Khoảng cách bên trong */
+  margin: 20px 0; /* Khoảng cách bên ngoài */
+  width: 250px; /* Chiều rộng của aside */
+  float: right; /* Để aside nằm bên trái */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+/* Định dạng cho thẻ p trong aside */
+.aside-right p {
+  font-size: 1.2em; /* Kích thước chữ */
+  color: #333; /* Màu chữ */
+  margin-bottom: 10px; /* Khoảng cách dưới */
+}
+
+/* Định dạng cho ul trong aside */
+.aside-right ul {
+  list-style-type: none; /* Không hiển thị dấu chấm */
+  padding: 0; /* Bỏ padding */
+}
+
+/* Định dạng cho các li trong ul */
+.aside-right ul li {
+  margin-bottom: 8px; /* Khoảng cách dưới cho từng mục */
+}
+
+/* Định dạng cho các a trong ul */
+.aside-right ul li a {
+  text-decoration: none; /* Bỏ gạch chân */
+  color: #007bff; /* Màu link */
+  transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+}
+
+/* Định dạng cho a khi hover */
+.aside-right ul li a:hover {
+  color: #0056b3; /* Màu khi hover */
+}
+
+.aside-right {
+  position: relative; /* Đặt thanh danh sách ở vị trí tương đối */
+  right: 0; /* Gán vị trí bên phải */
+  top: 10px; /* Khoảng cách từ trên xuống để nằm dưới group */
+  right: 20px; /* Gán vị trí bên phải */
+  width: 150px; /* Độ rộng của aside */
+  height: auto; /* Chiều cao tự động */
+  background-color: #f9f9f900; /* Màu nền của aside */
+  overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá lớn */
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.aside-right ol {
+  list-style-type: none; /* Ẩn số tự động của danh sách */
+  padding-left: 0; /* Bỏ lề bên trái */
+}
+
+.aside-right li {
+  margin-bottom: 10px; /* Khoảng cách giữa các mục */
+}
+
+
+/* BÊN TRÁIIIIIIIIIIIIIIIIIIIIII */
+/* Định dạng cho aside với class 'aside-left' */
+.aside-left {
+  position: relative; /* Giữ thanh cố định */
+
+  background-color: #f9f9f9; /* Màu nền */
+  border: 1px solid #ddd; /* Đường viền */
+  padding: 15px; /* Khoảng cách bên trong */
+  margin: 20px 0; /* Khoảng cách bên ngoài */
+  width: 250px; /* Chiều rộng của aside */
+  float: left; /* Để aside nằm bên trái */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+/* Định dạng cho thẻ p trong aside */
+.aside-left p {
+  font-size: 1.2em; /* Kích thước chữ */
+  color: #333; /* Màu chữ */
+  margin-bottom: 10px; /* Khoảng cách dưới */
+}
+
+/* Định dạng cho ul trong aside */
+.aside-left ul {
+  list-style-type: none; /* Không hiển thị dấu chấm */
+  padding: 0; /* Bỏ padding */
+}
+
+/* Định dạng cho các li trong ul */
+.aside-left ul li {
+  margin-bottom: 8px; /* Khoảng cách dưới cho từng mục */
+}
+
+/* Định dạng cho các a trong ul */
+.aside-left ul li a {
+  text-decoration: none; /* Bỏ gạch chân */
+  color: #007bff; /* Màu link */
+  transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+}
+
+/* Định dạng cho a khi hover */
+.aside-left ul li a:hover {
+  color: #0056b3; /* Màu khi hover */
+}
+
+.aside-left {
+  position: relative; /* Đặt thanh danh sách ở vị trí tương đối */
+  left: 0; /* Gán vị trí bên trái */
+  top: 10px; /* Khoảng cách từ trên xuống để nằm dưới group */
+  left: 20px;
+  width: 150px; /* Độ rộng của aside */
+  height: auto; /* Chiều cao tự động */
+  background-color: #f9f9f900; /* Màu nền của aside */
+  overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung quá lớn */
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.aside-left ol {
+  list-style-type: none; /* Ẩn số tự động của danh sách */
+  padding-left: 0; /* Bỏ lề bên trái */
+}
+
+.aside-left li {
+  margin-bottom: 10px; /* Khoảng cách giữa các mục */
+}
+
+.pagination {
+  margin-top: auto; /* Đẩy phần tử phân trang xuống dưới cùng */
+  display: flex; /* Sử dụng flexbox để căn giữa các nút */
+  justify-content: space-between; /* Đặt khoảng cách đều giữa hai nút */
+  padding: 20px; /* Thêm khoảng cách xung quanh */
+  width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+  box-sizing: border-box; /* Bao gồm padding trong chiều rộng */
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #007BFF; /* Màu sắc cho liên kết */
+  padding: 10px 15px; /* Thêm khoảng cách bên trong */
+  border-radius: 5px; /* Bo góc */
+  background-color: #f0f0f0; /* Màu nền */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+  position: relative; /* Để sử dụng cho pseudo-element */
+}
+
+.pagination a.prev::before,
+.pagination a.next::after {
+  content: ''; /* Thêm một phần tử giả cho mũi tên */
+  border: solid transparent; /* Đặt màu trong suốt cho đường viền */
+  border-width: 5px; /* Đặt kích thước cho mũi tên */
+  display: inline-block;
+  margin-left: 5px; /* Khoảng cách giữa văn bản và mũi tên */
+  transform: translateY(1px); /* Đẩy mũi tên xuống một chút */
+}
+
+.pagination a.prev::before {
+  border-right-color: #007BFF; /* Màu cho mũi tên sang trái */
+}
+
+.pagination a.next::after {
+  border-left-color: #007BFF; /* Màu cho mũi tên sang phải */
+}
+
+.pagination a:hover {
+  background-color: #e0e0e0; /* Hiệu ứng khi di chuột qua */
+}
+
+.scroll-to-top {
+  position: fixed; /* Đặt vị trí cố định */
+  bottom: 20px; /* Khoảng cách từ dưới lên */
+  right: 20px; /* Khoảng cách từ bên phải */
+  background-color: #0063EC; /* Màu nền */
+  color: white; /* Màu chữ */
+  padding: 10px 15px; /* Đệm cho nút */
+  border-radius: 5px; /* Bo góc */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Hiệu ứng bóng */
+  cursor: pointer; /* Hiển thị con trỏ khi hover */
+  display: flex; 
+}
