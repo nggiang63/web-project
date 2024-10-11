@@ -56,8 +56,9 @@
     <aside class="aside-right">
       <p><strong>Trong trang này</strong></p>
       <ul>
-          <li><a href="/css-content/css_content1.html#css-content-1.1">CSS là gì?</a></li>
-          <li><a href="/css-content/css_content1.html#css-content-1.2">Tại sao cần dùng CSS?</a></li>
+          <li><a href="/css-content/css_content5.html#css-content-5.1">Kiểu chữ và văn bản cơ bản</a></li>
+          <li><a href="/css-content/css_content5.html#css-content-5.2">Danh sách kiểu dáng</a></li>
+          <li><a href="/css-content/css_content5.html#css-content-5.3">Tạo kiểu cho liên kết</a></li>
       </ul>
     </aside>
   
@@ -134,17 +135,12 @@
           <h2>Kiểu chữ và văn bản cơ bản</h2>
           <p><em><strong>Kiểu font chữ</strong></em></p>
           <ul>
-            <li style="margin-bottom: 10px;">Màu sắc(<em>color</em>): Thuộc tính <em>color</em> thiết lập màu của nội dung nền trước của các
-                phần tử được chọn.</li>
-            <li style="margin-bottom: 10px;">Họ phông chữ(<em>font-family</em>): Để thiết lập một phông chữ khác cho văn bản,
-                ta sử dụng thuộc tính <em>font-family</em>, điều này cho phép chỉ định một phông chữ
-                (hoặc danh sách các phông chữ) để trình duyệt áp dụng cho các thành phần đã
-                chọn.
+            <li style="margin-bottom: 10px;">Màu sắc(<em>color</em>): Thuộc tính <em>color</em> thiết lập màu của nội dung nền trước của các phần tử được chọn.</li>
+            <li style="margin-bottom: 10px;">Họ phông chữ(<em>font-family</em>): Để thiết lập một phông chữ khác cho văn bản, ta sử dụng thuộc tính <em>font-family</em>, điều này cho phép chỉ định một phông chữ (hoặc danh sách các phông chữ) để trình duyệt áp dụng cho các thành phần đã chọn.
                 </li>
             <li style="margin-bottom: 10px;">Kích thước phông chữ (<em>font-size</em>): Các đơn vị phổ biến nhất mà
                 bạn sẽ sử dụng để định cỡ văn bản là: px, emS, remS</li>
-            <li style="margin-bottom: 10px;">Kiểu chữ, độ đậm chữ, chuyển đổi văn bản và trang trí văn bản: CSS cung cấp bốn
-                thuộc tính phổ biến để thay đổi độ đậm/nét nhấn trực quan của văn bản: <em>font-style, font-weight, text-transform, text-decoration</em>
+            <li style="margin-bottom: 10px;">Kiểu chữ, độ đậm chữ, chuyển đổi văn bản và trang trí văn bản: Có 4 thuộc tính phổ biến để thay đổi độ đậm/nét nhấn trực quan của văn bản: <em>font-style, font-weight, text-transform, text-decoration</em>
                 <img src="/images/Hightlightcss.png" alt="Hightlightcss" style="display: block; margin: 0 auto; width: 80%;">
                 <img src="/images/Hightlight.png" alt="Hightlight" style="display: block; margin: 0 auto; width: 75%;"></li>
             <li style="margin-bottom: 10px;">Đổ bóng: Sử dụng thuộc tính <em>text-shadow</em>. Thuộc tính này có thể sử dụng tối đa bốn giá trị:
@@ -155,10 +151,9 @@
           </ul>
           <p><em><strong>Bố cục văn bản</strong></em></p>
           <ul>
-            <li>Căn chỉnh văn bản: Thuộc tính <em>text-align</em> được sử dụng để kiểm soát cách căn chỉnh
-              văn bản trong hộp nội dung chứa nó (left, right, center, justify)</li>
-            <li>Chiều cao dòng: Thuộc tính <em>line-height</em> thiết lập chiều cao của mỗi dòng văn bản</li>
-            <li>Khoảng cách giữa các chữ cái và từ: Thuộc tính <em>letter-spacing</em> và <em>word-spacing</em> cho phép bạn thiết lập khoảng cách giữa các chữ cái và từ trong văn bản của bạn.</li>
+            <li>Căn chỉnh văn bản: Thuộc tính <em>text-align</em>(left, right, center, justify)</li>
+            <li>Chiều cao dòng: Thuộc tính <em>line-height</em></li>
+            <li>Khoảng cách giữa các chữ cái và từ: Thuộc tính <em>letter-spacing</em> và <em>word-spacing</em> cho phép bạn thiết lập khoảng cách giữa các chữ cái và từ trong văn bản.</li>
           </ul>
             
         </section>
@@ -168,27 +163,52 @@
             <p>Danh sách trong CSS gồm có ba loại chính: danh sách không có thứ tự (<em><code>&lt;ul&gt;</code></em>), danh
               sách có thứ tự (<em><code>&lt;ol&gt;</code></em>), và danh sách mô tả (<em><code>&lt;dl&gt;</code></em>). Mỗi loại có những thuộc tính CSS
               riêng để định dạng và tạo kiểu.</p>
-            <ul>
-                <li style="margin-bottom: 10px;">Bước 1: Tải tài liệu HTML: Trình duyệt tải tài liệu HTML từ máy chủ.</li>
-                <li style="margin-bottom: 10px;">Bước 2: Chuyển đổi HTML thành DOM: Tạo DOM từ tài liệu HTML để đại diện cho cấu trúc trang web trong bộ nhớ.</li>
-                <li style="margin-bottom: 10px;">Bước 3: Tìm nạp tài nguyên liên kết: Trình duyệt tìm nạp các tài nguyên liên kết như hình ảnh, video, và tệp CSS.</li>
-                <li style="margin-bottom: 10px;">Bước 4: Phân tích cú pháp CSS: Phân tích tệp CSS để xác định các quy tắc sẽ áp dụng cho các phần tử DOM.</li>
-                <li style="margin-bottom: 10px;">Bước 5: Tạo cây kết xuất (Render Tree): Kết hợp DOM và các quy tắc CSS để tạo ra cây kết xuất mô tả cấu trúc trang web.</li>
-                <li style="margin-bottom: 10px;">Bước 6: Hiển thị trên màn hình: Trình duyệt vẽ trang web dựa trên cây kết xuất và hiển thị trên màn hình.</li>
-            </ul>
-            <img src="images/csswork.png" alt="CSS work" style="display: block; margin: 0 auto; width: 60%;">
+            <p><em><strong>Kiểu danh sách cụ thể</strong></em></p>
+              <ul>
+                <li style="margin-bottom: 10px;"> list-style-type: Đặt loại dấu đầu dòng sử dụng cho danh sách, ví dụ, dấu đầu dòng hình vuông hoặc hình tròn cho danh sách không có thứ tự <em><code>&lt;ul&gt;</code></em> hoặc số, chữ cái hoặc số La Mã cho danh sách có thứ tự <em><code>&lt;ol&gt;</code></em>
+                  <img src="/images/roman.png" alt="roman" style="display: block; margin: 0 auto; width: 50%;"></li>
+                <li style="margin-bottom: 10px;">list-style-position: Thiết lập xem các dấu đầu dòng ở đầu mỗi mục sẽ xuất hiện bên trong hay bên ngoài danh sách.Nếu bạn đặt giá trị thành inside, các dấu đầu dòng sẽ nằm bên trong các dòng:
+                  <img src="/images/roman-inside.png" alt="roman" style="display: block; margin: 0 auto; width: 50%;"></li>
+                <li style="margin-bottom: 10px;">list-style-image: Cho phép bạn sử dụng hình ảnh tùy chỉnh cho dấu đầu dòng, thay vì hình vuông hoặc hình tròn đơn giản.
+                  <img src="/images/star2.png" alt="star" style="display: block; margin: 0 auto; width: 25%;"></li>
+              </ul>
+            
+              <p><em><strong>Kiểm soát danh sách đếm</strong></em></p>
+              <ul>
+                <li style="margin-bottom: 10px;">start: Bắt đầu danh sách từ một số khác 1.
+                  <img src="/images/start4.png" alt="start4" style="display: block; margin: 0 auto; width: 60%;"></li>
+                <li style="margin-bottom: 10px;">start: Bắt đầu danh sách từ một số khác 1.reversed: Đếm ngược. Thuộc tính đảo ngược sẽ bắt đầu đếm ngược danh sách thay vì đếm lên.
+                  <img src="/images/reversed.png" alt="reversed" style="display: block; margin: 0 auto; width: 60%;"></li>
+                  <li style="margin-bottom: 10px;">value: Đặt giá trị cụ thể cho một mục trong danh sách.
+                    <img src="/images/value.png" alt="start4" style="display: block; margin: 0 auto; width: 60%;"></li>
+              </ul>
         </section>
-        
-        
-
+      
         <section id="css-content-5.3">
-            <h2>Tạo kiểu cho liên kết</h2>
-              <ul><li style="margin-bottom: 10px;">Tính tương thích: không phải tất cả trình duyệt đều triển khai các tính năng CSS mới cùng một lúc.</li>
-                <li style="margin-bottom: 10px;">Phản ứng của trình duyệt: nếu không hiểu khai báo, trình duyệt bỏ qua phần đó và tiếp tục.</li>
-                <li style="margin-bottom: 10px;">Giải pháp: tạo các kiểu dự phòng đảm bảo nội dung vẫn hiển thị hợp lý.</li>
-                <li>Lợi ích: hành vi này cho phép sử dụng CSS mới như một cải tiến mà không lo xảy ra lỗi khi trình duyệt không hỗ trợ.
-                </li>
-            </ul></ul>
+          <h2>Tạo kiểu cho liên kết</h2>
+          <p><em><strong>Trạng thái liên kết</strong></em></p>
+          <ul>
+            <li style="margin-bottom: 10px;">Link (Liên kết)</li>
+            <li style="margin-bottom: 10px;">Visited (Đã truy cập)</li>
+            <li style="margin-bottom: 10px;">Hover (Di chuột qua) </li>
+            <li style="margin-bottom: 10px;">Focus (Tiêu điểm) </li>
+            <li style="margin-bottom: 10px;">Active (Đang hoạt động)</li>
+          </ul>
+
+          <p><em><strong>Liên kết mặc định</strong></em></p>
+          <p>Đặc điểm: Được gạch chân.Khi chưa được truy cập sẽ có màu xanh.hi di chuột vào liên kết, con trỏ chuột sẽ chuyển thành biểu tượng bàn tay nhỏ</p>
+          <img src="/images/simplelink.png" alt="roman" style="display: block; margin: 0 auto; width: 40%;">
+          
+          <p><em><strong>Thứ tự các quy tắc CSS quan trọng</strong></em></p>
+          <img src="/images/thutu.png" alt="roman" style="display: block; margin: 0 auto; width: 60%;">
+          <p>Thứ tự này quan trọng vì các kiểu liên kết được xây dựng dựa trên nhau.  Nếu bạn đặt chúng theo thứ tự sai mọi thứ sẽ không hoạt động như bạn mong đợi. Để nhớ thứ tự, bạn có thể thử sử dụng một mẹo ghi nhớ như LoVe Fears HAte.</p>
+
+          <p><em><strong>Thêm biểu tượng vào liên kết</strong></em></p>
+          <p>Biểu tượng được thêm vào liên kết ngoài để cung cấp thêm chỉ báo về loại nội dung mà liên kết trỏ đến, bằng cách sử dụng phần tử giả ::after và thuộc tính background-image</p>
+          <img src="/images/thembieutuong.png" alt="roman" style="display: block; margin: 0 auto; width: 50%;">
+           
+          <p><em><strong>Tạo kiểu cho liên kết như nút</strong></em></p>
+          <p>Tạo kiểu cho liên kết như nút nhằm biến một thẻ liên kết (thường là thẻ <em><code>&lt;a&gt;</code></em>) để tạo ra các liên kết điều hướng đến một trang web khác, một tài liệu hoặc một phần cụ thể trong trang.</p>
         </section>
         
 
@@ -197,8 +217,8 @@
   </div>
 
   <div class="pagination">
-    <a href="css_content2.html" class="prev"> Trang trước</a>
-    <a href="css_content4.html" class="next">Trang kế tiếp</a>
+    <a href="/css-content/css_content3.html" class="prev"> Trang trước</a>
+    <a href="/css-content/css_content6.html" class="next">Trang kế tiếp</a>
   </div>
 
   <div class="scroll-to-top" id="scrollBtn">↑</div>
