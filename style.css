@@ -729,3 +729,10 @@ nav ul li a:hover {
     transform: translateY(0);
   }
 }
+.member-card {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.member-card :hover {
+  color: #f39c12;
+  transform: translateY(-2px);
+}
