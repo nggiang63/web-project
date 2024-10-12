@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group 8</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css_content/css_style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-title">
+        <img src="../css_content/images/group8.png" alt="Logo" class="logo">
+        <a href="dashboard.html" class="site-title">Group 8</a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="../gioithieuHTML/html_content.html">HTML</a>
+              <div class="dropdown-content">
+                <a href="../gioithieuHTML/html_content.html">Giới thiệu về HTML</a>
+                <a href="../daphuongtienvanhung/daphuongtien_nhung.html">Đa phương tiện và nhúng</a>
+                <a href="../html_attributes.html">Bảng HTML</a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="../css_content/css_content.html">CSS</a>
+              <div class="dropdown-content">
+                <a href="../css_content/css_content.html">Mở đầu về CSS</a>
+                <a href="../css_content/css_content2.html">Nhúng CSS vào HTML</a>
+                <a href="../css_content/css_content3.html">Nguyên tắc hoạt động cơ bản</a>
+                <a href="../css_content/css_content4.html">Cấu trúc của CSS</a>
+                <a href="../css_content/css_content5.html">Định dạng văn bản bằng CSS</a>
+                <a href="../css_content/css_content6.html">Bố cục CSS</a>
+              </div>
+            </li>
+
+            <li><a href="../test/lithuyet.html">TEST</a></li>
+
+            <li class="search-container">
+              <form action="search-results.html" method="get"
+                style="display: flex; justify-content: space-between; align-items: center;">
+                <input type="text" name="q" placeholder="Tìm kiếm ..." class="search-input">
+                <button type="submit" class="search-button">Tìm kiếm</button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button id="toggle-theme" class="theme-toggle-button">Chế độ tối</button>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="" class="login-link"><span id="username-display"></span></a>
+              <div class="dropdown-content">
+                <a href="../profile.html">Trang cá nhân</a>
+                <a href="#" id="logout-btn">Đăng xuất</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="main-wrapper">
+      <main id="content" class="main-content">
+        <article class="main-page-content" lang="en-US">
+          <h1 class="main-title">Lí thuyết HTML và CSS</h1>
+        
+          <iframe src="../test/apptest/test_list.html" width="100%" height="3200px" frameborder="0"></iframe>
+          
+
+        </article>
+      </main>
+    </div>
+
+  
+    <footer>
+      <p>&copy; 2024 - Trường Đại học Khoa học Tự nhiên</p>
+    </footer>
+    <script>
+      // Lấy tên đăng nhập từ LocalStorage
+      var username = localStorage.getItem('loggedInUser');
+      // tên đăng nhập, hiển thị
+      document.getElementById('username-display').innerText = username;
+    </script>
+    <div class="scroll-to-top" id="scrollBtn">↑</div>
+    <script src="../css_content/scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script.js"></script>
+    <script src="logout1.js"></script>
+  </body>
+  </html>

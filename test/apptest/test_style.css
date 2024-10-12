@@ -1,0 +1,102 @@
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box-question {
+  float: left;
+  width: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+.box-question h2, .box-question h3 {
+  margin-bottom: 20px !important;
+  cursor: default;
+}
+.box-question h2 {
+  font-size: 1.3rem !important;
+}
+.box-question h3 {
+  font-size: 1.2rem !important;
+  font-weight: none !important;
+}
+.question ul {
+  margin: 10px 0 20px !important;
+  list-style: none;
+  padding: 0 !important;
+}
+.question ul > li {
+  float: left;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 15px 10px 15px 50px;
+  margin-bottom: 5px;
+  position: relative;
+  font-weight: none !important;
+  border-radius: 30px;
+  list-style-type: none !important;
+  line-height: 1.6;
+  cursor: pointer;
+}
+.question ul > li:before {
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 30px;
+}
+.question ul > li:first-child:before {
+  content: "A";
+}
+.question ul > li:nth-child(2):before {
+  content: "B";
+}
+.question ul > li:nth-child(3):before {
+  content: "C";
+}
+.question ul > li:nth-child(4):before {
+  content: "D";
+}
+.question ul.answered > li:not(.selected):not(.correct) {
+  opacity: 0.4;
+}
+.question ul.answered > li.selected:not(.correct) {
+  background: #f16464;
+}
+.question ul.answered > li.correct {
+  background: #55d000;
+}
+.result {
+  font-family: 'Times New Roman', Times, serif;
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+  position: relative;
+  background: #8dc8ff4b;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 20px 10px 25px;
+  line-height: 1.1;
+  border-radius: 20px;
+
+}
+.result:before {
+  content: "KẾT QUẢ";
+  color: #ffffff;
+  text-align: center;
+  margin-right: 10px;
+  display: block;
+  font-size: 0.8em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  font-weight: bold; /* Đảm bảo in đậm */
+  background-color: #0063EC; /* Thêm nền cho chữ */
+  padding: 10px; /* Tạo khoảng cách giữa nền và chữ */
+  border-radius: 18px; /* Bo góc nền nếu cần */
+}
