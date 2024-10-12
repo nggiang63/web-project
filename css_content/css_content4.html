@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group 8</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="css_style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-title">
+        <img src="images/group8.png" alt="Logo" class="logo">
+        <a href="dashboard.html" class="site-title">Group 8</a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="gioithieuHTML/html_content.html">HTML</a>
+              <div class="dropdown-content">
+                <a href="gioithieuHTML/html_content.html">Giới thiệu về HTML</a>
+                <a href="daphuongtienvanhung/daphuongtien_nhung.html">Đa phương tiện và nhúng</a>
+                <a href="html_attributes.html">Bảng HTML</a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="css_content.html">CSS</a>
+              <div class="dropdown-content">
+                <a href="css_content.html">1. Mở đầu về CSS</a>
+                <a href="css_content2.html">2. Nhúng CSS vào HTML</a>
+                <a href="css_content3.html">3. Nguyên tắc hoạt động cơ bản</a>
+                <a href="css_content4.html">4. Cấu trúc của CSS</a>
+                <a href="css_content5.html">5. Định dạng văn bản bằng CSS</a>
+                <a href="css_content6.html">6. Bố cục CSS</a>
+              </div>
+            </li>
+
+            <li class="search-container">
+              <form action="search-results.html" method="get"
+                style="display: flex; justify-content: space-between; align-items: center;">
+                <input type="text" name="q" placeholder="Tìm kiếm ..." class="search-input">
+                <button type="submit" class="search-button">Tìm kiếm</button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button id="toggle-theme" class="theme-toggle-button">Chế độ tối</button>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="" class="login-link"><span id="username-display"></span></a>
+              <div class="dropdown-content">
+                <a href="profile.html">Trang cá nhân</a>
+                <a href="#" id="logout-btn">Đăng xuất</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="aside-right">
+      <p><strong>Trong trang này</strong></p>
+      <ul>
+        <li><a href="css_content4.html#css-content-4.1">Bộ chọn CSS (CSS selectors)</a></li>
+        <li><a href="css_content4.html#css-content-4.2">Thuộc tính CSS (CSS Properties)</a></li>
+        <li><a href="css_content4.html#css-content-4.3">Giá trị và đơn vị trong CSS (CSS Values and Units)</a></li>
+        <li><a href="css_content4.html#css-content-4.4">Cơ chế hoạt động của CSS</a></li>
+      </ul>
+    </aside>
+
+    <aside class="aside-left">
+      <h2 class="title-content">CSS - Tạo kiểu cho trang web</h2>
+      <ol>
+        <li>
+          <details open>
+            <summary>Mở đầu về CSS</summary>
+            <ol>
+              <li><a href="css_content.html#css-content-1.1">CSS là gì?</a></li>
+              <li><a href="css_content.html#css-content-1.2">Tại sao cần dùng CSS?</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Kỹ thuật nhúng CSS vào HTML</summary>
+            <ol>
+              <li><a href="css_content2.html#css-content-2.1">Inline CSS</a></li>
+              <li><a href="css_content2.html#css-content-2.2">Internal CSS</a></li>
+              <li><a href="css_content2.html#css-content-2.3">External CSS</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Nguyên tắc hoạt động cơ bản của CSS</summary>
+            <ol>
+              <li><a href="css_content3.html#css-content-3.1">Giới thiệu về DOM</a></li>
+              <li><a href="css_content3.html#css-content-3.2">Nguyên tắc hoạt động của CSS</a></li>
+              <li><a href="css_content3.html#css-content-3.3">Trình duyệt xử lý CSS không hiểu như nào?</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Cấu trúc của CSS</summary>
+            <ol>
+              <li><a href="css_content4.html#css-content-4.1">Bộ chọn CSS (CSS selectors)</a></li>
+              <li><a href="css_content4.html#css-content-4.2">Thuộc tính CSS (CSS Properties)</a></li>
+              <li><a href="css_content4.html#css-content-4.3">Giá trị và đơn vị trong CSS (CSS Values and Units)</a>
+              </li>
+              <li><a href="css_content4.html#css-content-4.4">Cơ chế hoạt động của CSS</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Định dạng văn bản bằng CSS</summary>
+            <ol>
+              <li><a href="css_content5.html#css-content-5.1">Kiểu chữ và văn bản cơ bản</a></li>
+              <li><a href="css_content5.html#css-content-5.2">Danh sách kiểu dáng</a></li>
+              <li><a href="css_content5.html#css-content-5.3">Tạo kiểu cho liên kết</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Bố cục CSS</summary>
+            <ol>
+              <li><a href="css_content6.html#css-content-6.1">Normal Flow (Dòng chảy bình thường)</a></li>
+              <li><a href="css_content6.html#css-content-6.2">Các phương pháp bố cục chính</a></li>
+            </ol>
+          </details>
+        </li>
+      </ol>
+    </aside>
+
+
+
+
+    <div class="main-wrapper">
+      <main id="content" class="main-content">
+        <article class="main-page-content" lang="en-US">
+          <h1 class="main-title">Cấu trúc của CSS</h1>
+          <section id="css-content-4.1">
+            <h2>Bộ chọn CSS (CSS selectors)</h2>
+            <p>Bộ chọn CSS là phần đầu tiên của mỗi quy tắc CSS. Nó xác định phần tử HTML nào
+              sẽ được áp dụng phong cách. Có nhiều loại bộ chọn khác nhau:</p>
+            <img src="images/css-selectors.png" alt="css selectors" style="display: block; margin: 0 auto; width: 60%;">
+
+            <ul>
+              <li style="margin-bottom: 10px;">Bộ chọn loại (Type selectors): Là bộ chọn được sử dụng để định kiểu cho
+                tất cả các phần tử HTML dựa trên tên thẻ của chúng mà không phân biệt chữ hoa, chữ thường.
+                <img src="images/type-selectors.png" alt="css selectors"
+                  style="display: block; margin: 0 auto; width: 60%;">
+              </li>
+              <li style="margin-bottom: 10px;">Bộ chọn lớp (Class selectors): Chọn các phần tử dựa trên thuộc tính
+                class. Nhạy cảm với chữ hoa chữ thường và bắt đầu bằng ký tự dấu chấm <em>"."</em>.
+                <img src="images/class-selectors.png" alt="css selectors"
+                  style="display: block; margin: 0 auto; width: 60%;">
+              </li>
+              <li style="margin-bottom: 10px;">Bộ chọn ID (ID selectors): Chọn một phần tử duy nhất dựa trên thuộc tính
+                <em>id</em>. Bắt đầu bằng dấu <em>"#"</em> và nhạy cảm với chữ hoa chữ thường.
+                <img src="images/id-selectors.png" alt="css selectors"
+                  style="display: block; margin: 0 auto; width: 60%;">
+              </li>
+              <li style="margin-bottom: 10px;">Các lớp giả và phần tử giả (Pseudo-classes and Pseudo-elements):
+                <ul>
+                  <li style="margin-bottom: 10px;"> Lớp giả (Pseudo-classes): Áp dụng cho phần tử dựa trên trạng thái
+                    đặc biệt hoặc sự tương tác của người dùng.</li>
+                  <img src="images/pseudo-classes.png" alt="css selectors"
+                    style="display: block; margin: 0 auto; width: 60%;">
+
+                  <li style="margin-bottom: 10px;"> Phần tử giả (Pseudo-elements): Định kiểu cho một phần cụ thể của
+                    phần tử, chẳng hạn như dòng đầu tiên hoặc chữ cái đầu tiên.
+                    <img src="images/pseudo-elements.png" alt="css selectors"
+                      style="display: block; margin: 0 auto; width: 60%;">
+                  </li>
+                </ul>
+              </li>
+              <li style="margin-bottom: 10px;">Bộ chọn thuộc tính (Attribute selectors): Chọn các phần tử HTML dựa trên
+                sự hiện diện hoặc giá trị của thuộc tính, bất kể loại thẻ.
+                <img src="images/attribute-selectors.png" alt="css selectors"
+                  style="display: block; margin: 0 auto; width: 60%;">
+              </li>
+            </ul>
+          </section>
+
+          <section id="css-content-4.2">
+            <h2>Thuộc tính CSS (CSS Properties)</h2>
+            <p><em><strong>Nền (Backgrounds) trong CSS:</strong></em></p>
+
+            <table>
+              <tr>
+                <th style="border: 1px solid #ddd; padding: 10px;">Thuộc tính</th>
+                <th style="border: 1px solid #ddd; padding: 10px;">Mô tả</th>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">background</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Thuộc tính viết tắt cho tất cả các thuộc tính nền.
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">background-color</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Đặt màu nền.</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">background-image</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Đặt hình ảnh làm nền.</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">background-attachment</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Kiểm soát cuộn nền (scroll, fixed, local).</td>
+              </tr>
+            </table>
+
+            </li>
+            <p><em><strong>Viền (Borders) trong CSS:</strong></em></p>
+            <table>
+              <tr>
+                <th style="border: 1px solid #ddd; padding: 10px;">Thuộc tính</th>
+                <th style="border: 1px solid #ddd; padding: 10px;">Mô tả</th>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">border</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Thuộc tính viết tắt để thiết lập độ rộng, kiểu, và
+                  màu sắc của viền.</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">border-top</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Định nghĩa viền cho cạnh trên.</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">border-color</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Đặt màu sắc của viền.</td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #ddd; padding: 10px;">border-radius</td>
+                <td style="border: 1px solid #ddd; padding: 10px;">Bo tròn các góc của hộp.</td>
+              </tr>
+            </table>
+
+            </li>
+
+            <p><em><strong>Xử lý các hướng văn bản khác nhau (Handling Different Text Directions)</strong></em></p>
+
+            <ul>
+              <li style="margin-bottom: 10px;">CSS hỗ trợ văn bản từ phải sang trái và từ trên xuống dưới.</li>
+              <li style="margin-bottom: 10px;">Chế độ viết với <code>writing-mode</code>:
+                <ul>
+                  <li style="margin-bottom: 10px;"><code>horizontal-tb</code>: Từ trên xuống dưới.</li>
+                  <li style="margin-bottom: 10px;"><code>vertical-rl</code>: Từ phải sang trái.</li>
+                  <li style="margin-bottom: 10px;"><code>vertical-lr</code>: Từ trái sang phải.</li>
+                </ul>
+              </li>
+              <li style="margin-bottom: 10px;">Block và inline hiển thị khác nhau theo chế độ viết.</li>
+              <figure style="text-align: center;">
+                <img src="images/horizontal-tb-block-inline.png" alt="css selectors"
+                  style="display: block; margin: 0 auto; width: 60%;">
+                <figcaption>Chế độ viết ngang (horizontal-tb)</figcaption>
+              </figure>
+              <figure style="text-align: center;">
+                <img src="images/vertical-block-inline.png" alt="css selectors"
+                  style="display: block; margin: 0 auto; width: 50%;">
+                <figcaption>Chế độ viết dọc (vertical)</figcaption>
+              </figure>
+              <li style="margin-bottom: 10px;">Thuộc tính logic thay đổi theo hướng văn bản.
+                <ul>
+                  <li><code>Physic: width</code> ↔ <code>Logic: inline-size</code> (Thay thế cho thuộc tính width trong
+                    chế độ viết ngang)</li>
+                  <li><code>Physic: height</code> ↔ <code> Logic: block-size</code> (Thay thế cho thuộc tính height
+                    trong chế độ viết ngang)</li>
+                </ul>
+              </li>
+            </ul>
+            </li>
+
+            <p><em><strong>Nội dung tràn và kích thước trong CSS (Overflowing content and Sizing items in
+                  CSS)</strong></em></p>
+            <ul>
+              <li style="margin-bottom: 10px;">Nội dung tràn xảy ra khi phần tử không đủ kích thước để chứa nội dung.
+              </li>
+              <li style="margin-bottom: 10px;">Thuộc tính <code>overflow</code> điều chỉnh hiển thị nội dung tràn:
+                <code>visible</code>, <code>hidden</code>, <code>scroll</code>, <code>auto</code>.</li>
+              <li style="margin-bottom: 10px;">Quy định kích thước phần tử bằng các thuộc tính: <code>width</code>,
+                <code>height</code>, <code>min-width</code>, <code>max-width</code>, <code>min-height</code>,
+                <code>max-height</code>.</li>
+              <li style="margin-bottom: 10px;">Sử dụng đơn vị: pixel (px), phần trăm (%), viewport (vw, vh) để định
+                nghĩa kích thước.</li>
+              <li style="margin-bottom: 10px;">Box-sizing xác định cách tính kích thước: <code>content-box</code> và
+                <code>border-box</code>.</li>
+            </ul>
+            </li>
+
+            </ul>
+          </section>
+
+
+
+          <section id="css-content-4.3">
+            <h2>Giá trị và đơn vị trong CSS (CSS Values and Units)</h2>
+            <p><em><strong>Giá trị trong CSS: </strong></em> xác định thuộc tính của phần tử HTML, tạo giao diện người
+              dùng hấp dẫn.</p>
+
+            <ul>
+              <li style="margin-bottom: 10px;">Phân loại giá trị bao gồm:
+                <ul>
+                  <li style="margin-bottom: 10px;">Giá trị từ khóa (auto, inherit, none).</li>
+                  <li style="margin-bottom: 10px;">Giá trị màu (tên màu, Hex, RGB, RGBA).</li>
+                  <li style="margin-bottom: 10px;">Giá trị độ dài (px, em, rem, %).</li>
+                  <li style="margin-bottom: 10px;">Giá trị thời gian (s, ms).</li>
+                  <li style="margin-bottom: 10px;">Giá trị góc (deg, rad, turn).</li>
+                </ul>
+              </li>
+            </ul>
+            <p><em><strong>Đơn vị trong CSS: </strong></em>chia thành đơn vị tuyệt đối (px, cm, in) và tương đối (%, em,
+              rem, vw, vh, vmin, vmax).</p>
+          </section>
+
+          <section id="css-content-4.4">
+            <h2>Cơ chế hoạt động của CSS</h2>
+            <p><em><strong>Xếp tầng (Cascade): </strong></em> kiểm soát quy tắc nào được áp dụng khi có xung đột. Quy
+              tắc được định nghĩa sau sẽ được ưu tiên nếu hai quy tắc có cùng độ ưu tiên.</p>
+            <img src="images/cascade.png" alt="css selectors" style="display: block; margin: 0 auto; width: 50%;">
+
+            <p><em><strong>Đặc hiệu (Specificity): </strong></em>là thuật toán xác định quy tắc nào được áp dụng dựa
+              trên mức độ cụ thể của selector. Selector cho class có độ ưu tiên cao hơn selector cho element.</p>
+            <img src="images/specificity.png" alt="css selectors" style="display: block; margin: 0 auto; width: 50%;">
+
+            <p><em><strong>Kế thừa (Inheritance):</strong></em> cho phép một số thuộc tính CSS của phần tử cha tự động
+              áp dụng cho các phần tử con, nhưng không phải tất cả các thuộc tính đều kế thừa.</p>
+            <img src="images/inheritance.png" alt="css selectors" style="display: block; margin: 0 auto; width: 50%;">
+
+            <p><em><strong>Mô hình hộp (Box model):</strong></em> dùng để xác định cách trình duyệt tính toán kích thước
+              và không gian của các phần tử HTML. Mô hình hộp bao gồm hai loại hộp chính:</p>
+            <ul>
+              <li style="margin-bottom: 10px;">Hộp dạng khối (block boxes). Ví dụ: <code>&lt;h1&gt;</code>,
+                <code>&lt;p&gt;</code> mặc định là block.</li>
+              <li style="margin-bottom: 10px;">Hộp dạng dòng (inline boxes). Ví dụ: <code>&lt;a&gt;</code>,
+                <code>&lt;span&gt;</code> mặc định là inline.</li>
+            </ul>
+            <p>Mô hình hộp CSS bao gồm bốn phần chính:</p>
+            <ul>
+              <li style="margin-bottom: 10px;">Content box: Vùng chứa nội dung của bạn, kích thước có thể được thiết lập
+                bằng <code>width</code> và <code>height</code>.</li>
+              <li style="margin-bottom: 10px;">Padding box: Phần đệm bao quanh nội dung.</li>
+              <li style="margin-bottom: 10px;">Border box: Viền bao quanh phần đệm và nội dung.</li>
+              <li style="margin-bottom: 10px;">Margin box: Khoảng cách ngoài cùng, giữa hộp và các phần tử khác.</li>
+            </ul>
+            <img src="images/box-model.png" alt="css selectors" style="display: block; margin: 0 auto; width: 50%;">
+
+            <p>Trong đó: </p>
+            <ul>
+              <li style="margin-bottom: 10px;">Margin: Khoảng không gian bên ngoài hộp, có thể có giá trị âm hoặc dương,
+                tạo khoảng trống giữa các phần tử.</li>
+              <li style="margin-bottom: 10px;">Padding: Khoảng cách giữa nội dung và viền, không thể có giá trị âm.</li>
+              <li style="margin-bottom: 10px;">Border: Viền bao quanh padding và nội dung, có thể tùy chỉnh kích thước
+                và kiểu.</li>
+            </ul>
+            </ul>
+
+          </section>
+
+        </article>
+      </main>
+    </div>
+
+    <div class="pagination">
+      <a href="css_content2.html" class="prev"> Trang trước</a>
+      <a href="css_content4.html" class="next">Trang kế tiếp</a>
+    </div>
+
+    <div class="scroll-to-top" id="scrollBtn">↑</div>
+    <script src="scroll.js"></script> <!-- Kết nối file JavaScript -->
+
+    <footer>
+      <p>&copy; 2024 - Trường Đại học Khoa học Tự nhiên</p>
+    </footer>
+    <script>
+      // Lấy tên đăng nhập từ LocalStorage
+      var username = localStorage.getItem('loggedInUser');
+      // tên đăng nhập, hiển thị
+      document.getElementById('username-display').innerText = username;
+    </script>
+    <div class="scroll-to-top" id="scrollBtn">↑</div>
+    <script src="scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script.js"></script>
+    <script src="logout1.js"></script>
+</body>
+
+</html>

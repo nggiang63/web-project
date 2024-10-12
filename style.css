@@ -134,8 +134,6 @@ nav ul li a:hover {
     align-items: center;
   }
   
-  .search-input {
-    font-family: Times, 'Times New Roman', serif;
 
 .search-input {
   /* Cài đặt cho ô nhập tìm kiếm */
@@ -146,6 +144,8 @@ nav ul li a:hover {
     padding: 10px;
     border: 1px solid #007bff;
     border-radius: 15px;
+    margin-left: 200px;
+    
   }
   
   .search-button {
@@ -207,7 +207,7 @@ nav ul li a:hover {
 .project-details {
   /* Phần nội dung dự án với ảnh nền */
   position: relative;
-  background-image: url("images/background-hus-vnu.jpg");
+  background-image: url("css_content/images/background-hus-vnu.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
