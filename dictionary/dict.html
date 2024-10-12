@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search HTML/CSS Keywords</title>
+    <link rel="stylesheet" href="../dictionary/dict.css">
+</head>
+<body>
+
+<div class="search-container">
+    <h1>Tra từ khóa HTML/CSS</h1>
+    <input type="text" id="searchQuery" placeholder="Nhập từ khóa..." oninput="showSuggestions()">
+    <div id="suggestionsContainer" class="suggestions"></div> <!-- Container for suggestions -->
+    <button onclick="searchKeyword()">Tìm kiếm</button>
+</div>
+
+<div class="result-container" id="resultContainer">
+    <!-- Search results will be displayed here -->
+</div>
+
+<script src="../dictionary/dict.js"></script>
+</body>
+</html>

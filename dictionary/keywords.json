@@ -1,0 +1,17 @@
+[
+    {
+        "keyword": "a",
+        "description": "Thẻ <a> được sử dụng để tạo liên kết đến một trang web khác hoặc một vị trí trong trang hiện tại.",
+        "example": "<a href='https://example.com'>Đến trang ví dụ</a>"
+    },
+    {
+        "keyword": "alt",
+        "description": "Thuộc tính alt được sử dụng trong thẻ <img> để cung cấp mô tả cho hình ảnh nếu hình ảnh không thể hiển thị.",
+        "example": "alt='Mô tả hình ảnh'"
+    },
+    {
+        "keyword": "background",
+        "description": "Thuộc tính background trong CSS được sử dụng để thiết lập hình ảnh nền hoặc màu nền cho một phần tử.",
+        "example": "background: url('background.jpg') no-repeat center center;"
+    }
+]
