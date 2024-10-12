@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Frame</title>
+    <link rel="stylesheet" href="practice.css"> <!-- Liên kết tệp CSS -->
+</head>
+<body>
+
+<div class="practise-html-css">
+    <h1> CODE HTML/CSS </h1>
+
+    <div class="input-container">
+        <label for="htmlInput">HTML</label>
+        <textarea id="htmlInput" placeholder="Nhập code HTML"></textarea>
+    </div>
+    <div class="input-container">
+        <label for="cssInput">CSS</label>
+        <textarea id="cssInput" placeholder="Nhập code CSS"></textarea>
+    </div>
+    <button onclick="updateOutput()">Chạy</button>
+    <div class="output-container">
+        <label for="outputFrame">Kết quả</label>
+        <iframe id="outputFrame"></iframe>
+    </div>
+</div>
+
+<script src="practice.js"></script> <!-- Liên kết tệp JS -->
+
+</body>
+</html>
