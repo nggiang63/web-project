@@ -723,16 +723,80 @@ nav ul li a:hover {
   color: #f39c12;
   transform: translateY(-2px);
 }
-h2,
-h3 {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
-}
-
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+.member-card {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.member-card :hover {
+  color: #f39c12;
+  transform: translateY(-2px);
+}
+/* Hiệu ứng fade-in cho tiêu đề và nội dung */
+.main-title,
+.main-page-content section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s forwards; /* Thay đổi thời gian thành 0.8s */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hiệu ứng hover cho các liên kết */
+nav ul li a,
+.aside-right ul li a {
+  transition: transform 0.5s; /* Thay đổi thời gian thành 0.5s */
+}
+
+nav ul li a:hover,
+.aside-right ul li a:hover {
+  transform: scale(1.1);
+}
+
+/* Hiệu ứng cho nút cuộn lên */
+.scroll-to-top {
+  display: none; /* Ẩn nút ban đầu */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: opacity 0.5s; /* Thay đổi thời gian thành 0.5s */
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+}
+
+/* Hiệu ứng hiện ra cho nút cuộn lên */
+.show {
+  display: block;
+  opacity: 1;
+}
+
+.element {
+  transition: all 1.5s ease; /* Thay đổi thời gian thành 1.5s */
+  animation: myAnimation 1.5s ease-in-out; /* Thay đổi thời gian thành 1.5s */
+}
+
+@keyframes myAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
