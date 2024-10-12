@@ -1,7 +1,4 @@
-.{
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 
-}
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -11,6 +8,8 @@ body {
     align-items: center;
     margin: 0;
     padding: 40px 20px;
+    background-image: url("https://cdn.pixabay.com/photo/2018/01/11/21/27/laptop-3076957_960_720.jpg");
+    background-size: 140%;
 }
 
 .search-container {
@@ -23,6 +22,7 @@ h1 {
     margin-bottom: 20px;
     background-color: #0063EC; /* Thêm nền */
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 

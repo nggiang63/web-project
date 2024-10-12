@@ -1,17 +1,364 @@
 [
     {
-        "keyword": "a",
-        "description": "Thẻ <a> được sử dụng để tạo liên kết đến một trang web khác hoặc một vị trí trong trang hiện tại.",
-        "example": "<a href='https://example.com'>Đến trang ví dụ</a>"
+        "keyword": "html",
+        "description": "Thẻ <html> là thẻ gốc cho một tài liệu HTML.",
+        "example": "<html></html>"
     },
     {
-        "keyword": "alt",
-        "description": "Thuộc tính alt được sử dụng trong thẻ <img> để cung cấp mô tả cho hình ảnh nếu hình ảnh không thể hiển thị.",
-        "example": "alt='Mô tả hình ảnh'"
+        "keyword": "head",
+        "description": "Thẻ <head> chứa thông tin không hiển thị trên trang, như tiêu đề và liên kết đến CSS.",
+        "example": "<head><title>Tiêu đề trang</title></head>"
     },
     {
-        "keyword": "background",
-        "description": "Thuộc tính background trong CSS được sử dụng để thiết lập hình ảnh nền hoặc màu nền cho một phần tử.",
-        "example": "background: url('background.jpg') no-repeat center center;"
-    }
-]
+        "keyword": "body",
+        "description": "Thẻ <body> chứa nội dung hiển thị trên trang.",
+        "example": "<body><h1>Nội dung chính</h1></body>"
+    },
+    {
+        "keyword": "title",
+        "description": "Thẻ <title> xác định tiêu đề của trang web, hiển thị trên thanh tiêu đề của trình duyệt.",
+        "example": "<title>Trang chủ</title>"
+    },
+    {
+        "keyword": "link",
+        "description": "Thẻ <link> được sử dụng để liên kết đến tệp CSS bên ngoài.",
+        "example": "<link rel='stylesheet' href='styles.css'>"
+    },
+    {
+        "keyword": "meta",
+        "description": "Thẻ <meta> cung cấp thông tin về tài liệu, như từ khóa và mô tả.",
+        "example": "<meta name='description' content='Mô tả trang web'>"
+    },
+    {
+        "keyword": "h1",
+        "description": "Thẻ <h1> được sử dụng để định dạng tiêu đề lớn nhất trên trang.",
+        "example": "<h1>Tiêu đề lớn</h1>"
+    },
+    {
+        "keyword": "p",
+        "description": "Thẻ <p> được sử dụng để tạo đoạn văn bản.",
+        "example": "<p>Đây là một đoạn văn bản.</p>"
+    },
+    {
+        "keyword": "div",
+        "description": "Thẻ <div> được sử dụng để tạo khối chứa cho các phần tử.",
+        "example": "<div>Chứa nội dung</div>"
+    },
+    {
+        "keyword": "span",
+        "description": "Thẻ <span> được sử dụng để nhóm các phần tử nội tuyến.",
+        "example": "<span>Phần tử nội tuyến</span>"
+    },
+    {
+        "keyword": "img",
+        "description": "Thẻ <img> được sử dụng để chèn hình ảnh vào trang.",
+        "example": "<img src='image.jpg' alt='Hình ảnh'>"
+    },
+    {
+        "keyword": "ul",
+        "description": "Thẻ <ul> được sử dụng để tạo danh sách không có thứ tự.",
+        "example": "<ul><li>Mục 1</li><li>Mục 2</li></ul>"
+    },
+    {
+        "keyword": "ol",
+        "description": "Thẻ <ol> được sử dụng để tạo danh sách có thứ tự.",
+        "example": "<ol><li>Mục 1</li><li>Mục 2</li></ol>"
+    },
+    {
+        "keyword": "li",
+        "description": "Thẻ <li> được sử dụng để định nghĩa một mục trong danh sách.",
+        "example": "<li>Mục danh sách</li>"
+    },
+    {
+        "keyword": "table",
+        "description": "Thẻ <table> được sử dụng để tạo bảng dữ liệu.",
+        "example": "<table><tr><td>Ô</td></tr></table>"
+    },
+    {
+        "keyword": "tr",
+        "description": "Thẻ <tr> được sử dụng để định nghĩa một hàng trong bảng.",
+        "example": "<tr><td>Dữ liệu</td></tr>"
+    },
+    {
+        "keyword": "td",
+        "description": "Thẻ <td> được sử dụng để định nghĩa một ô trong hàng bảng.",
+        "example": "<td>Ô bảng</td>"
+    },
+    {
+        "keyword": "th",
+        "description": "Thẻ <th> được sử dụng để định nghĩa tiêu đề của một ô trong bảng.",
+        "example": "<th>Tiêu đề</th>"
+    },
+    {
+        "keyword": "form",
+        "description": "Thẻ <form> được sử dụng để tạo một biểu mẫu để gửi dữ liệu.",
+        "example": "<form action='/submit'><input type='text'></form>"
+    },
+    {
+        "keyword": "input",
+        "description": "Thẻ <input> được sử dụng để tạo các trường nhập liệu trong biểu mẫu.",
+        "example": "<input type='text' placeholder='Nhập tên'>"
+    },
+    {
+        "keyword": "button",
+        "description": "Thẻ <button> được sử dụng để tạo nút bấm.",
+        "example": "<button>Nhấn vào đây</button>"
+    },
+    {
+        "keyword": "label",
+        "description": "Thẻ <label> được sử dụng để định nghĩa nhãn cho trường nhập liệu.",
+        "example": "<label for='input-id'>Nhãn</label>"
+    },
+    {
+        "keyword": "select",
+        "description": "Thẻ <select> được sử dụng để tạo danh sách chọn.",
+        "example": "<select><option>Tuỳ chọn 1</option></select>"
+    },
+    {
+        "keyword": "option",
+        "description": "Thẻ <option> được sử dụng để xác định một tùy chọn trong danh sách chọn.",
+        "example": "<option value='1'>Tùy chọn 1</option>"
+    },
+    {
+        "keyword": "textarea",
+        "description": "Thẻ <textarea> được sử dụng để tạo trường nhập nhiều dòng.",
+        "example": "<textarea>Nhập nội dung tại đây</textarea>"
+    },
+    {
+        "keyword": "style",
+        "description": "Thẻ <style> được sử dụng để nhúng CSS vào trong tài liệu HTML.",
+        "example": "<style>body { background-color: #fff; }</style>"
+    },
+    {
+        "keyword": "script",
+        "description": "Thẻ <script> được sử dụng để nhúng JavaScript vào tài liệu HTML.",
+        "example": "<script src='script.js'></script>"
+    },
+    {
+        "keyword": "css",
+        "description": "CSS (Cascading Style Sheets) được sử dụng để định dạng và thiết kế giao diện của các trang web.",
+        "example": "body { background-color: lightblue; }"
+    },
+    {
+        "keyword": "color",
+        "description": "Thuộc tính color trong CSS được sử dụng để thiết lập màu sắc cho văn bản.",
+        "example": "color: blue;"
+    },
+    {
+        "keyword": "font-size",
+        "description": "Thuộc tính font-size trong CSS được sử dụng để thiết lập kích thước chữ.",
+        "example": "font-size: 16px;"
+    },
+    {
+        "keyword": "font-family",
+        "description": "Thuộc tính font-family trong CSS được sử dụng để thiết lập kiểu chữ.",
+        "example": "font-family: Arial, sans-serif;"
+    },
+    {
+        "keyword": "margin",
+        "description": "Thuộc tính margin trong CSS xác định khoảng cách bên ngoài của một phần tử.",
+        "example": "margin: 10px;"
+    },
+    {
+        "keyword": "padding",
+        "description": "Thuộc tính padding trong CSS xác định khoảng cách bên trong của một phần tử.",
+        "example": "padding: 10px;"
+    },
+    {
+        "keyword": "border",
+        "description": "Thuộc tính border trong CSS xác định đường viền của phần tử.",
+        "example": "border: 1px solid black;"
+    },
+    {
+        "keyword": "background-color",
+        "description": "Thuộc tính background-color trong CSS được sử dụng để thiết lập màu nền cho phần tử.",
+        "example": "background-color: #f0f0f0;"
+    },
+    {
+        "keyword": "text-align",
+        "description": "Thuộc tính text-align trong CSS được sử dụng để căn chỉnh văn bản.",
+        "example": "text-align: center;"
+    },
+    {
+        "keyword": "display",
+        "description": "Thuộc tính display trong CSS xác định cách mà phần tử sẽ được hiển thị.",
+        "example": "display: block;"
+    },
+    {
+        "keyword": "flex",
+        "description": "Thuộc tính flex trong CSS được sử dụng để thiết lập một khung chứa linh hoạt.",
+        "example": "display: flex;"
+    },
+    {
+        "keyword": "grid",
+        "description": "Thuộc tính grid trong CSS được sử dụng để thiết lập một lưới cho phần tử.",
+        "example": "display: grid;"
+    },
+    {
+        "keyword": "transition",
+        "description": "Thuộc tính transition trong CSS được sử dụng để thêm hiệu ứng chuyển tiếp.",
+        "example": "transition: all 0.3s ease;"
+    },
+    {
+        "keyword": "transform",
+        "description": "Thuộc tính transform trong CSS được sử dụng để biến đổi hình dạng của phần tử.",
+        "example": "transform: rotate(45deg);"
+    },
+    {
+        "keyword": "opacity",
+        "description": "Thuộc tính opacity trong CSS xác định độ trong suốt của phần tử.",
+        "example": "opacity: 0.5;"
+    },
+    {
+        "keyword": "overflow",
+        "description": "Thuộc tính overflow trong CSS xác định hành vi khi nội dung vượt quá kích thước của phần tử.",
+        "example": "overflow: hidden;"
+    },
+    {
+        "keyword": "position",
+        "description": "Thuộc tính position trong CSS xác định vị trí của phần tử.",
+        "example": "position: absolute;"
+    },
+    {
+        "keyword": "z-index",
+        "description": "Thuộc tính z-index trong CSS xác định thứ tự xếp chồng của phần tử.",
+        "example": "z-index: 10;"
+    },
+    {
+        "keyword": "text-decoration",
+        "description": "Thuộc tính text-decoration trong CSS được sử dụng để thêm hiệu ứng cho văn bản như gạch chân hoặc gạch ngang.",
+        "example": "text-decoration: underline;"
+    },
+    {
+        "keyword": "list-style",
+        "description": "Thuộc tính list-style trong CSS được sử dụng để thiết lập kiểu cho danh sách.",
+        "example": "list-style: square;"
+    },
+    {
+        "keyword": "box-shadow",
+        "description": "Thuộc tính box-shadow trong CSS thêm bóng cho phần tử.",
+        "example": "box-shadow: 2px 2px 5px grey;"
+    },
+    
+        {
+            "keyword": "selector",
+            "description": "Selector trong CSS được sử dụng để chọn các phần tử mà bạn muốn áp dụng kiểu dáng.",
+            "example": "h1 { color: blue; }"
+        },
+        {
+            "keyword": "element",
+            "description": "Element là một phần của tài liệu HTML, được định nghĩa bởi các thẻ HTML.",
+            "example": "<div></div>"
+        },
+        {
+            "keyword": "class",
+            "description": "Class selector cho phép bạn áp dụng kiểu cho một hoặc nhiều phần tử cùng loại.",
+            "example": ".classname { color: red; }"
+        },
+        {
+            "keyword": "id",
+            "description": "Id selector chọn một phần tử duy nhất dựa trên thuộc tính id của nó.",
+            "example": "#uniqueId { font-size: 20px; }"
+        },
+        {
+            "keyword": "attribute selector",
+            "description": "Attribute selector chọn các phần tử dựa trên giá trị của thuộc tính cụ thể.",
+            "example": "input[type='text'] { border: 1px solid black; }"
+        },
+        {
+            "keyword": "descendant selector",
+            "description": "Descendant selector chọn các phần tử con nằm bên trong một phần tử khác.",
+            "example": "div p { color: green; }"
+        },
+        {
+            "keyword": "child selector",
+            "description": "Child selector chọn các phần tử trực tiếp con của một phần tử khác.",
+            "example": "ul > li { list-style: none; }"
+        },
+        {
+            "keyword": "sibling selector",
+            "description": "Sibling selector chọn các phần tử cùng cấp với một phần tử khác.",
+            "example": "h1 + p { margin-top: 0; }"
+        },
+        {
+            "keyword": "pseudo-class",
+            "description": "Pseudo-class là các từ khóa thêm vào selectors để định nghĩa trạng thái đặc biệt của phần tử.",
+            "example": "a:hover { color: red; }"
+        },
+        {
+            "keyword": "pseudo-element",
+            "description": "Pseudo-element cho phép bạn định dạng một phần của một phần tử, như chữ cái đầu tiên.",
+            "example": "p::first-letter { font-size: 2em; }"
+        },
+        {
+            "keyword": "grouping selector",
+            "description": "Grouping selector cho phép bạn áp dụng cùng một kiểu cho nhiều selectors.",
+            "example": "h1, h2, h3 { margin: 0; }"
+        },
+        {
+            "keyword": "universal selector",
+            "description": "Universal selector chọn tất cả các phần tử trong tài liệu.",
+            "example": "* { box-sizing: border-box; }"
+        },
+        {
+            "keyword": "nth-child",
+            "description": "Nth-child selector chọn phần tử con dựa trên vị trí của nó trong danh sách.",
+            "example": "li:nth-child(2) { color: blue; }"
+        },
+        {
+            "keyword": "nth-of-type",
+            "description": "Nth-of-type selector chọn phần tử dựa trên kiểu phần tử của nó.",
+            "example": "p:nth-of-type(2) { font-weight: bold; }"
+        },
+        {
+            "keyword": "inline element",
+            "description": "Inline element là phần tử chỉ chiếm không gian cần thiết và không bắt đầu trên dòng mới.",
+            "example": "<span>Inline text</span>"
+        },
+        {
+            "keyword": "block element",
+            "description": "Block element chiếm toàn bộ chiều rộng và bắt đầu trên dòng mới.",
+            "example": "<div>Block element</div>"
+        },
+        {
+            "keyword": "inline-block element",
+            "description": "Inline-block element kết hợp tính năng của cả inline và block element.",
+            "example": "<div style='display: inline-block;'>Inline-block element</div>"
+        },
+        {
+            "keyword": "form element",
+            "description": "Form element là một phần tử HTML dùng để tạo biểu mẫu, cho phép người dùng nhập dữ liệu.",
+            "example": "<form><input type='text'></form>"
+        },
+        {
+            "keyword": "table element",
+            "description": "Table element dùng để tạo bảng trong HTML.",
+            "example": "<table><tr><td>Cell</td></tr></table>"
+        },
+        {
+            "keyword": "list element",
+            "description": "List element dùng để tạo danh sách có thứ tự hoặc không có thứ tự.",
+            "example": "<ul><li>Item</li></ul>"
+        },
+        {
+            "keyword": "image element",
+            "description": "Image element được sử dụng để chèn hình ảnh vào trang.",
+            "example": "<img src='image.jpg' alt='Image description'>"
+        },
+        {
+            "keyword": "link element",
+            "description": "Link element được sử dụng để tạo liên kết đến các tài liệu khác.",
+            "example": "<a href='https://example.com'>Link</a>"
+        },
+        {
+            "keyword": "video element",
+            "description": "Video element được sử dụng để nhúng video vào trang.",
+            "example": "<video src='video.mp4' controls></video>"
+        },
+        {
+            "keyword": "audio element",
+            "description": "Audio element được sử dụng để nhúng âm thanh vào trang.",
+            "example": "<audio src='audio.mp3' controls></audio>"
+        }
+    ]
+    
