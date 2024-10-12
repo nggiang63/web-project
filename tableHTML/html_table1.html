@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Cấu trúc trang Web</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="html_style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-title">
+        <img src="../css_content/images/group8.png" alt="Logo" class="logo">
+        <a href="../dashboard.html" class="site-title">Group 8</a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="../gioithieuHTML/html_content.html">HTML</a>
+              <div class="dropdown-content">
+                <a href="../gioithieuHTML/html_content.html">Giới thiệu về HTML</a>
+                <a href="../daphuongtienvanhung/daphuongtien_nhung.html">Đa phuong tiện và nhúng</a>
+                <a href="html_table1.html">Bảng HTML</a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="../css_content/css_content.html">CSS</a>
+              <div class="dropdown-content">
+                <a href="../css_content/css_content.html">1. Mở đầu về CSS</a>
+                <a href="../css_content/css_content2.html">2. Nhúng CSS vào HTML</a>
+                <a href="../css_content/css_content3.html">3. Nguyên tắc hoạt động cơ bản</a>
+                <a href="../css_content/css_content4.html">4. Cấu trúc của CSS</a>
+                <a href="../css_content/css_content5.html">5. Định dạng văn bản bằng CSS</a>
+                <a href="../css_content/css_content6.html">6. Bố cục CSS</a>
+              </div>
+            </li>
+
+            <li class="search-container">
+              <form action="search-results.html" method="get"
+                style="display: flex; justify-content: space-between; align-items: center;">
+                <input type="text" name="q" placeholder="Tìm kiếm ..." class="search-input">
+                <button type="submit" class="search-button">Tìm kiếm</button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button id="toggle-theme" class="theme-toggle-button">Chế độ tối</button>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="" class="login-link"><span id="username-display"></span></a>
+              <div class="dropdown-content">
+                <a href="../profile.html">Trang cá nhân</a>
+                <a href="#" id="logout-btn">Đăng xuất</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="aside-right">
+      <p><strong>Trong trang này</strong></p>
+      <ul>
+          <li><a href="#html-2.1">Bảng</a></li>
+          <li><a href="#html-2.2">Tiêu đề bảng</a></li>
+          <li><a href="#html-2.3">Cột</a></li>
+      </ul>
+    </aside>
+  
+    <aside class="aside-left">
+        <h2 class="title-content">HTML - Cấu trúc trang Web</h2> 
+        <ol>
+            <li>
+                <details open="">
+                    <summary>Giới thiệu HTML</summary>
+                    <ol>
+                        <li><a href="../gioithieuHTML/html_content.html">Giới thiệu HTML</a></li>
+                        <li><a href="../gioithieuHTML/html_head.html">HTML Head</a></li>
+                        <li><a href="../gioithieuHTML/nguyentac.html">Nguyên tắc cơ bản trong HTML</a></li>
+                        <li><a href="../gioithieuHTML/sieulienket.html">Tạo siêu liên kết</a></li>
+                        <li><a href="../gioithieuHTML/dinhdangnangcao.html">Định dạng nâng cao</a></li>
+                    </ol>
+                </details>
+            </li>
+            <li>
+                <details open="">
+                    <summary>Đa phương tiện và nhúng</summary>
+                    <ol>
+                      <li><a href="../daphuongtienvanhung/daphuongtien_nhung.html">Hình ảnh trong HTML</a></li>
+                      <li><a href="../daphuongtienvanhung/video-sound.html">Nội dung video và âm thanh</a></li>
+                      <li><a href="../daphuongtienvanhung/nhung-other.html">Các công nghệ nhúng khác</a></li>
+                      <li><a href="../daphuongtienvanhung/hinhanhvector.html">Thêm đồ họa vector vào web</a></li>
+                      <li><a href="../daphuongtienvanhung/hinhanhdapung.html">Responsive images(Hình ảnh đáp ứng)</a></li> 
+                    </ol>
+                </details>
+            </li>
+            <li>
+                <details open="">
+                    <summary>Bảng HTML</summary>
+                    <ol>
+                      <li><a href="html_table1.html">Cơ bản về bảng HTML</a></li>
+                        <li><a href="html_table2.html">Các tính năng nâng cao và khả năng truy cập bảng</a></li>
+                    </ol>
+                </details>
+            </li>
+        </ol>
+      </aside>
+    
+
+
+
+  <div class="main-wrapper">
+    <main id="content" class="main-content">
+      <article class="main-page-content" lang="en-US">
+        <h1 class="main-title">Cơ bản về HTML</h1>
+        <section id="html-2.1">
+          <h2>Bảng</h2>
+          <div class="image-container">
+            <img src="img/bang1 (1).png" alt="bảng">
+          </div>
+          <div class="image-container">
+            <img src="img/bang2.png" alt="Bảng">
+          </div>
+        </section>
+
+        <section id="html-2.2">
+
+            <h2>Tiêu đề bảng</h2>
+            <div class="image-container">
+                <img src="img/tieude.png" alt="Tiêu đề bảng">
+            </div>
+        </section>
+        
+        <section id="html-2.3">
+            <h2>Cột</h2>
+            <div class="image-container">
+                <img src="img/col.png" alt="Col">
+            </div>
+        </section>
+
+      </article>
+    </main>
+  </div>
+
+  <div class="pagination">
+    <a href="../daphuongtienvanhung/hinhanhdapung.html" class="prev"> Trang trước</a>
+    <a href="html_table2.html" class="next">Trang kế tiếp</a>
+  </div>
+
+  <div class="scroll-to-top" id="scrollBtn">↑</div>
+  <script src="scroll.js"></script> <!-- Kết nối file JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../script.js"></script>
+  <script src="logout1.js"></script>
+  <footer>
+    <p>&copy; 2024 - Trường Đại học Khoa học Tự nhiên</p>
+  </footer>
+</body>
+</html>
