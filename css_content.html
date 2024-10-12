@@ -143,9 +143,106 @@
           </ul>
         </section>
       </article>
-    </main>
-  </div>
+      <div class="practise-html-css">
+        <div class="input-container">
+            <label for="htmlInput">HTML</label>
+            <textarea id="htmlInput" placeholder="Enter HTML code"></textarea>
+        </div>
+        <div class="input-container">
+            <label for="cssInput">CSS</label>
+            <textarea id="cssInput" placeholder="Enter CSS code"></textarea>
+        </div>
+        <button onclick="updateOutput()">Run</button>
+        <div class="output-container">
+            <label for="outputFrame">Kết quả</label>
+            <iframe id="outputFrame"></iframe>
+        </div>
+    </div>
+    
+    <style>
+        /* Đặt kiểu cho toàn bộ khung */
+        .practise-html-css {
+            max-width: 800px; /* Đặt chiều rộng tối đa */
+            margin: 20px auto; /* Căn giữa khung */
+            padding: 20px; /* Khoảng cách bên trong */
+            border: 1px solid #ccc; /* Đường viền xung quanh */
+            border-radius: 8px; /* Bo tròn góc */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+            background-color: #f9f9f9; /* Màu nền */
+        }
+    
+        /* Định dạng cho các ô input */
+        .input-container {
+            margin-bottom: 15px; /* Khoảng cách phía dưới */
+        }
+    
+        label {
+            display: block; /* Hiển thị label như một khối */
+            font-weight: bold; /* Đậm */
+            margin-bottom: 5px; /* Khoảng cách dưới label */
+        }
+    
+        /* Định dạng cho textarea */
+        #htmlInput,
+        #cssInput {
+            width: 90%; /* Chiếm toàn bộ chiều rộng */
+            height: 200px; /* Chiều cao */
+            padding: 15px; /* Khoảng cách bên trong */
+            border: 1px solid #ccc; /* Đường viền */
+            border-radius: 4px; /* Bo tròn góc */
+            font-family: monospace; /* Kiểu chữ */
+            font-size: 16px; /* Kích thước chữ */
+            resize: none; /* Không cho phép thay đổi kích thước */
+        }
+    
+        /* Định dạng cho button */
+        button {
+            background-color: #4CAF50; /* Màu nền */
+            color: white; /* Màu chữ */
+            border: none; /* Không có đường viền */
+            padding: 15px 20px; /* Khoảng cách bên trong */
+            text-align: center; /* Căn giữa chữ */
+            text-decoration: none; /* Không gạch chân */
+            display: inline-block; /* Hiển thị như một khối inline */
+            font-size: 18px; /* Kích thước chữ */
+            margin: 10px 0; /* Khoảng cách xung quanh */
+            cursor: pointer; /* Đổi con trỏ khi hover */
+            border-radius: 4px; /* Bo tròn góc */
+            transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+        }
+    
+        /* Định dạng cho button khi hover */
+        button:hover {
+            background-color: #45a049; /* Đổi màu khi hover */
+        }
+    
+        /* Định dạng cho iframe */
+        .output-container {
+            margin-top: 15px; /* Khoảng cách phía trên */
+        }
+    
+        #outputFrame {
+            width: 100%; /* Chiếm toàn bộ chiều rộng */
+            height: 400px; /* Chiều cao */
+            border: 1px solid #ccc; /* Đường viền */
+            border-radius: 4px; /* Bo tròn góc */
+        }
+    </style>
+    
+    <script>
+        function updateOutput() {
+            const htmlCode = document.getElementById("htmlInput").value;
+            const cssCode = `<style>${document.getElementById("cssInput").value}</style>`;
+            const outputFrame = document.getElementById("outputFrame").contentWindow.document;
+    
+            outputFrame.open();
+            outputFrame.write(htmlCode + cssCode);
+            outputFrame.close();
+        }
+    </script>
+    
 
+    </main>
   <div class="pagination">
     <a href="css_content.html" class="prev"> Trang trước</a>
     <a href="css_content2.html" class="next">Trang kế tiếp</a>
