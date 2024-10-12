@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Group 8</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/css-content/css_style.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="css_style.css">
 
 </head>
 
@@ -13,38 +13,54 @@
   <header>
     <div class="header-content">
       <div class="logo-title">
-        <a href="/index.html" style="text-decoration: none; color: inherit;">
-          <!-- <img src="" alt="Logo" class="logo"> -->
-          <h1 class="site-title">Group 8</h1>
-        </a>
+        <img src="images/group8.png" alt="Logo" class="logo">
+        <a href="dashboard.html" class="site-title">Group 8</a>
       </div>
-      
       <div class="nav-container">
         <nav>
-          <ul>               
-            <li><a href="/gioithieuHTML/html_content.html">HTML</a></li>
-
-            <!-- <li class="css-menu"><a href="css_content.html">CSS</a></li> -->
+          <ul>
+            <li class="dropdown">
+              <a href="gioithieuHTML/html_content.html">HTML</a>
+              <div class="dropdown-content">
+                <a href="gioithieuHTML/html_content.html">Giới thiệu về HTML</a>
+                <a href="daphuongtienvanhung/daphuongtien_nhung.html">Đa phương tiện và nhúng</a>
+                <a href="html_attributes.html">Bảng HTML</a>
+              </div>
+            </li>
 
             <li class="dropdown">
-              <a href="/css-content/css_content1.html">CSS</a>
+              <a href="css_content.html">CSS</a>
               <div class="dropdown-content">
-                <a href="/css-content/css_content1.html">1. Mở đầu về CSS</a>
-                <a href="/css-content/css_content2.html">2. Nhúng CSS vào HTML</a>
-                <a href="/css-content/css_content3.html">3. Nguyên tắc hoạt động cơ bản</a>
-                <a href="/css-content/css_content4.html">4. Cấu trúc của CSS</a>
-                <a href="/css-content/css_content5.html">5. Định dạng văn bản bằng CSS</a>
-                <a href="/css-content/css_content6.html">6. Bố cục CSS</a>
+                <a href="css_content.html">1. Mở đầu về CSS</a>
+                <a href="css_content2.html">2. Nhúng CSS vào HTML</a>
+                <a href="css_content3.html">3. Nguyên tắc hoạt động cơ bản</a>
+                <a href="css_content4.html">4. Cấu trúc của CSS</a>
+                <a href="css_content5.html">5. Định dạng văn bản bằng CSS</a>
+                <a href="css_content6.html">6. Bố cục CSS</a>
               </div>
             </li>
 
             <li class="search-container">
-              <form action="search-results.html" method="get">
+              <form action="search-results.html" method="get"
+                style="display: flex; justify-content: space-between; align-items: center;">
                 <input type="text" name="q" placeholder="Tìm kiếm ..." class="search-input">
                 <button type="submit" class="search-button">Tìm kiếm</button>
               </form>
             </li>
-
+          </ul>
+        </nav>
+      </div>
+      <button id="toggle-theme" class="theme-toggle-button">Chế độ tối</button>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="" class="login-link"><span id="username-display"></span></a>
+              <div class="dropdown-content">
+                <a href="../profile.html">Trang cá nhân</a>
+                <a href="#" id="logout-btn">Đăng xuất</a>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
@@ -56,21 +72,21 @@
     <aside class="aside-right">
       <p><strong>Trong trang này</strong></p>
       <ul>
-          <li><a href="/css-content/css_content5.html#css-content-5.1">Kiểu chữ và văn bản cơ bản</a></li>
-          <li><a href="/css-content/css_content5.html#css-content-5.2">Danh sách kiểu dáng</a></li>
-          <li><a href="/css-content/css_content5.html#css-content-5.3">Tạo kiểu cho liên kết</a></li>
+          <li><a href="css_content5.html#css-content-5.1">Kiểu chữ và văn bản cơ bản</a></li>
+          <li><a href="css_content5.html#css-content-5.2">Danh sách kiểu dáng</a></li>
+          <li><a href="css_content5.html#css-content-5.3">Tạo kiểu cho liên kết</a></li>
       </ul>
     </aside>
   
     <aside class="aside-left">
-      <h2 class="title-content">CSS - Tạo kiểu cho trang web</h2> 
+      <h2 class="title-content">CSS - Tạo kiểu cho trang web</h2>
       <ol>
         <li>
           <details open>
             <summary>Mở đầu về CSS</summary>
             <ol>
-              <li><a href="/css-content/css_content1.html#css-content-1.1">CSS là gì?</a></li>
-              <li><a href="/css-content/css_content1.html#css-content-1.2">Tại sao cần dùng CSS?</a></li>
+              <li><a href="css_content.html#css-content-1.1">CSS là gì?</a></li>
+              <li><a href="css_content.html#css-content-1.2">Tại sao cần dùng CSS?</a></li>
             </ol>
           </details>
         </li>
@@ -78,9 +94,9 @@
           <details>
             <summary>Kỹ thuật nhúng CSS vào HTML</summary>
             <ol>
-              <li><a href="/css-content/css_content2.html#css-content-2.1">Inline CSS</a></li>
-              <li><a href="/css-content/css_content2.html#css-content-2.2">Internal CSS</a></li>
-              <li><a href="/css-content/css_content2.html#css-content-2.3">External CSS</a></li>
+              <li><a href="css_content2.html#css-content-2.1">Inline CSS</a></li>
+              <li><a href="css_content2.html#css-content-2.2">Internal CSS</a></li>
+              <li><a href="css_content2.html#css-content-2.3">External CSS</a></li>
             </ol>
           </details>
         </li>
@@ -88,9 +104,9 @@
           <details>
             <summary>Nguyên tắc hoạt động cơ bản của CSS</summary>
             <ol>
-              <li><a href="/css-content/css_content3.html#css-content-3.1">Giới thiệu về DOM</a></li>
-              <li><a href="/css-content/css_content3.html#css-content-3.2">Nguyên tắc hoạt động của CSS</a></li>
-              <li><a href="/css-content/css_content3.html#css-content-3.3">Trình duyệt xử lý CSS không hiểu như nào?</a></li>
+              <li><a href="css_content3.html#css-content-3.1">Giới thiệu về DOM</a></li>
+              <li><a href="css_content3.html#css-content-3.2">Nguyên tắc hoạt động của CSS</a></li>
+              <li><a href="css_content3.html#css-content-3.3">Trình duyệt xử lý CSS không hiểu như nào?</a></li>
             </ol>
           </details>
         </li>
@@ -98,10 +114,11 @@
           <details>
             <summary>Cấu trúc của CSS</summary>
             <ol>
-              <li><a href="/css-content/css_content4.html#css-content-4.1">Bộ chọn CSS (CSS selectors)</a></li>
-              <li><a href="/css-content/css_content4.html#css-content-4.2">Thuộc tính CSS (CSS Properties)</a></li>
-              <li><a href="/css-content/css_content4.html#css-content-4.3">Giá trị và đơn vị trong CSS (CSS Values and Units)</a></li>
-              <li><a href="/css-content/css_content4.html#css-content-4.4">Cơ chế hoạt động của CSS</a></li>
+              <li><a href="css_content4.html#css-content-4.1">Bộ chọn CSS (CSS selectors)</a></li>
+              <li><a href="css_content4.html#css-content-4.2">Thuộc tính CSS (CSS Properties)</a></li>
+              <li><a href="css_content4.html#css-content-4.3">Giá trị và đơn vị trong CSS (CSS Values and Units)</a>
+              </li>
+              <li><a href="css_content4.html#css-content-4.4">Cơ chế hoạt động của CSS</a></li>
             </ol>
           </details>
         </li>
@@ -109,9 +126,9 @@
           <details>
             <summary>Định dạng văn bản bằng CSS</summary>
             <ol>
-              <li><a href="/css-content/css_content5.html#css-content-5.1">Kiểu chữ và văn bản cơ bản</a></li>
-              <li><a href="/css-content/css_content5.html#css-content-5.2">Danh sách kiểu dáng</a></li>
-              <li><a href="/css-content/css_content5.html#css-content-5.3">Tạo kiểu cho liên kết</a></li>
+              <li><a href="css_content5.html#css-content-5.1">Kiểu chữ và văn bản cơ bản</a></li>
+              <li><a href="css_content5.html#css-content-5.2">Danh sách kiểu dáng</a></li>
+              <li><a href="css_content5.html#css-content-5.3">Tạo kiểu cho liên kết</a></li>
             </ol>
           </details>
         </li>
@@ -119,8 +136,8 @@
           <details>
             <summary>Bố cục CSS</summary>
             <ol>
-              <li><a href="/css-content/css_content6.html#css-content-6.1">Normal Flow (Dòng chảy bình thường)</a></li>
-              <li><a href="/css-content/css_content6.html#css-content-6.2">Các phương pháp bố cục chính</a></li>
+              <li><a href="css_content6.html#css-content-6.1">Normal Flow (Dòng chảy bình thường)</a></li>
+              <li><a href="css_content6.html#css-content-6.2">Các phương pháp bố cục chính</a></li>
             </ol>
           </details>
         </li>
@@ -141,8 +158,8 @@
             <li style="margin-bottom: 10px;">Kích thước phông chữ (<em>font-size</em>): Các đơn vị phổ biến nhất mà
                 bạn sẽ sử dụng để định cỡ văn bản là: px, emS, remS</li>
             <li style="margin-bottom: 10px;">Kiểu chữ, độ đậm chữ, chuyển đổi văn bản và trang trí văn bản: Có 4 thuộc tính phổ biến để thay đổi độ đậm/nét nhấn trực quan của văn bản: <em>font-style, font-weight, text-transform, text-decoration</em>
-                <img src="/images/Hightlightcss.png" alt="Hightlightcss" style="display: block; margin: 0 auto; width: 80%;">
-                <img src="/images/Hightlight.png" alt="Hightlight" style="display: block; margin: 0 auto; width: 75%;"></li>
+                <img src="images/Hightlightcss.png" alt="Hightlightcss" style="display: block; margin: 0 auto; width: 80%;">
+                <img src="images/Hightlight.png" alt="Hightlight" style="display: block; margin: 0 auto; width: 75%;"></li>
             <li style="margin-bottom: 10px;">Đổ bóng: Sử dụng thuộc tính <em>text-shadow</em>. Thuộc tính này có thể sử dụng tối đa bốn giá trị:
               <div style="border: 1px solid #ddd; background-color: #f9f9f9; border-radius: 5px; position: relative; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: inline-block; text-align: center;">
                 <div style="position: absolute; top: -10px; left: 10px; background-color: #fff; padding: 1px 8px; font-weight: bold; color: #333; font-size: 14px; border: 1px solid #ddd; border-radius: 3px;">CSS</div>
@@ -166,21 +183,21 @@
             <p><em><strong>Kiểu danh sách cụ thể</strong></em></p>
               <ul>
                 <li style="margin-bottom: 10px;"> list-style-type: Đặt loại dấu đầu dòng sử dụng cho danh sách, ví dụ, dấu đầu dòng hình vuông hoặc hình tròn cho danh sách không có thứ tự <em><code>&lt;ul&gt;</code></em> hoặc số, chữ cái hoặc số La Mã cho danh sách có thứ tự <em><code>&lt;ol&gt;</code></em>
-                  <img src="/images/roman.png" alt="roman" style="display: block; margin: 0 auto; width: 50%;"></li>
+                  <img src="images/roman.png" alt="roman" style="display: block; margin: 0 auto; width: 50%;"></li>
                 <li style="margin-bottom: 10px;">list-style-position: Thiết lập xem các dấu đầu dòng ở đầu mỗi mục sẽ xuất hiện bên trong hay bên ngoài danh sách.Nếu bạn đặt giá trị thành inside, các dấu đầu dòng sẽ nằm bên trong các dòng:
-                  <img src="/images/roman-inside.png" alt="roman" style="display: block; margin: 0 auto; width: 50%;"></li>
+                  <img src="images/roman-inside.png" alt="roman" style="display: block; margin: 0 auto; width: 50%;"></li>
                 <li style="margin-bottom: 10px;">list-style-image: Cho phép bạn sử dụng hình ảnh tùy chỉnh cho dấu đầu dòng, thay vì hình vuông hoặc hình tròn đơn giản.
-                  <img src="/images/star2.png" alt="star" style="display: block; margin: 0 auto; width: 25%;"></li>
+                  <img src="images/star2.png" alt="star" style="display: block; margin: 0 auto; width: 25%;"></li>
               </ul>
             
               <p><em><strong>Kiểm soát danh sách đếm</strong></em></p>
               <ul>
                 <li style="margin-bottom: 10px;">start: Bắt đầu danh sách từ một số khác 1.
-                  <img src="/images/start4.png" alt="start4" style="display: block; margin: 0 auto; width: 60%;"></li>
+                  <img src="images/start4.png" alt="start4" style="display: block; margin: 0 auto; width: 60%;"></li>
                 <li style="margin-bottom: 10px;">start: Bắt đầu danh sách từ một số khác 1.reversed: Đếm ngược. Thuộc tính đảo ngược sẽ bắt đầu đếm ngược danh sách thay vì đếm lên.
-                  <img src="/images/reversed.png" alt="reversed" style="display: block; margin: 0 auto; width: 60%;"></li>
+                  <img src="images/reversed.png" alt="reversed" style="display: block; margin: 0 auto; width: 60%;"></li>
                   <li style="margin-bottom: 10px;">value: Đặt giá trị cụ thể cho một mục trong danh sách.
-                    <img src="/images/value.png" alt="start4" style="display: block; margin: 0 auto; width: 60%;"></li>
+                    <img src="images/value.png" alt="start4" style="display: block; margin: 0 auto; width: 60%;"></li>
               </ul>
         </section>
       
@@ -197,15 +214,15 @@
 
           <p><em><strong>Liên kết mặc định</strong></em></p>
           <p>Đặc điểm: Được gạch chân.Khi chưa được truy cập sẽ có màu xanh.hi di chuột vào liên kết, con trỏ chuột sẽ chuyển thành biểu tượng bàn tay nhỏ</p>
-          <img src="/images/simplelink.png" alt="roman" style="display: block; margin: 0 auto; width: 40%;">
+          <img src="images/simplelink.png" alt="roman" style="display: block; margin: 0 auto; width: 40%;">
           
           <p><em><strong>Thứ tự các quy tắc CSS quan trọng</strong></em></p>
-          <img src="/images/thutu.png" alt="roman" style="display: block; margin: 0 auto; width: 60%;">
+          <img src="images/thutu.png" alt="roman" style="display: block; margin: 0 auto; width: 60%;">
           <p>Thứ tự này quan trọng vì các kiểu liên kết được xây dựng dựa trên nhau.  Nếu bạn đặt chúng theo thứ tự sai mọi thứ sẽ không hoạt động như bạn mong đợi. Để nhớ thứ tự, bạn có thể thử sử dụng một mẹo ghi nhớ như LoVe Fears HAte.</p>
 
           <p><em><strong>Thêm biểu tượng vào liên kết</strong></em></p>
           <p>Biểu tượng được thêm vào liên kết ngoài để cung cấp thêm chỉ báo về loại nội dung mà liên kết trỏ đến, bằng cách sử dụng phần tử giả ::after và thuộc tính background-image</p>
-          <img src="/images/thembieutuong.png" alt="roman" style="display: block; margin: 0 auto; width: 50%;">
+          <img src="images/thembieutuong.png" alt="roman" style="display: block; margin: 0 auto; width: 50%;">
            
           <p><em><strong>Tạo kiểu cho liên kết như nút</strong></em></p>
           <p>Tạo kiểu cho liên kết như nút nhằm biến một thẻ liên kết (thường là thẻ <em><code>&lt;a&gt;</code></em>) để tạo ra các liên kết điều hướng đến một trang web khác, một tài liệu hoặc một phần cụ thể trong trang.</p>
@@ -217,8 +234,8 @@
   </div>
 
   <div class="pagination">
-    <a href="/css-content/css_content3.html" class="prev"> Trang trước</a>
-    <a href="/css-content/css_content6.html" class="next">Trang kế tiếp</a>
+    <a href="css_content4.html" class="prev"> Trang trước</a>
+    <a href="css_content6.html" class="next">Trang kế tiếp</a>
   </div>
 
   <div class="scroll-to-top" id="scrollBtn">↑</div>
@@ -227,5 +244,16 @@
   <footer>
     <p>&copy; 2024 - Trường Đại học Khoa học Tự nhiên</p>
   </footer>
+  <script>
+    // Lấy tên đăng nhập từ LocalStorage
+    var username = localStorage.getItem('loggedInUser');
+    // tên đăng nhập, hiển thị
+    document.getElementById('username-display').innerText = username;
+  </script>
+  <div class="scroll-to-top" id="scrollBtn">↑</div>
+  <script src="scroll.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../script.js"></script>
+  <script src="logout1.js"></script>
 </body>
 </html>
