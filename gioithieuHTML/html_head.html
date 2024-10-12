@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML - Cấu trúc trang Web</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="html_style.css">
+  <link rel="apple-touch-icon" sizes="60x60" href="../icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+<link rel="manifest" href="../icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="../icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -16,18 +33,18 @@
         <img src="../css_content/images/group8.png" alt="Logo" class="logo">
         <a href="../dashboard.html" class="site-title">Group 8</a>
       </div>
-      
       <div class="nav-container">
         <nav>
           <ul>
-            <li class="dropdown"><a href="html_content.html">HTML</a>
-                <div class="dropdown-content">
-                    <a href="html_content.html">1. Giới thiệu về HTML</a>
-                    <a href="../daphuongtienvanhung/daphuongtien_nhung.html">2. Đa phương tiện và nhúng</a>
-                    <a href="../tableHTML/table1.html">3. Bảng HTML</a>
-                </div>
+            <li class="dropdown">
+              <a href="html_content.html">HTML</a>
+              <div class="dropdown-content">
+                <a href="html_content.html">Giới thiệu về HTML</a>
+                <a href="../daphuongtienvanhung/daphuongtien_nhung.html">Đa phuong tiện và nhúng</a>
+                <a href="../tableHTML/html_table1.html">Bảng HTML</a>
+              </div>
             </li>
-            <!-- CSS Menu with Dropdown -->
+
             <li class="dropdown">
               <a href="../css_content/css_content.html">CSS</a>
               <div class="dropdown-content">
@@ -40,12 +57,21 @@
               </div>
             </li>
 
-            <!-- Search Bar -->
-            <li class="search-container">
-              <form action="search-results.html" method="get" role="search">
-                <input type="text" name="q" placeholder="Tìm kiếm ..." class="search-input" aria-label="Search">
-                <button type="submit" class="search-button">Tìm kiếm</button>
-              </form>
+            <li><a href="../test/lithuyet.html">TEST</a></li>
+
+          </ul>
+        </nav>
+      </div>
+      <button id="toggle-theme" class="theme-toggle-button">Chế độ tối</button>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="" class="login-link"><span id="username-display"></span></a>
+              <div class="dropdown-content">
+                <a href="../profile.html">Trang cá nhân</a>
+                <a href="#" id="logout-btn">Đăng xuất</a>
+              </div>
             </li>
           </ul>
         </nav>
@@ -57,93 +83,97 @@
     <aside class="aside-right">
       <p><strong>Trong trang này</strong></p>
       <ul>
-          <li><a href="#html-2.1">Head</a></li>
-          <li><a href="#html-2.2">Title</a></li>
-          <li><a href="#html-2.3">Meate</a></li>
-          <li><a href="#html-2.4">Favicon</a></li>
-          <li><a href="#html-2.5">Áp dụng CSS và JavaScript vào HTML</a></li>
-          <li><a href="#html-2.6">Thiết lập ngôn ngữ</a></li>
+        <li><a href="#html-2.1">Head</a></li>
+        <li><a href="#html-2.2">Title</a></li>
+        <li><a href="#html-2.3">Meate</a></li>
+        <li><a href="#html-2.4">Favicon</a></li>
+        <li><a href="#html-2.5">Áp dụng CSS và JavaScript vào HTML</a></li>
+        <li><a href="#html-2.6">Thiết lập ngôn ngữ</a></li>
       </ul>
     </aside>
-  
+
     <aside class="aside-left">
-        <h2 class="title-content">HTML - Cấu trúc trang Web</h2> 
-        <ol>
-            <li>
-                <details open="">
-                    <summary>Giới thiệu HTML</summary>
-                    <ol>
-                        <li><a href="html_content.html">Giới thiệu HTML</a></li>
-                        <li><a href="html_head.html">HTML Head</a></li>
-                        <li><a href="nguyentac.html">Nguyên tắc cơ bản trong HTML</a></li>
-                        <li><a href="sieulienket.html">Tạo siêu liên kết</a></li>
-                        <li><a href="dinhdangnangcao.html">Định dạng nâng cao</a></li>
-                    </ol>
-                </details>
-            </li>
-            <li>
-                <details open="">
-                    <summary>Đa phương tiện và nhúng</summary>
-                    <ol>
-                      <li><a href="../daphuongtienvanhung/daphuongtien_nhung.html">Hình ảnh trong HTML</a></li>
-                      <li><a href="../daphuongtienvanhung/video-sound.html">Nội dung video và âm thanh</a></li>
-                      <li><a href="../daphuongtienvanhung/nhung-other.html">Các công nghệ nhúng khác</a></li>
-                      <li><a href="../daphuongtienvanhung/hinhanhvector.html">Thêm đồ họa vector vào web</a></li>
-                      <li><a href="../daphuongtienvanhung/hinhanhdapung.html">Responsive images(Hình ảnh đáp ứng)</a></li> 
-                    </ol>
-                </details>
-            </li>
-            <li>
-                <details open="">
-                    <summary>Bảng HTML</summary>
-                    <ol>
-                      <li><a href="../tableHTML/html_table1.html">Cơ bản về bảng HTML</a></li>
-                        <li><a href="../tableHTML/html_table2.html">Các tính năng nâng cao và khả năng truy cập bảng</a></li>
-                    </ol>
-                </details>
-            </li>
-        </ol>
-      </aside>
-    
+      <h2 class="title-content">HTML - Cấu trúc trang Web</h2>
+      <ol>
+        <li>
+          <details open="">
+            <summary>Giới thiệu HTML</summary>
+            <ol>
+              <li><a href="html_content.html">Giới thiệu HTML</a></li>
+              <li><a href="html_head.html">HTML Head</a></li>
+              <li><a href="nguyentac.html">Nguyên tắc cơ bản trong HTML</a></li>
+              <li><a href="sieulienket.html">Tạo siêu liên kết</a></li>
+              <li><a href="dinhdangnangcao.html">Định dạng nâng cao</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details open="">
+            <summary>Đa phương tiện và nhúng</summary>
+            <ol>
+              <li><a href="../daphuongtienvanhung/daphuongtien_nhung.html">Hình ảnh trong HTML</a></li>
+              <li><a href="../daphuongtienvanhung/video-sound.html">Nội dung video và âm thanh</a></li>
+              <li><a href="../daphuongtienvanhung/nhung-other.html">Các công nghệ nhúng khác</a></li>
+              <li><a href="../daphuongtienvanhung/hinhanhvector.html">Thêm đồ họa vector vào web</a></li>
+              <li><a href="../daphuongtienvanhung/hinhanhdapung.html">Responsive images(Hình ảnh đáp ứng)</a></li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <details open="">
+            <summary>Bảng HTML</summary>
+            <ol>
+              <li><a href="../tableHTML/html_table1.html">Cơ bản về bảng HTML</a></li>
+              <li><a href="../tableHTML/html_table2.html">Các tính năng nâng cao và khả năng truy cập bảng</a></li>
+            </ol>
+          </details>
+        </li>
+      </ol>
+    </aside>
 
 
 
-  <div class="main-wrapper">
-    <main id="content" class="main-content">
-      <article class="main-page-content" lang="en-US">
-        <h1 class="main-title">HTML Head</h1>
-        <section id="html-2.1">
-          <h2>Head</h2>
-          <p>Phần tử <code>&lt;head&gt;</code> trong HTML chứa siêu dữ liệu về tài liệu và không được hiển thị trên trang, khác với phần tử <code>&lt;body&gt;</code> là phần hiển thị nội dung trên trang.</p>
-          <div class="image-container">
-          <img src="img/HTMLhead.jpg" alt="HTML Head">
-          </div>
-        </section>
 
-        <section id="html-2.2">
+    <div class="main-wrapper">
+      <main id="content" class="main-content">
+        <article class="main-page-content" lang="en-US">
+          <h1 class="main-title">HTML Head</h1>
+          <section id="html-2.1">
+            <h2>Head</h2>
+            <p>Phần tử <code>&lt;head&gt;</code> trong HTML chứa siêu dữ liệu về tài liệu và không được hiển thị trên
+              trang, khác với phần tử <code>&lt;body&gt;</code> là phần hiển thị nội dung trên trang.</p>
+            <div class="image-container">
+              <img src="img/HTMLhead.jpg" alt="HTML Head">
+            </div>
+          </section>
+
+          <section id="html-2.2">
             <h2>Title</h2>
-            <p>Phần tử &lt;title&gt; được sử dụng để thêm tiêu đề cho tài liệu. Tuy nhiên, điều này có thể bị nhầm lẫn với phần tử h1, được sử dụng để thêm tiêu đề cấp một cho nội dung trong phần thân — điều này cũng đôi khi được gọi là tiêu đề trang. Nhưng chúng là hai thứ khác nhau!</p>
-        </section>
-        
-        <section id="html-2.3">
+            <p>Phần tử &lt;title&gt; được sử dụng để thêm tiêu đề cho tài liệu. Tuy nhiên, điều này có thể bị nhầm lẫn
+              với phần tử h1, được sử dụng để thêm tiêu đề cấp một cho nội dung trong phần thân — điều này cũng đôi khi
+              được gọi là tiêu đề trang. Nhưng chúng là hai thứ khác nhau!</p>
+          </section>
+
+          <section id="html-2.3">
             <h2>Meta</h2>
             <p>Thêm mã hóa kí tự tài liệu: </p>
             <div class="image-container">
-            <img src="img/metama.png" alt="Thêm mã hóa">
+              <img src="img/metama.png" alt="Thêm mã hóa">
             </div>
             <p>Thêm tác giả và mô tả: </p>
             <div class="image-container">
-            <img src="img/meataname.png" alt="Thêm tác giả và mô tả">
-          </div>
-        </section>
-        <section id="html-2.4">
+              <img src="img/meataname.png" alt="Thêm tác giả và mô tả">
+            </div>
+          </section>
+          <section id="html-2.4">
             <h2>Favicon</h2>
-            <p>Favicon là biểu tượng vuông 16 pixel hiển thị ở nhiều nơi, thường thấy trên tab của trình duyệt, tùy thuộc vào trình duyệt sử dụng.</p>
+            <p>Favicon là biểu tượng vuông 16 pixel hiển thị ở nhiều nơi, thường thấy trên tab của trình duyệt, tùy
+              thuộc vào trình duyệt sử dụng.</p>
             <div class="image-container">
-            <img src="img/favicon.png" alt="Favicon">
-          </div>
-        </section>
-        <section id="html-2.5">
+              <img src="img/favicon.png" alt="Favicon">
+            </div>
+          </section>
+          <section id="html-2.5">
             <h2>Áp dụng CSS và JavaScript vào HTML</h2>
             <p>CSS</p>
             <div class="image-container">
@@ -153,29 +183,32 @@
             <div class="image-container">
               <img src="img/JS.png" alt="Thuộc tính src chứa đường dẫn đến JavaScript">
             </div>
-        </section>
-        <section id="html-2.6">
-          <h2>Thiết lập ngôn ngữ</h2>
-          <div class="image-container">
-          <img src="img/ngongnu.png" alt="Thiết lập ngôn ngữ">
-          </div>
-      </section>
-        
+          </section>
+          <section id="html-2.6">
+            <h2>Thiết lập ngôn ngữ</h2>
+            <div class="image-container">
+              <img src="img/ngongnu.png" alt="Thiết lập ngôn ngữ">
+            </div>
+          </section>
 
-      </article>
-    </main>
-  </div>
 
-  <div class="pagination">
-    <a href="html_content.html" class="prev"> Trang trước</a>
-    <a href="nguyentac.html" class="next">Trang kế tiếp</a>
-  </div>
+        </article>
+      </main>
+    </div>
 
-  <div class="scroll-to-top" id="scrollBtn">↑</div>
-  <script src="scroll.js"></script> <!-- Kết nối file JavaScript -->
+    <div class="pagination">
+      <a href="html_content.html" class="prev"> Trang trước</a>
+      <a href="nguyentac.html" class="next">Trang kế tiếp</a>
+    </div>
 
-  <footer>
-    <p>&copy; 2024 - Trường Đại học Khoa học Tự nhiên</p>
-  </footer>
+    <div class="scroll-to-top" id="scrollBtn">↑</div>
+    <script src="scroll.js"></script> <!-- Kết nối file JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script.js"></script>
+    <script src="logout1.js"></script>
+    <footer>
+      <p>&copy; 2024 - Trường Đại học Khoa học Tự nhiên</p>
+    </footer>
 </body>
+
 </html>
