@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Cấu trúc trang Web</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="html_style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-title">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+          <!-- <img src="" alt="Logo" class="logo"> -->
+          <h1 class="site-title">Group 8</h1>
+        </a>
+      </div>
+      
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li class="dropdown"><a href="html_content.html">HTML</a>
+                <div class="dropdown-content">
+                    <a href="html_content.html">1. Giới thiệu về HTML</a>
+                    <a href="../daphuongtienvanhung/daphuongtien_nhung.html">2. Đa phương tiện và nhúng</a>
+                    <a href="../tableHTML/table1.html">3. Bảng HTML</a>
+                </div>
+            </li>
+            <!-- CSS Menu with Dropdown -->
+            <li class="dropdown">
+              <a href="css_content.html">CSS</a>
+              <div class="dropdown-content">
+                <a href="css_content.html">1. Mở đầu về CSS</a>
+                <a href="css_content2.html">2. Nhúng CSS vào HTML</a>
+                <a href="css_content3.html">3. Nguyên tắc hoạt động cơ bản</a>
+                <a href="css_content4.html">4. Cấu trúc của CSS</a>
+                <a href="css_content5.html">5. Định dạng văn bản bằng CSS</a>
+                <a href="css_content6.html">6. Bố cục CSS</a>
+              </div>
+            </li>
+
+            <!-- Search Bar -->
+            <li class="search-container">
+              <form action="search-results.html" method="get" role="search">
+                <input type="text" name="q" placeholder="Tìm kiếm ..." class="search-input" aria-label="Search">
+                <button type="submit" class="search-button">Tìm kiếm</button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="aside-right">
+      <p><strong>Trong trang này</strong></p>
+      <ul>
+          <li><a href="#html-2.1">Siêu liên kết là gì?</a></li>
+          <li><a href="#html-2.2">Cấu trúc của một liên kết</a></li>
+          <li><a href="#html-2.3">Liên kết các phần tử khối(Block level links)</a></li>
+          <li><a href="#html-2.4">Liên kết hình ảnh</a></li>
+          <li><a href="#html-2.5">URL và đường dẫn</a></li>
+          <li><a href="#html-2.6">Liên kết email</a></li>
+      </ul>
+    </aside>
+  
+    <aside class="aside-left">
+        <h2 class="title-content">HTML - Cấu trúc trang Web</h2> 
+        <ol>
+            <li>
+                <details open="">
+                    <summary>Giới thiệu HTML</summary>
+                    <ol>
+                        <li><a href="html_content.html">Giới thiệu HTML</a></li>
+                        <li><a href="html_head.html">HTML Head</a></li>
+                        <li><a href="nguyentac.html">Nguyên tắc cơ bản trong HTML</a></li>
+                        <li><a href="sieulienket.html">Tạo siêu liên kết</a></li>
+                        <li><a href="dinhdangnangcao.html">Định dạng nâng cao</a></li>
+                    </ol>
+                </details>
+            </li>
+            <li>
+                <details open="">
+                    <summary>Đa phương tiện và nhúng</summary>
+                    <ol>
+                      <li><a href="../daphuongtienvanhung/daphuongtien_nhung.html">Hình ảnh trong HTML</a></li>
+                      <li><a href="../daphuongtienvanhung/video-sound.html">Nội dung video và âm thanh</a></li>
+                      <li><a href="../daphuongtienvanhung/nhung-other.html">Các công nghệ nhúng khác</a></li>
+                      <li><a href="../daphuongtienvanhung/hinhanhvector.html">Thêm đồ họa vector vào web</a></li>
+                      <li><a href="../daphuongtienvanhung/hinhanhdapung.html">Responsive images(Hình ảnh đáp ứng)</a></li> 
+                    </ol>
+                </details>
+            </li>
+            <li>
+                <details open="">
+                    <summary>Bảng HTML</summary>
+                    <ol>
+                      <li><a href="../tableHTML/html_table1.html">Cơ bản về bảng HTML</a></li>
+                        <li><a href="../tableHTML/html_table2.html">Các tính năng nâng cao và khả năng truy cập bảng</a></li>
+                    </ol>
+                </details>
+            </li>
+        </ol>
+      </aside>
+    
+
+
+
+  <div class="main-wrapper">
+    <main id="content" class="main-content">
+      <article class="main-page-content" lang="en-US">
+        <h1 class="main-title">Tạo siêu liên kết</h1>
+        <section id="html-2.1">
+          <h2>Siêu liên kết là gì</h2>
+          <p>Siêu liên kết là một đổi mới quan trọng của Web, cho phép kết nối tài liệu với tài nguyên khác và dẫn đến các phần cụ thể của tài liệu. Hầu hết mọi nội dung web đều có thể trở thành siêu liên kết, giúp người dùng truy cập các địa chỉ web (URL) khác khi nhấp vào.</p>
+          <div class="image-container">
+            <img src="img/taosieulienket.jpg" alt="HTML Head">
+          </div>
+        </section>
+
+        <section id="html-2.2">
+            <h2>Cấu trúc của một liên kết</h2>
+            <div class="image-container">
+                <img src="img/a.png" alt="Cấu trúc của một liên kết">
+            </div>
+        </section>
+        
+        <section id="html-2.3">
+            <h2>Liên kết các phần tử khối(Block level links)</h2>
+            <div class="image-container">
+                <img src="img/lienketlong.png" alt="Thêm mã hóa">
+            </div>
+            <p>Điều này biến tiêu đề thành một liên kết:
+            </p>
+            <div class="image-container">
+                <img src="img/kqlienketlong.png" alt="Kết quả liên kết lồng">
+            </div>
+        </section>
+        <section id="html-2.4">
+            <h2>Liên kết hình ảnh</h2>
+            <div class="image-container">
+            <img src="img/lienkethinhanh.png" alt="Liên kết hình ảnh">
+          </div>
+          <p>Điều này làm cho logo MDN trở thành một liên kết:</p>
+          <div class="image-container">
+            <img src="img/web.png" alt="Liên kết hình ảnh">
+          </div>
+        </section>
+        <section id="html-2.5">
+            <h2>URL và đường dẫn</h2>
+            <div class="image-container">
+              <img src="img/URL.png" alt="URL">
+            </div>
+            <p>Cùng cấp: </p>
+            <div class="image-container">
+              <img src="img/cungthumuc.png" alt="Cùng cấp ">
+            </div>
+            <p>Di chuyển xuống các thư mục con: </p>
+            <div class="image-container">
+                <img src="img/thumuccon.png" alt="Di chuyển xuống các thư mục con ">
+            </div>
+            <p>Di chuyển ngược lên các thư mục cha: </p>
+            <div class="image-container">
+                <img src="img/thumuccha.png" alt="Di chuyển lên các thư mục cha ">
+            </div>
+        </section>
+        <section id="html-2.6">
+          <h2>Liên kết email</h2>
+          <div class="image-container">
+            <img src="img/email.png" alt="Liên kết email">
+          </div>
+      </section>
+
+      </article>
+    </main>
+  </div>
+
+  <div class="pagination">
+    <a href="nguyentac.html" class="prev"> Trang trước</a>
+    <a href="dinhdangnangcao.html" class="next">Trang kế tiếp</a>
+  </div>
+
+  <div class="scroll-to-top" id="scrollBtn">↑</div>
+  <script src="../scroll.js"></script> <!-- Kết nối file JavaScript -->
+
+  <footer>
+    <p>&copy; 2024 - Trường Đại học Khoa học Tự nhiên</p>
+  </footer>
+</body>
+</html>

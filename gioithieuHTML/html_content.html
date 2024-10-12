@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Cấu trúc trang Web</title>
+  <style>
+    table {
+         width: auto; /* Đặt chiều rộng của bảng là tự động */
+         border-collapse: collapse;
+         margin-top: 20px;
+         
+     }
+     th, td {
+         border: 1px solid #ddd;
+         padding: 8px;
+         text-align: center; /* Căn giữa nội dung */
+     }
+     th {
+         background-color: #f2f2f2;
+     }
+     tr:hover {
+         background-color: #f5f5f5;
+     }
+ </style>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="html_style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-title">
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+          <!-- <img src="" alt="Logo" class="logo"> -->
+          <h1 class="site-title">Group 8</h1>
+        </a>
+      </div>
+      
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li class="dropdown"><a href="html_content.html">HTML</a>
+                <div class="dropdown-content">
+                    <a href="html_content.html">1. Giới thiệu về HTML</a>
+                    <a href="../daphuongtienvanhung/daphuongtien_nhung.html">2. Đa phương tiện và nhúng</a>
+                    <a href="../tableHTML/table1.html">3. Bảng HTML</a>
+                </div>
+            </li>
+            <!-- CSS Menu with Dropdown -->
+            <li class="dropdown">
+              <a href="css_content.html">CSS</a>
+              <div class="dropdown-content">
+                <a href="css_content.html">1. Mở đầu về CSS</a>
+                <a href="css_content2.html">2. Nhúng CSS vào HTML</a>
+                <a href="css_content3.html">3. Nguyên tắc hoạt động cơ bản</a>
+                <a href="css_content4.html">4. Cấu trúc của CSS</a>
+                <a href="css_content5.html">5. Định dạng văn bản bằng CSS</a>
+                <a href="css_content6.html">6. Bố cục CSS</a>
+              </div>
+            </li>
+
+            <!-- Search Bar -->
+            <li class="search-container">
+              <form action="search-results.html" method="get" role="search">
+                <input type="text" name="q" placeholder="Tìm kiếm ..." class="search-input" aria-label="Search">
+                <button type="submit" class="search-button">Tìm kiếm</button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="aside-right">
+      <p><strong>Trong trang này</strong></p>
+      <ul>
+          <li><a href="#html-2.1">Danh sách mô tả</a></li>
+          <li><a href="#html-2.2">Đánh dấu thông tin liên lạc</a></li>
+          <li><a href="#html-2.3">Biểu diễn mã máy tính</a></li>
+      </ul>
+    </aside>
+  
+    <aside class="aside-left">
+        <h2 class="title-content">HTML - Cấu trúc trang Web</h2> 
+        <ol>
+            <li>
+                <details open="">
+                    <summary>Giới thiệu HTML</summary>
+                    <ol>
+                        <li><a href="html_content.html">Giới thiệu HTML</a></li>
+                        <li><a href="html_head.html">HTML Head</a></li>
+                        <li><a href="nguyentac.html">Nguyên tắc cơ bản trong HTML</a></li>
+                        <li><a href="sieulienket.html">Tạo siêu liên kết</a></li>
+                        <li><a href="dinhdangnangcao.html">Định dạng nâng cao</a></li>
+                    </ol>
+                </details>
+            </li>
+            <li>
+                <details open="">
+                    <summary>Đa phương tiện và nhúng</summary>
+                    <ol>
+                      <li><a href="../daphuongtienvanhung/daphuongtien_nhung.html">Hình ảnh trong HTML</a></li>
+                      <li><a href="../daphuongtienvanhung/video-sound.html">Nội dung video và âm thanh</a></li>
+                      <li><a href="../daphuongtienvanhung/nhung-other.html">Các công nghệ nhúng khác</a></li>
+                      <li><a href="../daphuongtienvanhung/hinhanhvector.html">Thêm đồ họa vector vào web</a></li>
+                      <li><a href="../daphuongtienvanhung/hinhanhdapung.html">Responsive images(Hình ảnh đáp ứng)</a></li> 
+                    </ol>
+                </details>
+            </li>
+            <li>
+                <details open="">
+                    <summary>Bảng HTML</summary>
+                    <ol>
+                      <li><a href="../tableHTML/html_table1.html">Cơ bản về bảng HTML</a></li>
+                        <li><a href="../tableHTML/html_table2.html">Các tính năng nâng cao và khả năng truy cập bảng</a></li>
+                    </ol>
+                </details>
+            </li>
+        </ol>
+      </aside>
+    
+
+
+
+  <div class="main-wrapper">
+    <main id="content" class="main-content">
+      <article class="main-page-content" lang="en-US">
+        <h1 class="main-title">Bắt đầu với HTML</h1>
+        <section id="html-2.1">
+          <h2>Tóm tắt lịch sử</h2>
+          <h5>Khởi nguồn HTML:</h5>
+          <ul>
+            <li>
+              Năm 1990, Tim Berners-Lee định nghĩa siêu văn bản; HTML được chính
+              thức hóa vào năm 1991.
+            </li>
+          </ul>
+          <h5>Phát triển HTML:</h5>
+          <ul>
+            <li>
+              Năm 1993, IETF chỉ định HTML; HTML 4.0 trở thành tiêu chuẩn ISO
+              vào năm 2000.
+            </li>
+          </ul>
+          <h5>Chuyển hướng sang HTML5:</h5>
+          <ul>
+            <li>
+              Năm 2004, nhóm WHATWG được thành lập; HTML5 ra mắt vào năm 2014.
+            </li>
+          </ul>
+        </section>
+
+        <section id="html-2.2">
+            <h2>HTML là gì?</h2>
+            <p>HTML là ngôn ngữ đánh dấu dùng để cấu trúc các trang web, bao gồm các phần tử định dạng và liên kết nội dung. Nó có thể đơn giản hoặc phức tạp tùy theo nhà phát triển, giúp hiển thị và hoạt động theo ý muốn.</p>
+            <div class="image-container">
+                <img src="img/HTML.jpg" alt="HTML" width="500">
+            </div>
+        </section>
+        
+        <section id="html-2.3">
+            <h2>Cấu trúc của một phần tử HTML</h2>
+            <div class="image-container">
+              <img src="img/cautrucphantu.png" alt="Cấu trúc của một phần tử HTML">
+            </div>
+        </section>
+        <section id="html-2.4">
+            <h2>Thuộc tính</h2>
+            <img src="img/thuoctinh.png" alt="Thuộc tính">
+        </section>
+        <section id="html-2.5">
+            <h2>Cấu trúc của tài liệu HTML</h2>
+            <div class="image-container">
+              <img src="img/cautructailieu.png" alt="Cấu trúc tài liệu">
+            </div>
+            <ul>
+                <li>
+                    &lt;!doctype html&gt;: Xác định tài liệu HTML chuẩn.
+                </li>
+                <li>
+                    &lt;html&gt;&lt;/html&gt;: Phần tử bao quanh toàn bộ nội dung trang, gọi là phần tử gốc.
+                </li>
+                <li>
+                    &lt;head&gt;&lt;/head&gt;: Chứa thông tin không hiển thị trực tiếp như từ khóa, mô tả, CSS, và khai báo ký tự.
+                </li>
+                <li>
+                    &lt;meta charset="utf-8"&gt;: Đặt mã hóa ký tự cho tài liệu là UTF-8, giúp trang xử lý đa dạng ngôn ngữ.
+                </li>
+                <li>
+                    &lt;title&gt;&lt;/title&gt;: Đặt tiêu đề trang, hiển thị trên tab trình duyệt và khi trang được đánh dấu.
+                </li>
+                <li>
+                    &lt;body&gt;&lt;/body&gt;: Chứa toàn bộ nội dung hiển thị của trang như văn bản, hình ảnh, video.
+                </li>
+            </ul>
+            <p>Các kí tự đặc biệt: </p>
+    <table>
+      <thead>
+          <tr>
+              <th>Ký tự nguyên văn</th>
+              <th>Ký tự tham chiếu tương đương</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>&lt;</td>
+              <td>&amp;lt;</td>
+          </tr>
+          <tr>
+              <td>&gt;</td>
+              <td>&amp;gt;</td>
+          </tr>
+          <tr>
+              <td>"</td>
+              <td>&amp;quot;</td>
+          </tr>
+          <tr>
+              <td>’</td>
+              <td>&amp;apos;</td>
+          </tr>
+          <tr>
+              <td>&</td>
+              <td>&amp;amp;</td>
+          </tr>
+      </tbody>
+  </table>
+
+        </section>
+        
+
+      </article>
+    </main>
+  </div>
+
+  <div class="pagination">
+    <a href="nguyentac.html" class="prev"> Trang trước</a>
+    <a href="html_head.html" class="next">Trang kế tiếp</a>
+  </div>
+
+  <div class="scroll-to-top" id="scrollBtn">↑</div>
+  <script src="../scroll.js"></script> <!-- Kết nối file JavaScript -->
+
+  <footer>
+    <p>&copy; 2024 - Trường Đại học Khoa học Tự nhiên</p>
+  </footer>
+</body>
+</html>
