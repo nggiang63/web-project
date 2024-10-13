@@ -13,7 +13,7 @@ body {
 }
 
 .search-container {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
 }
 
@@ -23,6 +23,7 @@ h1 {
     background-color: #0063EC; /* Thêm nền */
     border-radius: 10px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 
