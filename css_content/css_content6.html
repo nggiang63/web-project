@@ -166,7 +166,9 @@
           <h2>Normal flow (Dòng chảy bình thường)</h2> 
           <ul>
             <li style="margin-bottom: 10px;">Khái niệm: Là cách mà các phần tử trên trang web được hiển thị tự động theo thứ tự mà chúng xuất hiện trong mã HTML.</li>    
-            
+            <li style="margin-bottom: 10px;">Cách hoạt động của dòng chảy bình thường:
+              <img src="images/normalflow.png" alt="normalflow" style="display: block; margin: 0 auto; width: 60%;">
+            </li>
           </ul>
         </section>
 
@@ -190,9 +192,15 @@
                   <pre style="margin: 0; font-family: monospace; background-color: #f4f4f4; padding: 1px; border-radius: 3px; text-align: center;"><code>display: flex</code></pre>
                 </div>
                 <ul>
-                  <li style="margin-bottom: 10px;">Cách hoạt động: Sử dụng mô hình "flex", giúp tạo bố cục linh hoạt theo cả chiều ngang và chiều dọc</li>
+                  <li style="margin-bottom: 10px;">Cách hoạt động: Sử dụng mô hình "flex", giúp tạo bố cục linh hoạt theo cả chiều ngang và chiều dọc. Các phần tử có thể co giãn hoặc giãn rộng tự động</li>
                   <li style="margin-bottom: 10px;">Mô hình flexbox:</li>
                   <img src="images/flexbox.png" alt="float" style="display: block; margin: 0 auto; width: 60%;">
+                  <li style="margin-bottom: 10px;">Wrapping: Khi các phần tử flexbox con tràn vùng chứa của cột và hàng, thì ta dùng wrap.</li>
+
+                  <div style="border: 1px solid #ddd; background-color: #f9f9f9; border-radius: 5px; position: relative; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: inline-block; text-align: center;">
+                    <div style="position: absolute; top: -10px; left: 10px; background-color: #fff; padding: 1px 8px; font-weight: bold; color: #333; font-size: 14px; border: 1px solid #ddd; border-radius: 3px;">CSS</div>
+                    <pre style="margin: 0; font-family: monospace; background-color: #f4f4f4; padding: 1px; border-radius: 3px; text-align: center;"><code>flex-wrap: wrap</code></pre></div>
+                  <li style="margin-bottom: 10px;">Căn chỉnh theo chiều ngang và chiều dọc: Bạn cũng có thể sử dụng các tính năng flexbox để căn chỉnh các mục flex dọc theo trục chính hoặc trục chéo</li>
                   </ul>
                 
                 <p><em><strong>Grids (Lưới)</strong></em></p>
@@ -204,11 +212,13 @@
                   <li style="margin-bottom: 10px;">Lưới cho phép bạn tạo ra các bố cục phức tạp bằng cách chia không gian thành các hàng và cột, từ đó dễ dàng sắp xếp và căn chỉnh các phần tử.</li>
                   <li style="margin-bottom: 10px;">Sơ đồ lưới: Một lưới thường có các cột , hàng và sau đó là khoảng cách giữa mỗi hàng và cột.Các khoảng cách này thường được gọi là gutter.</li>
                   <img src="images/luoi.png" alt="luoi" style="display: block; margin: 0 auto; width: 70%;">
+                  <li style="margin-bottom: 10px;">Hàng và cột: Chúng ta sử dụng thuộc tính <em>grid-template-row</em> và <em>grid-template-column</em>. VÀ nếu muốn thêm khoảng cách giữa các hàng, cột thì chỉ cần thêm <em> grid-column-gap</em> và <em>grid-row-gap</em> hoặc <em>grid-gap</em>.</li>
+                  <li style="margin-bottom: 10px;">Hàm minmax(): cho phép chúng ta đặt kích thước tối thiểu và tối đa cho một track, ví dụ, minmax(100px, auto).</li>
                 </ul>
                 
                 <p><em><strong>Positioning (Định vị)</strong></em></p>
                 <ul>
-                  <li style="margin-bottom: 10px;">Positioning cho phép chúng ta ghi đè lên luồng tài liệu thông thường; thay đổi một chút vị trí của một số hộp so với vị trí luồng mặc định của chúng</li>
+                  <li style="margin-bottom: 10px;">Positioningcho phép chúng ta ghi đè lên luồng tài liệu thông thường; thay đổi một chút vị trí của một số hộp so với vị trí luồng mặc định của chúng</li>
                   <li style="margin-bottom: 10px;">Các thuộc tính của Positioning:</li>
                   <ul>
                     <li style="margin-bottom: 10px;">Static: Box mặc định theo normal flow.</li>
@@ -233,15 +243,15 @@
                   <li style="margin-bottom: 10px;">Responsive được hiểu là một công nghệ hỗ trợ cho website sẽ hiển thị tốt trên mọi loại thiết bị như Smart Phone, Laptop, Máy tính bảng, PC, trình duyệt... </li></li>
                   <li style="margin-bottom: 10px;">Các thành phần cơ bản của Responsive:</li>
                   <ul>
-                    <li style="margin-bottom: 10px;">Media Queries: là thành phần chính trong Responsive CSS, cho phép áp dụng các quy tắc CSS khác nhau dựa trên các đặc điểm của thiết bị giúp điều chỉnh phong cách trang web phù hợp nhiều thiết bị.</li>
-                    <li style="margin-bottom: 10px;">Flexible Grid Layouts</li>
-                    <li style="margin-bottom: 10px;">Flexible Images</li>
+                    <li style="margin-bottom: 10px;">Media Queries: là thành phần chính trong Responsive CSS, cho phép áp dụng các quy tắc CSS khác nhau dựa trên các đặc điểm của thiết bị như chiều rộng, chiều cao, độ phân giải và định hướng màn hình, giúp điều chỉnh phong cách trang web phù hợp nhiều thiết bị</li>
+                    <li style="margin-bottom: 10px;">Flexible Grid Layouts: Hệ thống lưới linh hoạt cho phép sắp xếp và bố trí các phần tử trên trang một cách tương thích với các kích thước màn hình khác nhau.</li>
+                    <li style="margin-bottom: 10px;">Flexible Images: Hình ảnh linh hoạt tự động thay đổi kích thước để phù hợp với bố cục và kích thước màn hình, giúp tránh tình trạng hình ảnh bị méo hoặc vỡ.</li>
                   </ul>
                   <li style="margin-bottom: 10px;">Công cụ hỗ trợ Responsive Design</li>
                     <ul>
-                      <li style="margin-bottom: 10px;"> Chrome DevTools</li>
-                      <li style="margin-bottom: 10px;"> Responsive Design Checker</li>
-                      <li style="margin-bottom: 10px;">Bootstrap</li>
+                      <li style="margin-bottom: 10px;"> Chrome DevTools: Trình duyệt Chrome cung cấp các công cụ để kiểm tra cách trang web hiển thị trên các kích thước màn hình khác nhau.</li>
+                      <li style="margin-bottom: 10px;"> Responsive Design Checker: Các công cụ trực tuyến cho phép bạn kiểm tra responsive design của trang web.</li>
+                      <li style="margin-bottom: 10px;">Bootstrap: Một framework phổ biến giúp xây dựng các trang web responsive dễ dàng và nhanh chóng.</li>
                     </ul>
                   
     
